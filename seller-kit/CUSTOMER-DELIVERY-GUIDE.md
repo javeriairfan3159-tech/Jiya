@@ -23,18 +23,22 @@ Thank you for your purchase! Follow these steps to open your new planner.
 
 ## Troubleshooting
 
-**I cannot see the Duplicate button.**  
+**I cannot see the Duplicate button.**
+
 Make sure you are signed in to Notion and try opening the link in a desktop
 browser. If the problem continues, copy the URL into another browser.
 
-**Can I use the planner on my phone?**  
+**Can I use the planner on my phone?**
+
 Yes. Duplicate it in a desktop browser first for the easiest setup, then open
 it with the Notion mobile app.
 
-**Do I need a paid Notion account?**  
+**Do I need a paid Notion account?**
+
 No. The planner is designed to work with a free personal account.
 
-**Will my information be shared with the seller?**  
+**Will my information be shared with the seller?**
+
 No. Your duplicated planner belongs to your workspace. The seller cannot see
 the information you add to your private copy.
 

@@ -1,0 +1,5 @@
+Transaction,Type,Category,Account,Date,Amount,Recurring,Notes
+Monthly salary,Income,Salary,Checking,2026-01-01,3000,TRUE,"Example income"
+Rent,Expense,Housing,Checking,2026-01-02,950,TRUE,"Due on the second"
+Groceries,Expense,Food,Credit Card,2026-01-04,86.40,FALSE,"Weekly grocery shop"
+Emergency fund,Savings,Savings,Checking,2026-01-05,250,TRUE,"Automatic transfer"

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charlie — Two Infinity And Beyond! · 5×7</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Pacifico&family=Luckiest+Guy&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --sky: #1a4fc4;
+      --sky-deep: #0d2d7a;
+      --banner-red: #e03131;
+      --logo-yellow: #ffe14a;
+      --hat: #6b3fa0;
+      --paper: #fffef9;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 5in;
+      height: 7in;
+      overflow: hidden;
+      background: var(--paper);
+    }
+
+    body {
+      font-family: "Fredoka", system-ui, sans-serif;
+      color: var(--sky-deep);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    @page { size: 5in 7in; margin: 0; }
+
+    .sheet {
+      width: 5in;
+      height: 7in;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 15% 10%, #fff6d6 0%, transparent 28%),
+        radial-gradient(circle at 85% 15%, #e8f0ff 0%, transparent 30%),
+        radial-gradient(circle at 50% 90%, #ffe8f0 0%, transparent 35%),
+        var(--paper);
+      border: 4px solid var(--sky);
+    }
+
+    .confetti { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+    .confetti i {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.9;
+    }
+    .confetti i.w {
+      width: 12px; height: 3px; border-radius: 3px;
+    }
+
+    .char {
+      position: absolute;
+      z-index: 2;
+      filter: drop-shadow(0 2px 1px rgba(0,0,0,0.15));
+    }
+
+    .c1 { top: 10px; left: 4px; width: 74px; }
+    .c2 { top: 10px; right: 4px; width: 74px; }
+    .c3 { top: 130px; left: 0; width: 68px; }
+    .c4 { top: 120px; right: 0; width: 74px; }
+    .c5 { top: 265px; left: -2px; width: 80px; }
+    .c6 { top: 250px; right: -2px; width: 72px; }
+    .c7 { bottom: 105px; left: 2px; width: 66px; }
+    .c8 { bottom: 100px; right: 2px; width: 62px; }
+    .c9 { bottom: 6px; right: 55px; width: 90px; }
+    .c10 { top: 300px; left: 50%; margin-left: -26px; width: 48px; z-index: 5; }
+
+    .content {
+      position: relative;
+      z-index: 4;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0.48in 0.62in 0.38in;
+    }
+
+    .banner-wrap {
+      transform: rotate(-2.5deg);
+      margin-top: 2px;
+    }
+
+    .banner {
+      display: inline-block;
+      background: var(--banner-red);
+      color: var(--logo-yellow);
+      font-family: "Luckiest Guy", "Fredoka", cursive;
+      font-size: 30px;
+      letter-spacing: 0.5px;
+      line-height: 1;
+      padding: 11px 20px 9px;
+      border: 3px solid var(--sky);
+      box-shadow: 5px 5px 0 rgba(13, 45, 122, 0.28);
+      /* trapezoid feel */
+      clip-path: polygon(4% 0, 96% 0, 100% 100%, 0 100%);
+      text-shadow:
+        -2px -2px 0 #1240a8,
+         2px -2px 0 #1240a8,
+        -2px  2px 0 #1240a8,
+         2px  2px 0 #1240a8,
+         0  0 0 #1240a8;
+    }
+
+    .beyond {
+      font-family: "Pacifico", cursive;
+      font-size: 27px;
+      color: var(--sky-deep);
+      margin-top: 8px;
+      transform: rotate(1deg);
+    }
+
+    .name {
+      font-family: "Pacifico", cursive;
+      font-size: 50px;
+      color: var(--sky);
+      line-height: 1;
+      margin-top: 8px;
+    }
+
+    .turning-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 2px;
+    }
+
+    .turning-row .label {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--sky);
+    }
+
+    .age {
+      font-family: "Luckiest Guy", cursive;
+      font-size: 68px;
+      color: var(--logo-yellow);
+      line-height: 0.85;
+      transform: rotate(-5deg);
+      text-shadow:
+        -3px -3px 0 #1240a8,
+         3px -3px 0 #1240a8,
+        -3px  3px 0 #1240a8,
+         3px  3px 0 #1240a8;
+    }
+
+    .join {
+      margin-top: 64px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--sky-deep);
+    }
+
+    .when {
+      margin-top: 12px;
+      background: var(--banner-red);
+      border: 2.5px dashed #fff;
+      border-radius: 16px;
+      padding: 10px 26px 9px;
+      color: #fff;
+      box-shadow: 0 0 0 7px var(--sky);
+      min-width: 175px;
+    }
+
+    .when .date {
+      font-family: "Luckiest Guy", cursive;
+      font-size: 27px;
+      color: var(--logo-yellow);
+      letter-spacing: 1px;
+      line-height: 1.05;
+      text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    }
+
+    .when .time {
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .address {
+      margin-top: 14px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--sky);
+      line-height: 1.4;
+      max-width: 230px;
+    }
+
+    .rsvp {
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--sky-deep);
+      letter-spacing: 0.3px;
+    }
+  </style>
+</head>
+<body>
+  <article class="sheet">
+    <div class="confetti" aria-hidden="true">
+      <i style="left:10%;top:7%;width:8px;height:8px;background:#ff6b9d"></i>
+      <i style="left:26%;top:16%;width:6px;height:6px;background:#ffe14a"></i>
+      <i class="w" style="left:68%;top:10%;background:#3ec6ff;transform:rotate(28deg)"></i>
+      <i style="left:86%;top:20%;width:7px;height:7px;background:#3ecf8e"></i>
+      <i style="left:16%;top:40%;width:5px;height:5px;background:#3ec6ff"></i>
+      <i class="w" style="left:52%;top:36%;background:#ff6b9d;transform:rotate(-18deg)"></i>
+      <i style="left:76%;top:46%;width:8px;height:8px;background:#ffe14a"></i>
+      <i style="left:38%;top:56%;width:6px;height:6px;background:#3ecf8e"></i>
+      <i class="w" style="left:20%;top:70%;background:#ffe14a;transform:rotate(40deg)"></i>
+      <i style="left:60%;top:76%;width:7px;height:7px;background:#ff6b9d"></i>
+      <i style="left:46%;top:88%;width:5px;height:5px;background:#3ec6ff"></i>
+      <i style="left:84%;top:64%;width:6px;height:6px;background:#3ecf8e"></i>
+      <i style="left:7%;top:52%;width:7px;height:7px;background:#ffe14a"></i>
+      <i class="w" style="left:90%;top:38%;background:#e03131;transform:rotate(12deg)"></i>
+      <i style="left:32%;top:28%;width:5px;height:5px;background:#ff6b9d"></i>
+      <i style="left:58%;top:64%;width:5px;height:5px;background:#ffe14a"></i>
+    </div>
+
+    <!-- Cowboy doll -->
+    <svg class="char c1" viewBox="0 0 80 110" aria-hidden="true">
+      <ellipse cx="40" cy="106" rx="20" ry="3" fill="rgba(0,0,0,.12)"/>
+      <path d="M30 88h8v16H30zm12 0h8v16h-8z" fill="#3b2412"/>
+      <path d="M28 58h24v32H28z" fill="#c45c26"/>
+      <path d="M28 58h24l-3 10H31z" fill="#f0c98a"/>
+      <path d="M34 68h12v3H34z" fill="#2f6b3a"/>
+      <circle cx="40" cy="40" r="15" fill="#f0c98a"/>
+      <path d="M25 30c5-16 25-16 30 0v5H25z" fill="#efe0c0"/>
+      <rect x="23" y="33" width="34" height="6" rx="1" fill="#2f6b3a"/>
+      <path d="M33 18l7-12 7 12" fill="#6b3fa0"/>
+      <circle cx="40" cy="8" r="4.5" fill="#ffe14a"/>
+      <circle cx="34" cy="39" r="2.1" fill="#222"/><circle cx="46" cy="39" r="2.1" fill="#222"/>
+      <path d="M36 47c2.2 3 5.8 3 8 0" stroke="#b45309" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M14 62h14v7H14zM52 62h14v7H52z" fill="#f0c98a"/>
+      <path d="M18 55l-6 10h8z" fill="#c45c26"/>
+    </svg>
+
+    <!-- Cowgirl doll -->
+    <svg class="char c2" viewBox="0 0 80 110" aria-hidden="true">
+      <ellipse cx="40" cy="106" rx="20" ry="3" fill="rgba(0,0,0,.12)"/>
+      <path d="M30 88h8v16H30zm12 0h8v16h-8z" fill="#3b2412"/>
+      <path d="M28 56h24v34H28z" fill="#e03131"/>
+      <path d="M28 56h24v12H28z" fill="#fff" opacity=".95"/>
+      <path d="M28 68h24" stroke="#e03131" stroke-width="2" stroke-dasharray="3 2"/>
+      <circle cx="40" cy="38" r="14" fill="#f0c98a"/>
+      <path d="M22 32c6-18 30-18 36 0" fill="#e85d2a"/>
+      <path d="M33 16l7-12 7 12" fill="#6b3fa0"/>
+      <circle cx="40" cy="6" r="4.5" fill="#ffe14a"/>
+      <circle cx="34" cy="37" r="2" fill="#222"/><circle cx="46" cy="37" r="2" fill="#222"/>
+      <path d="M36 45c2 2.8 6 2.8 8 0" stroke="#b45309" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M14 60h14v6H14zM52 60h14v6H52z" fill="#f0c98a"/>
+      <circle cx="48" cy="52" r="3" fill="#ffe14a" stroke="#e03131"/>
+    </svg>
+
+    <!-- Space ranger -->
+    <svg class="char c3" viewBox="0 0 70 100" aria-hidden="true">
+      <ellipse cx="35" cy="97" rx="18" ry="2.5" fill="rgba(0,0,0,.12)"/>
+      <rect x="22" y="78" width="10" height="16" fill="#1a4fc4"/><rect x="38" y="78" width="10" height="16" fill="#1a4fc4"/>
+      <rect x="18" y="44" width="34" height="36" rx="7" fill="#1a4fc4"/>
+      <rect x="24" y="50" width="22" height="14" rx="3" fill="#5ad0ff"/>
+      <circle cx="43" cy="58" r="3.5" fill="#e03131"/>
+      <rect x="26" y="66" width="18" height="4" rx="1" fill="#ffe14a"/>
+      <circle cx="35" cy="28" r="13" fill="#f0c98a"/>
+      <path d="M22 20h26v8H22z" fill="#1a4fc4"/>
+      <path d="M29 10l6-9 6 9" fill="#6b3fa0"/><circle cx="35" cy="3" r="3.5" fill="#ffe14a"/>
+      <circle cx="30" cy="28" r="1.8" fill="#222"/><circle cx="40" cy="28" r="1.8" fill="#222"/>
+      <path d="M31 34c1.6 2.2 5.4 2.2 7 0" stroke="#b45309" stroke-width="1.6" fill="none"/>
+      <path d="M6 52h14v9H6zM50 52h14v9H50z" fill="#1a4fc4"/>
+      <path d="M8 44l-8 8 8 3zM62 44l8 8-8 3z" fill="#5ad0ff"/>
+      <path d="M10 40h6v4h-6zM54 40h6v4h-6z" fill="#fff" opacity=".7"/>
+    </svg>
+
+    <!-- Dino -->
+    <svg class="char c4" viewBox="0 0 80 100" aria-hidden="true">
+      <ellipse cx="40" cy="97" rx="20" ry="2.5" fill="rgba(0,0,0,.12)"/>
+      <ellipse cx="28" cy="84" rx="9" ry="6" fill="#2fae5f"/><ellipse cx="48" cy="84" rx="9" ry="6" fill="#2fae5f"/>
+      <ellipse cx="40" cy="58" rx="22" ry="26" fill="#4ad687"/>
+      <ellipse cx="40" cy="30" rx="15" ry="14" fill="#4ad687"/>
+      <path d="M58 70c12 0 18-10 14-18" stroke="#4ad687" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M18 50c-10 2-14 14-8 20" stroke="#4ad687" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M34 12l6-10 6 10" fill="#6b3fa0"/><circle cx="40" cy="4" r="3.5" fill="#ffe14a"/>
+      <circle cx="34" cy="28" r="2.3" fill="#222"/><circle cx="46" cy="28" r="2.3" fill="#222"/>
+      <ellipse cx="40" cy="36" rx="5" ry="3.2" fill="#1f7a48"/>
+      <path d="M30 18h4M36 16h4M42 18h4" stroke="#2fae5f" stroke-width="2"/>
+    </svg>
+
+    <!-- Spring dog -->
+    <svg class="char c5" viewBox="0 0 95 75" aria-hidden="true">
+      <ellipse cx="18" cy="32" rx="15" ry="13" fill="#c45c26"/>
+      <ellipse cx="8" cy="28" rx="5" ry="7" fill="#a04820"/>
+      <circle cx="14" cy="30" r="2.2" fill="#222"/><circle cx="23" cy="30" r="2.2" fill="#222"/>
+      <ellipse cx="18" cy="38" rx="4" ry="2.5" fill="#8b4513"/>
+      <path d="M12 14l6-10 6 10" fill="#6b3fa0"/><circle cx="18" cy="6" r="3.2" fill="#ffe14a"/>
+      <path d="M32 34c7-12 15 10 23-4s13 14 22 0 9 10 14 2" stroke="#e0a820" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="82" cy="40" rx="11" ry="9" fill="#c45c26"/>
+      <path d="M88 34c5-1 8 2 9 6" stroke="#a04820" stroke-width="3" fill="none"/>
+    </svg>
+
+    <!-- Piggy bank + balloon -->
+    <svg class="char c6" viewBox="0 0 80 85" aria-hidden="true">
+      <line x1="62" y1="22" x2="62" y2="42" stroke="#2fae5f" stroke-width="2"/>
+      <circle cx="62" cy="16" r="11" fill="#3ecf8e"/>
+      <ellipse cx="36" cy="50" rx="24" ry="20" fill="#ff8fab"/>
+      <ellipse cx="36" cy="44" rx="15" ry="11" fill="#ffb3c6"/>
+      <ellipse cx="54" cy="48" rx="7" ry="5" fill="#ff8fab"/>
+      <circle cx="54" cy="48" r="2" fill="#e86b88"/>
+      <circle cx="28" cy="42" r="2.2" fill="#222"/><circle cx="40" cy="42" r="2.2" fill="#222"/>
+      <path d="M30 24l6-11 6 11" fill="#6b3fa0"/><circle cx="36" cy="15" r="3.5" fill="#ffe14a"/>
+      <ellipse cx="24" cy="66" rx="5" ry="4" fill="#e86b88"/><ellipse cx="44" cy="66" rx="5" ry="4" fill="#e86b88"/>
+      <rect x="32" y="36" width="8" height="2" rx="1" fill="#c45c26"/>
+    </svg>
+
+    <!-- Three-eye alien + gift -->
+    <svg class="char c7" viewBox="0 0 70 95" aria-hidden="true">
+      <ellipse cx="35" cy="38" rx="18" ry="22" fill="#5ad687"/>
+      <circle cx="25" cy="32" r="4.2" fill="#fff"/><circle cx="35" cy="28" r="4.2" fill="#fff"/><circle cx="45" cy="32" r="4.2" fill="#fff"/>
+      <circle cx="25" cy="32" r="2" fill="#222"/><circle cx="35" cy="28" r="2" fill="#222"/><circle cx="45" cy="32" r="2" fill="#222"/>
+      <path d="M29 14l6-10 6 10" fill="#6b3fa0"/><circle cx="35" cy="6" r="3.5" fill="#ffe14a"/>
+      <path d="M20 54h10v20H20zm20 0h10v20H40z" fill="#2fae5f"/>
+      <rect x="20" y="62" width="24" height="18" rx="2" fill="#1a4fc4"/>
+      <path d="M20 68h24" stroke="#ffe14a" stroke-width="3.5"/>
+      <rect x="30" y="62" width="4" height="18" fill="#ffe14a"/>
+      <circle cx="32" cy="62" r="3.5" fill="#ffe14a"/>
+      <path d="M28 46c3 4 11 4 14 0" stroke="#1f7a48" stroke-width="1.8" fill="none"/>
+    </svg>
+
+    <!-- Potato toy -->
+    <svg class="char c8" viewBox="0 0 70 90" aria-hidden="true">
+      <ellipse cx="35" cy="48" rx="22" ry="26" fill="#c9a06a"/>
+      <circle cx="27" cy="42" r="4" fill="#fff"/><circle cx="43" cy="42" r="4" fill="#fff"/>
+      <circle cx="27" cy="42" r="2" fill="#222"/><circle cx="43" cy="42" r="2" fill="#222"/>
+      <ellipse cx="35" cy="52" rx="5.5" ry="3.5" fill="#8b4513"/>
+      <path d="M26 58c4 5.5 14 5.5 18 0" stroke="#8b4513" stroke-width="2" fill="none"/>
+      <path d="M29 18l6-11 6 11" fill="#6b3fa0"/><circle cx="35" cy="9" r="3.5" fill="#ffe14a"/>
+      <path d="M10 50h12M48 50h12" stroke="#c9a06a" stroke-width="6" stroke-linecap="round"/>
+      <path d="M27 72v14M43 72v14" stroke="#c9a06a" stroke-width="6" stroke-linecap="round"/>
+      <rect x="18" y="34" width="10" height="3.5" fill="#1a4fc4" transform="rotate(-18 23 36)"/>
+      <rect x="42" y="34" width="10" height="3.5" fill="#e03131" transform="rotate(16 47 36)"/>
+      <path d="M22 28h8M40 26h8" stroke="#5c4033" stroke-width="2"/>
+    </svg>
+
+    <!-- Horse -->
+    <svg class="char c9" viewBox="0 0 105 70" aria-hidden="true">
+      <path d="M22 50c-10 0-16 10-12 16" stroke="#a04820" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M38 54v14M52 54v14M64 52v14" stroke="#6b3a1f" stroke-width="4.5" stroke-linecap="round"/>
+      <ellipse cx="50" cy="42" rx="28" ry="15" fill="#c45c26"/>
+      <ellipse cx="80" cy="34" rx="14" ry="12" fill="#c45c26"/>
+      <circle cx="86" cy="30" r="2.2" fill="#222"/>
+      <path d="M90 26c5-2 10 0 12 5" stroke="#f0c98a" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M72 18l6-11 6 11" fill="#6b3fa0"/><circle cx="78" cy="9" r="3.5" fill="#ffe14a"/>
+      <circle cx="42" cy="36" r="6" fill="#fff"/><circle cx="42" cy="36" r="3" fill="#e03131"/>
+      <path d="M30 34c8-2 16-2 24 0" stroke="#fff" stroke-width="2" opacity=".5"/>
+    </svg>
+
+    <!-- Craft fork toy -->
+    <svg class="char c10" viewBox="0 0 52 72" aria-hidden="true">
+      <rect x="19" y="30" width="14" height="30" rx="3" fill="#f7ebd2" stroke="#333" stroke-width="1.4"/>
+      <path d="M14 12v22h6V18h4v16h6V18h4v16h6V12c0-5-5-9-13-9s-13 4-13 9z" fill="#f7ebd2" stroke="#333" stroke-width="1.4"/>
+      <circle cx="23" cy="38" r="3.2" fill="#fff" stroke="#333"/><circle cx="31" cy="38" r="2.4" fill="#222"/>
+      <circle cx="23" cy="38" r="1.3" fill="#222"/>
+      <path d="M21 46h10" stroke="#333" stroke-width="1.5"/>
+      <path d="M24 6l5-8 5 8" fill="#6b3fa0"/><circle cx="29" cy="0" r="2.8" fill="#ffe14a"/>
+      <path d="M12 50c-7 4-9 14-4 16M40 50c7 4 9 14 4 16" stroke="#e85d2a" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </svg>
+
+    <div class="content">
+      <div class="banner-wrap"><div class="banner">TWO INFINITY</div></div>
+      <div class="beyond">And Beyond!</div>
+      <div class="name">Charlie</div>
+      <div class="turning-row">
+        <span class="label">is Turning</span>
+        <span class="age">3</span>
+      </div>
+      <div class="join">Join us as we Celebrate</div>
+      <div class="when">
+        <div class="date">June 25</div>
+        <div class="time">3 PM – 5 PM</div>
+      </div>
+      <p class="address">Suite 864 / 113 Emilio Plaza,<br />North Jed, KS 68416-3036</p>
+      <p class="rsvp">RSVP TO MOM: 555 222 1111</p>
+    </div>
+  </article>
+</body>
+</html>

@@ -6,9 +6,11 @@ Print-ready **5 × 7 inch** Toy Adventure birthday invitations for Charlie (turn
 
 | File | Description |
 |------|-------------|
+| `invite/charlie-birthday-card.html` | **Main birthday card** — framed cast, yellow inner border |
+| `invite/charlie-birthday-card-5x7.png` | PNG of the main card (5×7 @ 192 DPI) |
 | `invite/charlie-5x7-variation.html` | Variation A — characters framing the edges |
 | `invite/charlie-5x7-variation-b.html` | Variation B — text on top, toy parade along the bottom |
-| `invite/index.html` | Side-by-side preview hub |
+| `invite/index.html` | Preview hub |
 
 ## Party details
 

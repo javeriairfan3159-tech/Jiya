@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Charlie Invite — Print Hub</title>
+  <title>Charlie Birthday Card — 5×7</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -11,42 +11,44 @@
       min-height: 100vh;
       display: grid;
       place-items: center;
-      gap: 16px;
-      padding: 24px;
+      gap: 18px;
+      padding: 28px 16px;
       font-family: Fredoka, system-ui, sans-serif;
       background: linear-gradient(160deg, #eef4ff, #fff8e8 55%, #ffeef4);
-      color: #0d2d7a;
+      color: #0c2f86;
     }
-    h1 { font-size: 22px; text-align: center; }
-    p { text-align: center; max-width: 420px; font-size: 14px; line-height: 1.45; }
+    h1 { font-size: 24px; text-align: center; }
+    p { text-align: center; max-width: 480px; font-size: 14px; line-height: 1.45; }
+    .actions {
+      display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;
+    }
     a {
       display: inline-block;
-      background: #1a4fc4;
+      background: #1c4fbf;
       color: #fff;
       text-decoration: none;
-      padding: 12px 20px;
+      padding: 12px 18px;
       border-radius: 10px;
       font-weight: 700;
     }
+    a.alt { background: #e22b2b; }
     iframe {
       width: 5in;
       height: 7in;
       border: 0;
-      box-shadow: 0 16px 40px rgba(13,45,122,.2);
+      box-shadow: 0 18px 44px rgba(12,47,134,.22);
       background: #fff;
     }
   </style>
 </head>
 <body>
-  <h1>Charlie · Two Infinity And Beyond</h1>
-  <p>Two <strong>5×7 inch</strong> print-ready variations — same party details &amp; toy theme, different layouts. Print at 100% scale on 5×7 paper (or Save as PDF).</p>
-  <p style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
-    <a href="charlie-5x7-variation.html" target="_blank">Variation A — framed cast</a>
-    <a href="charlie-5x7-variation-b.html" target="_blank" style="background:#e03131">Variation B — parade</a>
-  </p>
-  <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center">
-    <iframe src="charlie-5x7-variation.html" title="Variation A"></iframe>
-    <iframe src="charlie-5x7-variation-b.html" title="Variation B"></iframe>
+  <h1>Charlie’s Birthday Card</h1>
+  <p>Print-ready <strong>5 × 7 inch</strong> invitation card — Toy Adventure theme, same party details.</p>
+  <div class="actions">
+    <a href="charlie-birthday-card.html" target="_blank">Open birthday card</a>
+    <a class="alt" href="charlie-5x7-variation.html" target="_blank">Variation A</a>
+    <a class="alt" href="charlie-5x7-variation-b.html" target="_blank">Variation B</a>
   </div>
+  <iframe src="charlie-birthday-card.html" title="Charlie birthday card 5x7"></iframe>
 </body>
 </html>

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Meadow Shell Market Tote — A Crochet Pattern</title>
+<style>
+  @font-face { font-family:'Playfair'; src:url('../assets/fonts/PlayfairDisplay.ttf'); font-weight:100 900; font-style:normal; }
+  @font-face { font-family:'Playfair'; src:url('../assets/fonts/PlayfairDisplay-Italic.ttf'); font-weight:100 900; font-style:italic; }
+  @font-face { font-family:'Lora'; src:url('../assets/fonts/Lora.ttf'); font-weight:100 900; font-style:normal; }
+  @font-face { font-family:'Lora'; src:url('../assets/fonts/Lora-Italic.ttf'); font-weight:100 900; font-style:italic; }
+
+  :root{
+    --cream:#FAF6E9;
+    --card:#FFFDF3;
+    --ink:#4A4A40;
+    --ink-soft:#6B6B5E;
+    --green-dark:#44573A;
+    --olive:#8A9271;
+    --pink:#CE4570;
+    --pink-deep:#B93A61;
+    --pink-soft:#F9E3EC;
+    --pink-row:#F7DDE7;
+    --green-soft:#EAEFDC;
+    --sage:#9DB08C;
+    --sage-light:#CBD7BE;
+    --sage-mid:#AEC09C;
+    --sage-dark:#7C9070;
+    --sage-deep:#5F7355;
+    --border:#E7E0C8;
+    --rule:#E9E2CC;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ background:var(--cream); }
+  body{ font-family:'Lora', serif; color:var(--ink); font-size:9.5pt; line-height:1.55; }
+  @page{ size:A4; margin:0; }
+
+  .page{
+    width:210mm; height:297mm; background:var(--cream);
+    padding:15mm 17mm 12mm; position:relative;
+    page-break-after:always; overflow:hidden;
+  }
+  .page:last-child{ page-break-after:auto; }
+  .pagenum{
+    position:absolute; bottom:6.5mm; left:0; right:0; text-align:center;
+    font-size:7pt; color:#B9B29A; letter-spacing:.25em;
+  }
+
+  .kicker{
+    text-align:center; color:var(--pink); font-weight:700; font-size:8pt;
+    letter-spacing:.38em; text-transform:uppercase; margin-bottom:2.5mm;
+  }
+  h1.section{
+    font-family:'Playfair', serif; font-weight:700; color:var(--pink);
+    text-align:center; font-size:20pt; margin-bottom:3mm; letter-spacing:.01em;
+  }
+  .divider{
+    display:flex; align-items:center; justify-content:center; gap:4mm;
+    color:var(--pink); margin:2mm 0 6mm; font-size:9pt;
+  }
+  .divider::before,.divider::after{ content:''; width:22mm; height:1px; background:var(--rule); }
+
+  .lede{ text-align:center; max-width:150mm; margin:0 auto 6mm; }
+
+  .cols{ display:flex; gap:8mm; }
+  .col{ flex:1; min-width:0; }
+
+  h3.flower{ color:var(--green-dark); font-weight:700; font-size:10.5pt; margin:4.5mm 0 2mm; }
+  h3.flower::before{ content:'✿ '; color:var(--pink); font-size:9pt; }
+
+  ul.plus{ list-style:none; }
+  ul.plus li{ padding-left:4.5mm; position:relative; margin-bottom:1.8mm; }
+  ul.plus li::before{ content:'+'; position:absolute; left:0; color:var(--pink); font-weight:700; }
+
+  .tipbox{ background:var(--pink-soft); border-radius:3mm; padding:4mm 5mm; margin:4mm 0; }
+  .tipbox .tiplabel{ color:var(--pink); font-weight:700; font-size:7.5pt; letter-spacing:.28em; text-transform:uppercase; margin-bottom:1.5mm; }
+  .tipbox p{ font-style:italic; color:#7A4A5C; }
+  .tipbox p b{ color:#69374A; }
+
+  .greenbox{ background:var(--green-soft); border-radius:3mm; padding:4mm 5mm; margin:4mm 0; }
+  .greenbox .tiplabel{ color:var(--green-dark); font-weight:700; font-size:7.5pt; letter-spacing:.28em; text-transform:uppercase; margin-bottom:1.5mm; }
+  .greenbox p{ font-style:italic; color:#5C6A4E; }
+
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:3.5mm;
+    padding:5mm 6mm; margin:4mm 0;
+  }
+  .caption{ text-align:center; font-style:italic; color:var(--olive); font-size:8.5pt; margin-top:2.5mm; }
+  .caption-bold{ text-align:center; font-weight:700; color:var(--green-dark); font-size:9.5pt; margin-top:3mm; }
+
+  table.rounds{ width:100%; border-collapse:collapse; margin:3mm 0; }
+  table.rounds tr{ border-top:1px solid var(--rule); }
+  table.rounds tr:first-child{ border-top:none; }
+  table.rounds td{ padding:2.6mm 2mm 2.6mm 0; vertical-align:top; }
+  td.rlabel{ width:20mm; color:var(--pink); font-weight:700; white-space:nowrap; }
+  td.rlabel .sub{ display:block; font-weight:400; font-size:7pt; letter-spacing:.15em; color:var(--pink); opacity:.75; }
+  td.rcount{ width:24mm; text-align:right; color:var(--pink); font-size:8pt; padding-top:3mm; }
+  table.rounds .note{ font-style:italic; color:var(--ink-soft); }
+
+  table.sizes{ width:100%; border-collapse:collapse; margin:4mm 0; }
+  table.sizes th{ background:var(--pink-row); color:var(--pink-deep); font-weight:700; text-align:left; padding:2.6mm 3mm; font-size:9pt; }
+  table.sizes td{ padding:2.6mm 3mm; border-top:1px solid var(--rule); vertical-align:top; }
+  table.sizes td.rowhead{ font-weight:700; color:var(--ink); width:30mm; }
+
+  .abbr{ display:grid; grid-template-columns:1fr 1fr; gap:1.2mm 5mm; font-size:8.8pt; }
+  .abbr b{ color:var(--pink); font-weight:700; }
+
+  .photo-page{ display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; padding-bottom:8mm; }
+  .photo-frame{ border:2.5px solid #3E3A2E; border-radius:5mm; overflow:hidden; background:#fff; }
+  .photo-frame img{ display:block; }
+
+  .colorways{ display:flex; gap:4mm; margin:3mm 0; }
+  .colorway{ flex:1; background:var(--card); border:1px solid var(--border); border-radius:2.5mm; overflow:hidden; }
+  .colorway .swatch{ height:7mm; }
+  .colorway .cw-body{ padding:2.5mm 3mm; }
+  .colorway b{ color:var(--green-dark); font-size:8.8pt; }
+  .colorway p{ font-size:7.8pt; color:var(--ink-soft); line-height:1.45; }
+
+  .check{ list-style:none; margin-top:3mm; }
+  .check li{ padding:2.4mm 0 2.4mm 8mm; position:relative; border-bottom:1px solid var(--rule); }
+  .check li::before{
+    content:''; position:absolute; left:0; top:2.9mm; width:3.6mm; height:3.6mm;
+    border:1.4px solid var(--sage-dark); border-radius:.8mm; background:#fff;
+  }
+  .videos{ list-style:none; margin:3mm 0; }
+  .videos li{ margin-bottom:2.2mm; padding-left:5mm; position:relative; }
+  .videos li::before{ content:'▸'; position:absolute; left:0; color:var(--pink); }
+
+  .svgwrap{ text-align:center; }
+  svg text{ font-family:'Lora', serif; }
+  .diag-label{ font-size:8.2px; fill:var(--ink); }
+  .diag-label-b{ font-size:8.2px; fill:var(--ink); font-weight:700; }
+  .diag-pink{ font-size:8.2px; fill:var(--pink); font-weight:700; }
+  .diag-olive{ font-size:8px; fill:var(--olive); font-style:italic; }
+</style>
+</head>
+<body>
+
+<!-- ═════════ PAGE 1 · COVER ═════════ -->
+<div class="page">
+  <div class="kicker" style="margin-top:6mm">A Crochet Pattern</div>
+  <div style="text-align:center; font-family:'Playfair'; font-weight:800; font-size:30pt; color:var(--green-dark); line-height:1.1;">Meadow Shell</div>
+  <div style="text-align:center; font-family:'Playfair'; font-style:italic; font-weight:600; font-size:21pt; color:var(--pink); margin-top:1mm;">Market Tote</div>
+  <div class="divider">✿</div>
+  <p class="lede" style="max-width:140mm">A modern, boutique-style market bag with a beautiful shell-inspired open mesh, a sturdy rounded rectangular base, thick comfy straps, and a decorative reinforced edge — worked seamlessly from the bottom up, with <b>no sewing required</b>. Comes in three sizes and three modern colourways.</p>
+  <div class="divider">✿</div>
+
+  <div class="card" style="padding:7mm 5mm 5mm">
+    <div class="svgwrap">
+    <svg width="176mm" height="118mm" viewBox="0 0 560 376">
+      <defs>
+        <g id="fan">
+          <path d="M0,8 L-10,-7 M0,8 L-5,-9 M0,8 L0,-10 M0,8 L5,-9 M0,8 L10,-7" stroke="#7C9070" stroke-width="2.1" stroke-linecap="round" fill="none"/>
+        </g>
+        <clipPath id="bodyclip">
+          <path d="M158,108 L438,108 L425,268 Q422,308 380,308 L216,308 Q174,308 171,268 Z"/>
+        </clipPath>
+      </defs>
+
+      <!-- back handle -->
+      <path d="M242,106 C242,26 354,26 354,106" fill="none" stroke="#A5B894" stroke-width="12" stroke-linecap="round"/>
+      <!-- front handle -->
+      <path d="M232,106 C232,32 364,32 364,106" fill="none" stroke="#7C9070" stroke-width="13" stroke-linecap="round"/>
+      <path d="M232,106 C232,32 364,32 364,106" fill="none" stroke="#93A883" stroke-width="8" stroke-linecap="round"/>
+
+      <!-- bag body -->
+      <path d="M158,108 L438,108 L425,268 Q422,308 380,308 L216,308 Q174,308 171,268 Z"
+            fill="#CBD7BE" stroke="#7C9070" stroke-width="2.5" stroke-linejoin="round"/>
+
+      <g clip-path="url(#bodyclip)">
+        <!-- dense base -->
+        <rect x="150" y="252" width="300" height="60" fill="#B7C6A6"/>
+        <g stroke="#8FA37E" stroke-width="1.6" fill="none">
+          <path d="M150,261 H450 M150,270 H450 M150,279 H450 M150,288 H450 M150,297 H450" stroke-dasharray="5 3.2"/>
+        </g>
+        <!-- hdc band -->
+        <rect x="150" y="108" width="300" height="30" fill="#AEC09C"/>
+        <g stroke="#6E8263" stroke-width="1.7">
+          <g id="hdcrow1">
+            <path d="M166,112 V121 M178,112 V121 M190,112 V121 M202,112 V121 M214,112 V121 M226,112 V121 M238,112 V121 M250,112 V121 M262,112 V121 M274,112 V121 M286,112 V121 M298,112 V121 M310,112 V121 M322,112 V121 M334,112 V121 M346,112 V121 M358,112 V121 M370,112 V121 M382,112 V121 M394,112 V121 M406,112 V121 M418,112 V121 M430,112 V121"/>
+          </g>
+          <g>
+            <path d="M166,125 V134 M178,125 V134 M190,125 V134 M202,125 V134 M214,125 V134 M226,125 V134 M238,125 V134 M250,125 V134 M262,125 V134 M274,125 V134 M286,125 V134 M298,125 V134 M310,125 V134 M322,125 V134 M334,125 V134 M346,125 V134 M358,125 V134 M370,125 V134 M382,125 V134 M394,125 V134 M406,125 V134 M418,125 V134 M430,125 V134"/>
+          </g>
+        </g>
+        <!-- staggered shell mesh: 6 rows -->
+        <g>
+          <g transform="translate(0,156)"><use href="#fan" x="176" y="0"/><use href="#fan" x="208" y="0"/><use href="#fan" x="240" y="0"/><use href="#fan" x="272" y="0"/><use href="#fan" x="304" y="0"/><use href="#fan" x="336" y="0"/><use href="#fan" x="368" y="0"/><use href="#fan" x="400" y="0"/><use href="#fan" x="432" y="0"/></g>
+          <g transform="translate(16,175)"><use href="#fan" x="160" y="0"/><use href="#fan" x="192" y="0"/><use href="#fan" x="224" y="0"/><use href="#fan" x="256" y="0"/><use href="#fan" x="288" y="0"/><use href="#fan" x="320" y="0"/><use href="#fan" x="352" y="0"/><use href="#fan" x="384" y="0"/><use href="#fan" x="416" y="0"/></g>
+          <g transform="translate(0,194)"><use href="#fan" x="176" y="0"/><use href="#fan" x="208" y="0"/><use href="#fan" x="240" y="0"/><use href="#fan" x="272" y="0"/><use href="#fan" x="304" y="0"/><use href="#fan" x="336" y="0"/><use href="#fan" x="368" y="0"/><use href="#fan" x="400" y="0"/><use href="#fan" x="432" y="0"/></g>
+          <g transform="translate(16,213)"><use href="#fan" x="160" y="0"/><use href="#fan" x="192" y="0"/><use href="#fan" x="224" y="0"/><use href="#fan" x="256" y="0"/><use href="#fan" x="288" y="0"/><use href="#fan" x="320" y="0"/><use href="#fan" x="352" y="0"/><use href="#fan" x="384" y="0"/><use href="#fan" x="416" y="0"/></g>
+          <g transform="translate(0,232)"><use href="#fan" x="176" y="0"/><use href="#fan" x="208" y="0"/><use href="#fan" x="240" y="0"/><use href="#fan" x="272" y="0"/><use href="#fan" x="304" y="0"/><use href="#fan" x="336" y="0"/><use href="#fan" x="368" y="0"/><use href="#fan" x="400" y="0"/><use href="#fan" x="432" y="0"/></g>
+        </g>
+      </g>
+      <!-- re-stroke outline above textures -->
+      <path d="M158,108 L438,108 L425,268 Q422,308 380,308 L216,308 Q174,308 171,268 Z"
+            fill="none" stroke="#7C9070" stroke-width="2.5" stroke-linejoin="round"/>
+
+      <!-- labels -->
+      <text x="118" y="52" class="diag-olive" text-anchor="start">strap grows from the rim</text>
+      <path d="M186,56 Q210,64 228,72" fill="none" stroke="#B9B29A" stroke-width="1"/>
+
+      <text x="462" y="118" class="diag-pink">reinforced hdc</text>
+      <text x="462" y="129" class="diag-pink">top edge</text>
+      <path d="M458,118 L442,122" fill="none" stroke="#CE4570" stroke-width="1"/>
+
+      <text x="462" y="196" class="diag-label-b">shell mesh body,</text>
+      <text x="462" y="207" class="diag-label">repeats for height</text>
+      <path d="M458,196 L432,196" fill="none" stroke="#B9B29A" stroke-width="1"/>
+
+      <text x="462" y="286" class="diag-label-b">rounded rectangular</text>
+      <text x="462" y="297" class="diag-label">base</text>
+      <path d="M458,286 L430,284" fill="none" stroke="#B9B29A" stroke-width="1"/>
+
+      <text x="280" y="342" class="diag-olive" text-anchor="middle">The whole bag at a glance — base, shell mesh body, reinforced edge, built-in strap</text>
+      <text x="280" y="358" class="diag-olive" text-anchor="middle">pictured colourway: one solid shade of sage, straps included</text>
+    </svg>
+    </div>
+  </div>
+  <div class="pagenum">— 1 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 2 · HERO PHOTO ═════════ -->
+<div class="page">
+  <div class="photo-page">
+    <div class="photo-frame"><img src="../assets/photos/cover.png" style="width:118mm; height:auto;"></div>
+    <div class="caption-bold">The Meadow Shell Market Tote</div>
+  </div>
+  <div class="pagenum">— 2 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 3 · BEFORE YOU START ═════════ -->
+<div class="page">
+  <div class="kicker">Before You Make a Stitch</div>
+  <h1 class="section">Before You Start</h1>
+  <div class="divider">✿</div>
+
+  <div class="cols">
+    <div class="col">
+      <h3 class="flower" style="margin-top:0">Pattern Introduction</h3>
+      <p>This tote is worked in one continuous piece, from the base upward — no separate pieces, no sewing at all. The body uses just one easy, repeating 2-round stitch pattern that combines an open mesh with soft shell arches, so once you've worked it a couple of times, your hands will know it by heart.</p>
+      <h3 class="flower">Skill Level Notes</h3>
+      <p>Only chain, single crochet, half double crochet, and double crochet are used — no complicated shaping, no colour changes mid-round, and no sewing. If you can chain and single crochet confidently, you can make this bag.</p>
+    </div>
+    <div class="col">
+      <h3 class="flower" style="margin-top:0">Notes</h3>
+      <ul class="plus">
+        <li>Please do not redistribute, share or sell this pattern. You may sell the finished product made from it.</li>
+        <li>The base is worked in joined rounds; the body and edge continue the same way — join each round with a sl st, ch 1 to start the next.</li>
+        <li>All stitches go in both loops unless a round says otherwise.</li>
+        <li>Use a stitch marker to track the first stitch of every round.</li>
+        <li>The straps are worked directly from the top edge — there is nothing separate to sew on.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tipbox">
+    <div class="tiplabel">A Little Note on Sizes</div>
+    <p>This pattern gives instructions for Small, Medium, and Large all at once, written like this: Small (Medium, Large). Find your size once at the start of each round, then just follow that one number all the way through. It's simpler than it looks! ♡</p>
+  </div>
+
+  <div class="tipbox" style="display:flex; gap:6mm; align-items:center;">
+    <div style="flex:1">
+      <div class="tiplabel">Skill Level · Beginner Friendly</div>
+      <p>Comfortable with <b>chain, single crochet, half double crochet, double crochet,</b> working in joined rounds, and simple repeats. Every round tells you exactly what to do next.</p>
+    </div>
+    <div style="text-align:center; white-space:nowrap;">
+      <div style="font-family:'Playfair'; font-weight:700; font-size:17pt; color:var(--pink);">8–12 hrs</div>
+      <div style="font-size:7.5pt; letter-spacing:.22em; color:#A0798A; text-transform:uppercase;">Time Estimate</div>
+    </div>
+  </div>
+
+  <h3 class="flower">Helpful Notes on Gauge</h3>
+  <p>Gauge is not critical for this bag — a slightly bigger or smaller tote is still a lovely, useful tote. What matters most is a fabric tight enough to hold its shape: if the mesh looks floppy after a few rounds, go down a hook size.</p>
+
+  <div class="pagenum">— 3 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 4 · SIZING ═════════ -->
+<div class="page">
+  <div class="kicker">Choose Your Size</div>
+  <h1 class="section">Sizing &amp; Finished Dimensions</h1>
+  <div class="divider">✿</div>
+  <p class="lede">All three sizes use the exact same stitches and the exact same construction — only the starting numbers and repeat counts change.</p>
+
+  <table class="sizes">
+    <tr><th style="width:30mm"></th><th>Small</th><th>Medium</th><th>Large</th></tr>
+    <tr><td class="rowhead">Base (L × W)</td><td>21 × 11 cm</td><td>26 × 13 cm</td><td>31 × 16 cm</td></tr>
+    <tr><td class="rowhead">Body height (approx.)</td><td>24 cm</td><td>30 cm</td><td>36 cm</td></tr>
+    <tr><td class="rowhead">Body repeats</td><td>6</td><td>8</td><td>10</td></tr>
+    <tr><td class="rowhead">Strap rise above rim (approx.)</td><td>12 cm</td><td>13 cm</td><td>14 cm</td></tr>
+    <tr><td class="rowhead">Best for</td><td>Library, lunch, everyday errands</td><td>Farmers market, beach, everyday carry</td><td>Grocery shopping, travel, beach days</td></tr>
+  </table>
+
+  <div class="greenbox">
+    <div class="tiplabel">Adjustable by Design</div>
+    <p>Every measurement above is a friendly guide, not a strict rule. Want a taller bag in any size? Simply work extra Body repeats (Section 2) until it's the height you love, then move on to the Top Edge. Prefer longer handles? Add extra strap chains in steps of 4.</p>
+  </div>
+
+  <div class="card">
+    <div style="text-align:center; font-style:italic; font-size:8.8pt; margin-bottom:.5mm;">Same construction, same stitches — only the starting numbers change</div>
+    <div style="text-align:center; font-style:italic; font-size:8pt; color:var(--olive); margin-bottom:2mm;">follow one bracket number all the way through: Small (Medium, Large)</div>
+    <div class="svgwrap">
+    <svg width="160mm" height="52mm" viewBox="0 0 560 182">
+      <defs>
+        <g id="minibag">
+          <path d="M-32,-6 C-32,-34 32,-34 32,-6" fill="none" stroke="#7C9070" stroke-width="6" stroke-linecap="round"/>
+          <path d="M-45,-4 L45,-4 L41,44 Q40,58 26,58 L-26,58 Q-40,58 -41,44 Z" fill="#CBD7BE" stroke="#7C9070" stroke-width="2.2" stroke-linejoin="round"/>
+          <rect x="-45" y="-4" width="90" height="9" fill="#AEC09C"/>
+          <path d="M-42,44 Q-30,52 0,52 Q30,52 42,44 L41,44 Q40,58 26,58 L-26,58 Q-40,58 -41,44 Z" fill="#B7C6A6"/>
+          <path d="M-45,-4 L45,-4 L41,44 Q40,58 26,58 L-26,58 Q-40,58 -41,44 Z" fill="none" stroke="#7C9070" stroke-width="2.2" stroke-linejoin="round"/>
+          <g fill="#F6F2E2"><circle cx="-24" cy="14" r="2.6"/><circle cx="-8" cy="14" r="2.6"/><circle cx="8" cy="14" r="2.6"/><circle cx="24" cy="14" r="2.6"/><circle cx="-16" cy="26" r="2.6"/><circle cx="0" cy="26" r="2.6"/><circle cx="16" cy="26" r="2.6"/><circle cx="-24" cy="38" r="2.6"/><circle cx="-8" cy="38" r="2.6"/><circle cx="8" cy="38" r="2.6"/><circle cx="24" cy="38" r="2.6"/></g>
+        </g>
+      </defs>
+      <g transform="translate(115,66) scale(0.78)"><use href="#minibag"/></g>
+      <g transform="translate(280,60) scale(1.0)"><use href="#minibag"/></g>
+      <g transform="translate(452,52) scale(1.22)"><use href="#minibag"/></g>
+      <text x="115" y="146" text-anchor="middle" class="diag-label-b">Small</text>
+      <text x="280" y="146" text-anchor="middle" class="diag-label-b">Medium</text>
+      <text x="452" y="146" text-anchor="middle" class="diag-label-b">Large</text>
+      <text x="280" y="172" text-anchor="middle" class="diag-olive">Small, Medium and Large — same shape, same stitches, different numbers</text>
+    </svg>
+    </div>
+  </div>
+  <div class="pagenum">— 4 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 5 · THREE SIZES PHOTO ═════════ -->
+<div class="page">
+  <div class="photo-page">
+    <div class="photo-frame"><img src="../assets/photos/three-sizes.png" style="width:158mm; height:auto;"></div>
+    <div class="caption-bold">All Three Sizes, Side by Side</div>
+  </div>
+  <div class="pagenum">— 5 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 6 · MATERIALS ═════════ -->
+<div class="page">
+  <div class="kicker">Everything You Need</div>
+  <h1 class="section">Materials</h1>
+  <div class="divider">✿</div>
+
+  <div class="cols">
+    <div class="col">
+      <h3 class="flower" style="margin-top:0">Yarn Requirements</h3>
+      <ul class="plus">
+        <li><b>Yarn:</b> 100% cotton, DK or worsted weight.</li>
+        <li><b>Small:</b> approx. 280 g.</li>
+        <li><b>Medium:</b> approx. 380 g.</li>
+        <li><b>Large:</b> approx. 480 g.</li>
+        <li>Any smooth cotton works; avoid fuzzy or halo yarns, which hide the shell texture.</li>
+      </ul>
+      <h3 class="flower">Hook &amp; Tools</h3>
+      <ul class="plus">
+        <li><b>Hook:</b> 5.0 mm (adjust to match gauge).</li>
+        <li>Tapestry needle, stitch marker, scissors.</li>
+        <li>A blocking mat or towel for finishing.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3 class="flower" style="margin-top:0">Gauge</h3>
+      <p>One full Body repeat (2 rounds) measures approx. <b>4 cm tall</b>. 2 shells + 2 mesh sc measure approx. <b>11 cm wide</b>, after light blocking. Exact gauge is not essential — see Helpful Notes on the previous page.</p>
+      <h3 class="flower">Abbreviations (US Terms)</h3>
+      <div class="abbr">
+        <span><b>ch</b> — chain</span><span><b>sc</b> — single crochet</span>
+        <span><b>hdc</b> — half double crochet</span><span><b>dc</b> — double crochet</span>
+        <span><b>sl st</b> — slip stitch</span><span><b>inc</b> — 2 sc in one st</span>
+        <span><b>sk</b> — skip</span><span><b>sp</b> — space</span>
+        <span><b>Rnd</b> — round</span><span><b>st(s)</b> — stitch(es)</span>
+        <span><b>BLO</b> — back loop only</span><span><b>( )</b> — total stitch count</span>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="flower">Three Modern Colourways</h3>
+  <div class="colorways">
+    <div class="colorway">
+      <div class="swatch" style="background:#9DB08C"></div>
+      <div class="cw-body"><b>Sage — as pictured</b><p>the whole bag — body, edge and straps — in one soft sage green</p></div>
+    </div>
+    <div class="colorway">
+      <div class="swatch" style="background:#C0714F"></div>
+      <div class="cw-body"><b>Terracotta</b><p>one warm, earthy terracotta from base to straps</p></div>
+    </div>
+    <div class="colorway">
+      <div class="swatch" style="background:#7E9BB8"></div>
+      <div class="cw-body"><b>Dusty Blue</b><p>one calm dusty blue from base to straps</p></div>
+    </div>
+  </div>
+
+  <div class="tipbox">
+    <div class="tiplabel">Tip</div>
+    <p>Prefer a two-tone look? Simply switch to a contrast shade (cream, oatmeal, ivory…) for the top edge and straps — the bag pictured throughout this pattern keeps everything in one solid colour.</p>
+  </div>
+
+  <div class="card" style="padding:4mm 6mm 3mm">
+    <div class="svgwrap">
+    <svg width="150mm" height="17mm" viewBox="0 0 560 62">
+      <g stroke="#4A4A40" stroke-width="1.8" fill="none">
+        <ellipse cx="55" cy="22" rx="8" ry="5"/>
+        <path d="M138,15 L152,29 M152,15 L138,29"/>
+        <path d="M232,15 V29 M225,15 H239"/>
+        <path d="M325,15 V29 M318,15 H332 M321,24 L329,20"/>
+        <path d="M492,29 L499,15 L506,29"/>
+      </g>
+      <circle cx="415" cy="22" r="4" fill="#4A4A40"/>
+      <g fill="#8A9271" font-size="8.5" text-anchor="middle">
+        <text x="55" y="47">ch</text><text x="145" y="47">sc</text><text x="232" y="47">hdc</text>
+        <text x="325" y="47">dc</text><text x="415" y="47">sl st</text><text x="499" y="47">inc</text>
+      </g>
+    </svg>
+    </div>
+    <div class="caption" style="margin-top:0">The little symbols used in the diagrams below</div>
+  </div>
+  <div class="pagenum">— 6 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 7 · MATERIALS PHOTO ═════════ -->
+<div class="page">
+  <div class="photo-page">
+    <div class="photo-frame"><img src="../assets/photos/materials.png" style="width:128mm; height:auto;"></div>
+    <div class="caption-bold">Everything Laid Out &amp; Ready</div>
+  </div>
+  <div class="pagenum">— 7 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 8 · BASE ═════════ -->
+<div class="page">
+  <div class="kicker">Section One · The Foundation</div>
+  <h1 class="section">Rounded Rectangular Base</h1>
+  <div class="divider">✿</div>
+  <p class="lede">A firm, flat oval-rectangle worked in joined rounds, with increases only at the two curved short ends — the long sides stay perfectly straight.</p>
+
+  <table class="rounds">
+    <tr>
+      <td class="rlabel">Start</td>
+      <td><b>Ch 24 (30, 36).</b></td>
+      <td class="rcount" style="font-size:7.5pt; letter-spacing:.1em;">S / M / L</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Rnd 1</td>
+      <td>3 sc in 2nd ch from hook, sc 21 (27, 33), 3 sc in last ch, sc 21 (27, 33) back along the other side. Join with a sl st.</td>
+      <td class="rcount">48 (60, 72)</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Rnd 2</td>
+      <td>Ch 1. Inc in each of the next 3 sts, sc 21 (27, 33), inc in each of the next 3 sts, sc 21 (27, 33). Join.</td>
+      <td class="rcount">54 (66, 78)</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Rnd 3</td>
+      <td>Ch 1. *Sc 1, inc* 3 times, sc 21 (27, 33), *sc 1, inc* 3 times, sc 21 (27, 33). Join.</td>
+      <td class="rcount">60 (72, 84)</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Rnd 4</td>
+      <td>Ch 1. *Sc 2, inc* 3 times, sc 21 (27, 33), *sc 2, inc* 3 times, sc 21 (27, 33). Join.</td>
+      <td class="rcount">66 (78, 90)</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Rnd 5</td>
+      <td>Ch 1. Sc in <b>BLO</b> of each st around. Join. <span class="note">(This crisp line is what turns the flat base upward into the walls.)</span></td>
+      <td class="rcount">66 (78, 90)</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Rnd 6–7</td>
+      <td>Ch 1. Sc in each st around — 2 rounds. Join each round.</td>
+      <td class="rcount">66 (78, 90)</td>
+    </tr>
+  </table>
+
+  <div class="tipbox">
+    <div class="tiplabel">Tip</div>
+    <p>Every increase round adds exactly 6 stitches in total (3 at each rounded end) — if your count is off by anything other than a multiple of 6, you've likely increased along a straight side by mistake. Uncurl and recheck before continuing.</p>
+  </div>
+
+  <div class="card">
+    <div class="svgwrap">
+    <svg width="168mm" height="49mm" viewBox="0 0 560 164">
+      <!-- outer base -->
+      <rect x="102" y="42" width="330" height="92" rx="46" fill="#CBD7BE" stroke="#7C9070" stroke-width="2.4"/>
+      <rect x="118" y="54" width="298" height="68" rx="34" fill="none" stroke="#93A883" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <rect x="134" y="66" width="266" height="44" rx="22" fill="none" stroke="#93A883" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <!-- foundation chain -->
+      <g stroke="#5F7355" stroke-width="1.5" fill="none">
+        <ellipse cx="172" cy="88" rx="6" ry="3.6"/><ellipse cx="186" cy="88" rx="6" ry="3.6"/><ellipse cx="200" cy="88" rx="6" ry="3.6"/><ellipse cx="214" cy="88" rx="6" ry="3.6"/><ellipse cx="228" cy="88" rx="6" ry="3.6"/><ellipse cx="242" cy="88" rx="6" ry="3.6"/><ellipse cx="256" cy="88" rx="6" ry="3.6"/><ellipse cx="270" cy="88" rx="6" ry="3.6"/><ellipse cx="284" cy="88" rx="6" ry="3.6"/><ellipse cx="298" cy="88" rx="6" ry="3.6"/><ellipse cx="312" cy="88" rx="6" ry="3.6"/><ellipse cx="326" cy="88" rx="6" ry="3.6"/><ellipse cx="340" cy="88" rx="6" ry="3.6"/><ellipse cx="354" cy="88" rx="6" ry="3.6"/><ellipse cx="368" cy="88" rx="6" ry="3.6"/>
+      </g>
+      <!-- increase dots at both ends -->
+      <g fill="#CE4570">
+        <circle cx="128" cy="72" r="2.6"/><circle cx="120" cy="88" r="2.6"/><circle cx="128" cy="104" r="2.6"/>
+        <circle cx="144" cy="76" r="2.6"/><circle cx="138" cy="88" r="2.6"/><circle cx="144" cy="100" r="2.6"/>
+        <circle cx="406" cy="72" r="2.6"/><circle cx="414" cy="88" r="2.6"/><circle cx="406" cy="104" r="2.6"/>
+        <circle cx="390" cy="76" r="2.6"/><circle cx="396" cy="88" r="2.6"/><circle cx="390" cy="100" r="2.6"/>
+      </g>
+      <!-- labels -->
+      <text x="267" y="18" text-anchor="middle" class="diag-label-b">foundation ch 24 (30, 36)</text>
+      <path d="M267,23 L267,80" stroke="#B9B29A" stroke-width="1" fill="none"/>
+      <text x="446" y="34" class="diag-pink">R2–R4 — increases,</text>
+      <text x="446" y="45" class="diag-pink">only at the two ends</text>
+      <path d="M444,40 Q424,52 416,66" fill="none" stroke="#CE4570" stroke-width="1" stroke-dasharray="3 2"/>
+      <text x="16" y="140" class="diag-label-b">straight sides</text>
+      <text x="16" y="151" class="diag-olive">never increase here</text>
+      <path d="M70,138 Q120,144 180,136" fill="none" stroke="#B9B29A" stroke-width="1"/>
+      <text x="300" y="153" class="diag-pink">R5 — sc in BLO turns the base upward into walls</text>
+      <path d="M296,149 L268,136" fill="none" stroke="#CE4570" stroke-width="1" stroke-dasharray="3 2"/>
+    </svg>
+    </div>
+    <div class="caption" style="margin-top:1mm">top-down view of the flat base before the walls rise</div>
+    <div class="caption">Increases only at the two rounded ends — the long sides stay straight</div>
+  </div>
+  <div class="pagenum">— 8 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 9 · BASE PHOTO ═════════ -->
+<div class="page">
+  <div class="photo-page">
+    <div class="photo-frame"><img src="../assets/photos/base.jpg" style="width:150mm; height:auto;"></div>
+    <div class="caption-bold">The Rounded Rectangular Base, Worked Flat</div>
+  </div>
+  <div class="pagenum">— 9 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 10 · BODY ═════════ -->
+<div class="page">
+  <div class="kicker">Section Two · Repeat to Height</div>
+  <h1 class="section">Shell-Inspired Open Mesh Body</h1>
+  <div class="divider">✿</div>
+  <p class="lede">Just two rounds, repeated again and again — an airy mesh round, then a round of soft shell arches sitting inside it. This one combination is the whole body of the bag.</p>
+
+  <table class="rounds">
+    <tr>
+      <td class="rlabel">Rnd A<span class="sub">MESH</span></td>
+      <td>Ch 1. *Sc in next st, ch 3, skip 2 sts* — repeat all the way around. Join with a sl st to the first sc.</td>
+      <td class="rcount">22 (26, 30)<br>ch-3 sps</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Rnd B<span class="sub">SHELL</span></td>
+      <td>Sl st into the first ch-3 sp. Ch 1. *Sc in next ch-3 sp, (2 dc, ch 1, 3 dc) all in the next ch-3 sp* — repeat around. Join with a sl st to the first sc. <span class="note">(That 5-dc-plus-ch-1 group is your shell.)</span></td>
+      <td class="rcount">11 (13, 15)<br>shells</td>
+    </tr>
+  </table>
+
+  <div class="tipbox">
+    <div class="tiplabel">Tip — How to Count This Round</div>
+    <p>Because this stitch mixes chains, sc, and dc, don't try to count a single "total stitch number." Instead, just check that you have <b>one shell alternating with one sc, all the way around, with no partial shell at the join</b> — that's your real stitch-count check for this pattern.</p>
+  </div>
+
+  <div class="card">
+    <p><span style="color:var(--pink); font-weight:700;">Repeat</span> — Work <b>Rnd A + Rnd B</b> together as one repeat. Work a total of <b>6 (8, 10) repeats</b> for the height shown on the size chart, or keep going for a taller bag.</p>
+  </div>
+
+  <div class="greenbox">
+    <div class="tiplabel">Why This Reads as "Shell Mesh," Not Fishnet</div>
+    <p>A plain fishnet bag is just chains and sc. Here, the dc shells sitting inside the open mesh catch the light and give a soft, scalloped texture — that's the detail that makes this a modern boutique-style tote instead of a traditional string market bag.</p>
+  </div>
+  <div class="pagenum">— 10 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 11 · STITCH CHART + WIP PHOTO ═════════ -->
+<div class="page">
+  <div class="card" style="margin-top:0; padding:5mm 6mm 3mm">
+    <div style="text-align:center; font-size:9pt; margin-bottom:1mm;">Rnd B: sc in one space, <span style="color:var(--pink); font-weight:700;">(2dc, ch1, 3dc) shell in the next</span></div>
+    <div style="text-align:center; font-style:italic; font-size:8pt; color:var(--pink); margin-bottom:2mm;">the pink dot is the shell's own tiny ch-1 — leave it open</div>
+    <div class="svgwrap">
+    <svg width="170mm" height="55mm" viewBox="0 0 620 200">
+      <defs>
+        <!-- one dc symbol: stem + top bar + mid tick -->
+        <g id="dc"><path d="M0,0 L0,-34 M-5,-34 L5,-34 M-4,-15 L4,-19" stroke="#5F7355" stroke-width="1.8" fill="none" stroke-linecap="round"/></g>
+        <g id="scx"><path d="M-4,-4 L4,4 M4,-4 L-4,4" stroke="#4A4A40" stroke-width="1.8" fill="none" stroke-linecap="round"/></g>
+        <g id="chov"><ellipse cx="0" cy="0" rx="5.5" ry="3.4" stroke="#4A4A40" stroke-width="1.4" fill="none"/></g>
+        <!-- shell: 5 dc fanning from one point + pink ch-1 dot -->
+        <g id="shell5">
+          <path d="M0,0 L-26,-30 M-26,-30 L-32,-30 M-14,-14 L-8,-18" stroke="#5F7355" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <path d="M0,0 L-12,-33 M-12,-33 L-19,-32 M-7,-16 L-1,-19" stroke="#5F7355" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <path d="M0,0 L0,-34 M-3,-35 L4,-35 M-4,-16 L4,-20" stroke="#5F7355" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <path d="M0,0 L12,-33 M12,-33 L19,-32 M1,-19 L7,-16" stroke="#5F7355" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <path d="M0,0 L26,-30 M26,-30 L32,-30 M8,-18 L14,-14" stroke="#5F7355" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <circle cx="0" cy="-40" r="3.4" fill="#CE4570"/>
+        </g>
+        <!-- ch-3 arc of Rnd A -->
+        <g id="ch3">
+          <path d="M0,0 Q14,-16 28,-18 Q42,-16 56,0" stroke="none" fill="none"/>
+          <ellipse cx="9" cy="-11" rx="5.5" ry="3.4" transform="rotate(-38 9 -11)" stroke="#4A4A40" stroke-width="1.4" fill="none"/>
+          <ellipse cx="28" cy="-16" rx="5.5" ry="3.4" stroke="#4A4A40" stroke-width="1.4" fill="none"/>
+          <ellipse cx="47" cy="-11" rx="5.5" ry="3.4" transform="rotate(38 47 -11)" stroke="#4A4A40" stroke-width="1.4" fill="none"/>
+        </g>
+      </defs>
+
+      <!-- previous-round baseline: sc row -->
+      <line x1="30" y1="168" x2="590" y2="168" stroke="#D9D2B8" stroke-width="1.4"/>
+      <g>
+        <use href="#scx" x="46" y="160"/><use href="#scx" x="70" y="160"/><use href="#scx" x="94" y="160"/><use href="#scx" x="118" y="160"/><use href="#scx" x="142" y="160"/><use href="#scx" x="166" y="160"/><use href="#scx" x="190" y="160"/><use href="#scx" x="214" y="160"/><use href="#scx" x="238" y="160"/><use href="#scx" x="262" y="160"/><use href="#scx" x="286" y="160"/><use href="#scx" x="310" y="160"/><use href="#scx" x="334" y="160"/><use href="#scx" x="358" y="160"/><use href="#scx" x="382" y="160"/><use href="#scx" x="406" y="160"/><use href="#scx" x="430" y="160"/><use href="#scx" x="454" y="160"/><use href="#scx" x="478" y="160"/><use href="#scx" x="502" y="160"/><use href="#scx" x="526" y="160"/><use href="#scx" x="550" y="160"/><use href="#scx" x="574" y="160"/>
+      </g>
+
+      <!-- Rnd A: sc every 3rd st + ch-3 arcs -->
+      <g>
+        <use href="#scx" x="46" y="136"/><path d="M46,132 L46,152" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(46,132)"><use href="#ch3"/></g>
+        <use href="#scx" x="118" y="136"/><path d="M118,132 L118,152" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(118,132)"><use href="#ch3"/></g>
+        <use href="#scx" x="190" y="136"/><path d="M190,132 L190,152" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(190,132)"><use href="#ch3"/></g>
+        <use href="#scx" x="262" y="136"/><path d="M262,132 L262,152" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(262,132)"><use href="#ch3"/></g>
+        <use href="#scx" x="334" y="136"/><path d="M334,132 L334,152" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(334,132)"><use href="#ch3"/></g>
+        <use href="#scx" x="406" y="136"/><path d="M406,132 L406,152" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(406,132)"><use href="#ch3"/></g>
+        <use href="#scx" x="478" y="136"/><path d="M478,132 L478,152" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(478,132)"><use href="#ch3"/></g>
+        <use href="#scx" x="550" y="136"/><path d="M550,132 L550,152" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(550,132)"><use href="#ch3"/></g>
+      </g>
+
+      <!-- Rnd B: sc into 1st sp, shell into next, alternating -->
+      <g>
+        <use href="#scx" x="74" y="106"/><path d="M74,112 L74,118" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(146,112)"><use href="#shell5"/></g>
+        <use href="#scx" x="218" y="106"/><path d="M218,112 L218,118" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(290,112)"><use href="#shell5"/></g>
+        <use href="#scx" x="362" y="106"/><path d="M362,112 L362,118" stroke="#B9B29A" stroke-width=".8"/>
+        <g transform="translate(434,112)"><use href="#shell5"/></g>
+        <use href="#scx" x="506" y="106"/><path d="M506,112 L506,118" stroke="#B9B29A" stroke-width=".8"/>
+      </g>
+
+      <!-- labels -->
+      <text x="52" y="34" class="diag-pink">Rnd B — shells</text>
+      <path d="M104,30 Q126,44 138,60" fill="none" stroke="#CE4570" stroke-width="1" stroke-dasharray="3 2"/>
+      <text x="450" y="192" class="diag-olive">Rnd A: sc, ch 3, sk 2 (mesh gap)</text>
+      <path d="M446,188 Q430,172 424,150" fill="none" stroke="#B9B29A" stroke-width="1"/>
+    </svg>
+    </div>
+    <div class="caption" style="margin-top:0">Mesh round (open ch-3 gaps) then shell round (dc fans sitting inside them)</div>
+  </div>
+
+  <div class="photo-page" style="height:auto; margin-top:4mm; padding-bottom:0;">
+    <div class="photo-frame"><img src="../assets/photos/mesh-wip.jpg" style="width:96mm; height:auto;"></div>
+    <div class="caption-bold">The Shell Mesh, Growing Round by Round</div>
+  </div>
+  <div class="pagenum">— 11 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 12 · TOP EDGE ═════════ -->
+<div class="page">
+  <div class="kicker">Section Three · Before the Straps</div>
+  <h1 class="section">Decorative Reinforced Top Edge</h1>
+  <div class="divider">✿</div>
+  <p class="lede">A firmer band of hdc closes up the open mesh at the top, giving the bag's opening structure and something sturdy for the straps to grow from.</p>
+
+  <table class="rounds">
+    <tr>
+      <td class="rlabel">Rnd 1</td>
+      <td>Your last Rnd B already ends with exactly 66 (78, 90) solid sc + dc stitches around the shells — no extra mesh round is needed first. Ch 2 (counts as first hdc). <b>Hdc in each of these sts around</b> (that's every sc and every dc from Rnd B). Leave each shell's small centre ch-1 space alone — it stays open as a delicate detail peeking through the reinforced band. Join with a sl st to the top of the ch 2.</td>
+      <td class="rcount">66 (78, 90)</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Rnd 2</td>
+      <td>Ch 2. Hdc in each st around. Join.</td>
+      <td class="rcount">66 (78, 90)</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Rnd 3</td>
+      <td>Ch 1. Sc in each st around, for a clean, firm finished lip. Join. <b>Do not fasten off</b> — you'll use this same round to begin the straps.</td>
+      <td class="rcount">66 (78, 90)</td>
+    </tr>
+  </table>
+
+  <div class="tipbox">
+    <div class="tiplabel">Tip</div>
+    <p>Hdc rounds are naturally denser than sc — that density is exactly what stops the bag opening from stretching out of shape once it's loaded with groceries or books.</p>
+  </div>
+
+  <div class="card" style="display:flex; gap:6mm; align-items:center;">
+    <div class="svgwrap" style="flex:1.4">
+    <svg width="100%" height="34mm" viewBox="0 0 340 118">
+      <!-- sc lip -->
+      <rect x="30" y="18" width="280" height="10" fill="#AEC09C" stroke="#7C9070" stroke-width="1.2"/>
+      <g stroke="#5F7355" stroke-width="1.2" fill="none">
+        <path d="M40,21 l4,4 m0,-4 l-4,4 M56,21 l4,4 m0,-4 l-4,4 M72,21 l4,4 m0,-4 l-4,4 M88,21 l4,4 m0,-4 l-4,4 M104,21 l4,4 m0,-4 l-4,4 M120,21 l4,4 m0,-4 l-4,4 M136,21 l4,4 m0,-4 l-4,4 M152,21 l4,4 m0,-4 l-4,4 M168,21 l4,4 m0,-4 l-4,4 M184,21 l4,4 m0,-4 l-4,4 M200,21 l4,4 m0,-4 l-4,4 M216,21 l4,4 m0,-4 l-4,4 M232,21 l4,4 m0,-4 l-4,4 M248,21 l4,4 m0,-4 l-4,4 M264,21 l4,4 m0,-4 l-4,4 M280,21 l4,4 m0,-4 l-4,4 M296,21 l4,4 m0,-4 l-4,4"/>
+      </g>
+      <!-- two hdc rounds -->
+      <rect x="30" y="28" width="280" height="34" fill="#D6E0C8" stroke="#7C9070" stroke-width="1.2"/>
+      <g stroke="#5F7355" stroke-width="1.6" fill="none">
+        <path d="M42,32 v10 m-4,-10 h8 M58,32 v10 m-4,-10 h8 M74,32 v10 m-4,-10 h8 M90,32 v10 m-4,-10 h8 M106,32 v10 m-4,-10 h8 M122,32 v10 m-4,-10 h8 M138,32 v10 m-4,-10 h8 M154,32 v10 m-4,-10 h8 M170,32 v10 m-4,-10 h8 M186,32 v10 m-4,-10 h8 M202,32 v10 m-4,-10 h8 M218,32 v10 m-4,-10 h8 M234,32 v10 m-4,-10 h8 M250,32 v10 m-4,-10 h8 M266,32 v10 m-4,-10 h8 M282,32 v10 m-4,-10 h8 M298,32 v10 m-4,-10 h8"/>
+        <path d="M42,47 v10 m-4,-10 h8 M58,47 v10 m-4,-10 h8 M74,47 v10 m-4,-10 h8 M90,47 v10 m-4,-10 h8 M106,47 v10 m-4,-10 h8 M122,47 v10 m-4,-10 h8 M138,47 v10 m-4,-10 h8 M154,47 v10 m-4,-10 h8 M170,47 v10 m-4,-10 h8 M186,47 v10 m-4,-10 h8 M202,47 v10 m-4,-10 h8 M218,47 v10 m-4,-10 h8 M234,47 v10 m-4,-10 h8 M250,47 v10 m-4,-10 h8 M266,47 v10 m-4,-10 h8 M282,47 v10 m-4,-10 h8 M298,47 v10 m-4,-10 h8"/>
+      </g>
+      <!-- shells peeking below with pink ch-1 dots -->
+      <g stroke="#7C9070" stroke-width="1.7" fill="none" stroke-linecap="round">
+        <path d="M70,92 L58,68 M70,92 L64,66 M70,92 L70,64 M70,92 L76,66 M70,92 L82,68"/>
+        <path d="M140,92 L128,68 M140,92 L134,66 M140,92 L140,64 M140,92 L146,66 M140,92 L152,68"/>
+        <path d="M210,92 L198,68 M210,92 L204,66 M210,92 L210,64 M210,92 L216,66 M210,92 L222,68"/>
+        <path d="M280,92 L268,68 M280,92 L274,66 M280,92 L280,64 M280,92 L286,66 M280,92 L292,68"/>
+      </g>
+      <g fill="#CE4570">
+        <circle cx="105" cy="70" r="3"/><circle cx="175" cy="70" r="3"/><circle cx="245" cy="70" r="3"/>
+      </g>
+      <text x="170" y="110" text-anchor="middle" class="diag-olive">Two firm hdc rounds, then one clean sc round to finish the lip</text>
+    </svg>
+    </div>
+    <div style="flex:1; font-size:8.6pt;">
+      <p style="margin-bottom:2mm;"><b style="color:var(--green-dark)">Rnd 1–2</b> — hdc rounds, firm and dense</p>
+      <p style="margin-bottom:2mm;"><b style="color:var(--pink)">shell centres</b> — stay open beneath, peeking through</p>
+      <p><b style="color:var(--green-dark)">Rnd 3</b> — one clean sc round finishes the lip</p>
+    </div>
+  </div>
+
+  <div class="photo-page" style="height:auto; margin-top:2mm; padding-bottom:0;">
+    <div class="photo-frame"><img src="../assets/photos/top-edge.jpg" style="width:88mm; height:auto;"></div>
+    <div class="caption-bold">The Reinforced Hdc Band</div>
+  </div>
+  <div class="pagenum">— 12 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 13 · STRAPS ═════════ -->
+<div class="page">
+  <div class="kicker">Section Four · Built Right In</div>
+  <h1 class="section">No-Sew Straps</h1>
+  <div class="divider">✿</div>
+  <p class="lede">Instead of two separate pieces to sew on, both straps grow directly out of the top edge — chained up, reinforced, and crocheted straight back into the rim, exactly as pictured.</p>
+
+  <table class="rounds">
+    <tr>
+      <td class="rlabel">Position</td>
+      <td>Working from your last join, ch 1 and sc in each of the first <b>11 (13, 15) sts</b> of the round — this brings you to where the first strap begins on the front panel.</td>
+      <td class="rcount"></td>
+    </tr>
+    <tr>
+      <td class="rlabel">Strap 1</td>
+      <td>Ch <b>36 (40, 44)</b> for the strap. Making sure the chain isn't twisted, count forward along the <b>next 10 (12, 14) rim sts</b> and sl st into the last of them. The strap now arches over those stitches, <b>anchored at both ends</b> — just like the handles in the photos.</td>
+      <td class="rcount">36 (40, 44)<br>ch</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Reinforce</td>
+      <td>Turn. Work <b>hdc in each ch</b> back along the strap. Sl st into the rim st where the chain began (right beside your last sc), closing the reinforced arch firmly. No floppy handles — this second pass gives the strap its thickness.</td>
+      <td class="rcount">36 (40, 44)<br>hdc</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Under the arch</td>
+      <td>Ch 1. Sc in each of the <b>10 (12, 14) rim sts beneath the strap</b> — they are still unworked; the strap simply arches on top of them. <b>Do not skip any rim stitches</b> — every single one gets worked, and the round stays continuous.</td>
+      <td class="rcount"></td>
+    </tr>
+    <tr>
+      <td class="rlabel">Continue</td>
+      <td>Sc in each of the <b>next 23 (27, 31) rim sts</b> — this carries you around the side and to the matching strap position, exactly opposite, on the back panel.</td>
+      <td class="rcount"></td>
+    </tr>
+    <tr>
+      <td class="rlabel">Strap 2</td>
+      <td>Repeat the <b>Strap 1</b>, <b>Reinforce</b> and <b>Under the arch</b> steps exactly, to build the second strap on the back panel.</td>
+      <td class="rcount">36 (40, 44)<br>hdc</td>
+    </tr>
+    <tr>
+      <td class="rlabel">Finish</td>
+      <td>Sc in the remaining <b>12 (14, 16) rim sts</b> to complete the round. Join with a sl st. Fasten off and weave in the end.</td>
+      <td class="rcount"></td>
+    </tr>
+  </table>
+
+  <div class="greenbox">
+    <div class="tiplabel">Common Mistake</div>
+    <p>It's easy to forget the rim stitches sitting beneath a strap, out of habit from other patterns. Remember: the strap arches on top of the rim — after reinforcing it, go back and sc into every stitch beneath the arch before carrying on. Count check: 11 + 10 + 23 + 10 + 12 = 66 sts for Small — every rim stitch worked, nothing skipped. ✓</p>
+  </div>
+  <div class="pagenum">— 13 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 14 · STRAP DIAGRAM + PHOTO ═════════ -->
+<div class="page">
+  <div class="tipbox" style="margin-top:0">
+    <div class="tiplabel">Tip</div>
+    <p>Because the straps are reinforced with a second pass of hdc, they hold their shape and width beautifully — no floppy handles, and genuinely nothing to sew.</p>
+  </div>
+
+  <div class="card">
+    <div class="svgwrap">
+    <svg width="170mm" height="56mm" viewBox="0 0 600 198">
+      <!-- strap arch: chain pass + hdc pass -->
+      <path d="M245,117 C245,32 355,32 355,117" fill="none" stroke="#7C9070" stroke-width="9" stroke-linecap="round"/>
+      <path d="M245,117 C245,32 355,32 355,117" fill="none" stroke="#AEC09C" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="7 4"/>
+      <!-- rim (top view ellipse) -->
+      <ellipse cx="300" cy="150" rx="190" ry="34" fill="none" stroke="#4A4A40" stroke-width="2"/>
+      <!-- rim stitch ticks -->
+      <g stroke="#8A8A7C" stroke-width="1.3" fill="none">
+        <path d="M487.5,150.0 L493.5,150.0 M485.8,153.7 L490.3,157.6 M479.5,158.3 L482.4,163.6 M468.5,163.1 L470.5,168.7 M453.1,167.6 L454.6,173.4 M433.9,171.6 L435.0,177.5 M411.4,175.0 L412.1,181.0 M386.0,177.8 L386.6,183.8 M358.6,179.8 L358.9,185.8 M329.7,181.1 L329.8,187.1 M300.0,181.5 L300.0,187.5 M270.3,181.1 L270.2,187.1 M241.4,179.8 L241.1,185.8 M214.0,177.8 L213.4,183.8 M188.6,175.0 L187.9,181.0 M166.1,171.6 L165.0,177.5 M146.9,167.6 L145.4,173.4 M131.5,163.1 L129.5,168.7 M120.5,158.3 L117.6,163.6 M114.2,153.7 L109.7,157.6 M112.5,150.0 L106.5,150.0 M114.2,146.3 L109.7,142.4 M120.5,141.7 L117.6,136.4 M131.5,136.9 L129.5,131.3 M146.9,132.4 L145.4,126.6 M166.1,128.4 L165.0,122.5 M188.6,125.0 L187.9,119.0 M214.0,122.2 L213.4,116.2 M241.4,120.2 L241.1,114.2 M270.3,118.9 L270.2,112.9 M300.0,118.5 L300.0,112.5 M329.7,118.9 L329.8,112.9 M358.6,120.2 L358.9,114.2 M386.0,122.2 L386.6,116.2 M411.4,125.0 L412.1,119.0 M433.9,128.4 L435.0,122.5 M453.1,132.4 L454.6,126.6 M468.5,136.9 L470.5,131.3 M479.5,141.7 L482.4,136.4 M485.8,146.3 L490.3,142.4"/>
+      </g>
+      <!-- two anchor points -->
+      <circle cx="245" cy="117" r="4.5" fill="#CE4570"/>
+      <circle cx="355" cy="117" r="4.5" fill="#CE4570"/>
+      <!-- worked sts beneath the arch -->
+      <g stroke="#CE4570" stroke-width="1.5" fill="none">
+        <path d="M258,124 l4,4 m0,-4 l-4,4 M274,123 l4,4 m0,-4 l-4,4 M290,122 l4,4 m0,-4 l-4,4 M306,122 l4,4 m0,-4 l-4,4 M322,123 l4,4 m0,-4 l-4,4 M338,124 l4,4 m0,-4 l-4,4"/>
+      </g>
+      <!-- labels -->
+      <text x="300" y="20" text-anchor="middle" class="diag-label-b">chain up, hdc back down — anchored at BOTH ends of the arch</text>
+      <path d="M300,26 L300,42" stroke="#B9B29A" stroke-width="1"/>
+      <text x="452" y="94" class="diag-pink">two anchor points,</text>
+      <text x="452" y="105" class="diag-pink">10 (12, 14) sts apart</text>
+      <path d="M448,100 Q400,106 362,114" fill="none" stroke="#CE4570" stroke-width="1" stroke-dasharray="3 2"/>
+      <text x="24" y="78" class="diag-label-b">no stitches skipped —</text>
+      <text x="24" y="89" class="diag-label">the rim sts beneath the</text>
+      <text x="24" y="100" class="diag-label">arch still get worked</text>
+      <path d="M120,96 Q200,110 254,124" fill="none" stroke="#B9B29A" stroke-width="1"/>
+    </svg>
+    </div>
+    <div class="caption" style="margin-top:0">The strap rises and returns — every rim stitch beneath it still gets worked, nothing to sew</div>
+  </div>
+
+  <div class="photo-page" style="height:auto; margin-top:3mm; padding-bottom:0;">
+    <div class="photo-frame"><img src="../assets/photos/strap.jpg" style="width:106mm; height:auto;"></div>
+    <div class="caption-bold">A Strap, Chained, Reinforced &amp; Anchored — No Sewing</div>
+  </div>
+  <div class="pagenum">— 14 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 15 · BLOCKING ═════════ -->
+<div class="page">
+  <div class="kicker">Almost There</div>
+  <h1 class="section">Blocking &amp; Finishing</h1>
+  <div class="divider">✿</div>
+
+  <div class="greenbox" style="margin-top:0">
+    <div class="tiplabel">Why Block Cotton?</div>
+    <p>Cotton doesn't "block" the same way wool does (it won't hold a dramatically different shape), but a gentle soak and flat dry still relaxes the stitches beautifully and makes the shell mesh sit open and even — that's how the pictured bag gets its crisp, open look.</p>
+  </div>
+
+  <h3 class="flower">Finishing Guide</h3>
+  <table class="rounds">
+    <tr><td class="rlabel">Step 1</td><td>Soak the finished bag in cool water with a splash of gentle wool or cotton wash for about 15 minutes.</td></tr>
+    <tr><td class="rlabel">Step 2</td><td>Gently squeeze out excess water (never wring or twist), then roll the bag in a clean towel and press to remove more moisture.</td></tr>
+    <tr><td class="rlabel">Step 3</td><td>Lay the bag flat on a blocking mat or towel and pin it out to shape. Gently open out each shell and mesh space with your fingers, and shape the base and straps into place.</td></tr>
+    <tr><td class="rlabel">Step 4</td><td>Leave to air dry fully before use — this is what sets the drape and really opens up the shell mesh pattern.</td></tr>
+  </table>
+
+  <h3 class="flower">Final Touches</h3>
+  <table class="rounds">
+    <tr><td class="rlabel">Step 1</td><td>Weave in every remaining yarn end through several nearby stitches on the inside of the bag, then trim close.</td></tr>
+    <tr><td class="rlabel">Step 2</td><td>Check both straps sit at even lengths and the same twist — gently steam if one needs coaxing into place.</td></tr>
+    <tr><td class="rlabel">Step 3</td><td>If you chose a two-tone version, double check every join is tucked to the inside where it won't show.</td></tr>
+    <tr><td class="rlabel">Step 4</td><td>Give the finished bag a final light press or steam, and it's ready for the market, the beach, or the library.</td></tr>
+  </table>
+  <div class="pagenum">— 15 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 16 · FINAL PHOTO ═════════ -->
+<div class="page">
+  <div class="photo-page">
+    <div class="photo-frame"><img src="../assets/photos/final-blocked.jpg" style="width:140mm; height:auto;"></div>
+    <div class="caption-bold">Ready to Carry</div>
+    <div class="caption">pinned out and blocked flat — shells open, base square, straps even</div>
+  </div>
+  <div class="pagenum">— 16 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 17 · EXTRAS ═════════ -->
+<div class="page">
+  <div class="kicker">Extra Support</div>
+  <h1 class="section">Video Tutorial References</h1>
+  <div class="divider">✿</div>
+  <p class="lede">If you'd like to see any of these techniques worked in real time, add your own tutorial links here for buyers who prefer to watch and follow along.</p>
+
+  <ul class="videos">
+    <li>Rounded rectangular base (increases at two ends) — <i>add your link here</i></li>
+    <li>Shell stitch (2 dc, ch 1, 3 dc) worked into a chain space — <i>add your link here</i></li>
+    <li>No-sew built-in strap technique — <i>add your link here</i></li>
+    <li>Blocking a cotton crochet piece — <i>add your link here</i></li>
+  </ul>
+
+  <div class="tipbox">
+    <div class="tiplabel">Tip for Pattern Sellers</div>
+    <p>Linking 2–3 short technique clips (even generic ones from your own channel or trusted creators) is one of the easiest ways to reduce buyer questions and support requests.</p>
+  </div>
+
+  <div style="margin-top:8mm"></div>
+  <div class="kicker">For Your Workspace</div>
+  <h1 class="section" style="font-size:17pt">Printable Progress Checklist</h1>
+  <div class="divider">✿</div>
+  <p style="text-align:center; font-style:italic; color:var(--olive);">Print this page and tick off each stage as you go.</p>
+
+  <ul class="check">
+    <li>Chose my size (Small / Medium / Large) and gathered yarn + hook</li>
+    <li>Base worked, Rnds 1–7 complete</li>
+    <li>Body repeats worked (6 / 8 / 10 of Rnd A + Rnd B)</li>
+    <li>Top Edge Rnds 1–3 complete</li>
+    <li>Strap 1 chained, reinforced, and anchored at both ends</li>
+    <li>Strap 2 chained, reinforced, and anchored at both ends</li>
+    <li>All ends woven in</li>
+    <li>Bag soaked, blocked, and left to dry flat</li>
+    <li>Final press or steam done — ready to carry!</li>
+  </ul>
+  <div class="pagenum">— 17 of 18 —</div>
+</div>
+
+<!-- ═════════ PAGE 18 · THANK YOU ═════════ -->
+<div class="page">
+  <div style="height:30mm"></div>
+  <div class="kicker">The Last Little Step</div>
+  <div style="text-align:center; font-family:'Playfair'; font-style:italic; font-size:12pt; color:var(--green-dark); margin-bottom:3mm;">Your Meadow Shell Market Tote is all done!</div>
+  <h1 class="section" style="font-size:26pt">Thank You</h1>
+  <div class="divider">✿</div>
+
+  <div style="max-width:130mm; margin:0 auto; text-align:center;">
+    <p style="margin-bottom:4mm;">Thank you so much for choosing this pattern and for supporting a small handmade shop. It truly means the world to me, and I hope you love carrying your new tote everywhere. ♡</p>
+    <p>If you enjoyed this pattern, would you consider leaving a review? Every review genuinely makes my day and helps my little shop grow. Tag me in your makes so I can see and share your beautiful work, and follow along for new patterns. ♡</p>
+    <div style="margin-top:10mm; font-family:'Playfair'; font-style:italic; font-size:12pt; color:var(--green-dark);">With love &amp; lots of stitches,</div>
+    <div style="margin-top:2mm; font-family:'Playfair'; font-weight:700; font-size:13pt; color:var(--pink);">— KnottiqueCraftShop —</div>
+    <div style="margin-top:10mm; font-size:8.5pt; letter-spacing:.18em; color:var(--ink-soft);">
+      <div style="margin-bottom:2mm;"><b style="color:var(--green-dark); letter-spacing:.28em;">ETSY</b>&nbsp;&nbsp;etsy.com/shop/KnottiqueCraftShop</div>
+      <div><b style="color:var(--green-dark); letter-spacing:.28em;">PINTEREST</b>&nbsp;&nbsp;@KnottiqueCraftShop</div>
+    </div>
+  </div>
+  <div class="pagenum">— 18 of 18 —</div>
+</div>
+
+</body>
+</html>

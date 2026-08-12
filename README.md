@@ -15,12 +15,35 @@ instructions, the diagrams, and the photos all match the reference sample bag
 
 ## Rebuilding the PDF
 
+Use the build script (recommended). It finds Chrome/Chromium, renders the
+pattern, and exits as soon as the PDF is written:
+
+```bash
+scripts/build-pdf.sh
+# or write elsewhere: scripts/build-pdf.sh /tmp/preview.pdf
+```
+
+Equivalent raw command:
+
 ```bash
 google-chrome --headless=new --no-sandbox \
   --print-to-pdf=output/Meadow_Shell_Market_Tote_FIXED.pdf \
   --no-pdf-header-footer \
   "file:///$(pwd)/pattern/meadow-shell-market-tote.html"
 ```
+
+> In sandboxed/CI environments headless Chrome writes the PDF within a second
+> or two but often does not exit on its own; the raw command can appear to hang.
+> `scripts/build-pdf.sh` handles this by stopping Chrome once the PDF is
+> complete, so prefer it there.
+
+## Development environment (Cloud Agents)
+
+`.cursor/environment.json` configures the Cloud Agent environment. There are no
+package dependencies — the only tool required is Chrome/Chromium, which the base
+image already provides. `install` simply verifies Chrome is present and makes
+the build script executable. Edit `pattern/meadow-shell-market-tote.html`, then
+run `scripts/build-pdf.sh` to regenerate the PDF.
 
 ## Fixes applied vs. the previous version
 

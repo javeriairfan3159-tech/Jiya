@@ -1,0 +1,4 @@
+{
+  "name": "Meadow Shell Market Tote — PDF pattern",
+  "install": "google-chrome --version && chmod +x scripts/build-pdf.sh"
+}

@@ -20,3 +20,5 @@ Print files: **3000 x 4200 px** (600 DPI PNG)
 - `listing-jpg/` — 1500 x 2100 (300 DPI) JPEGs for upload
 
 Sample names/dates (Aria / Isla, Saturday at two, Crystal Palace) are mockup text. Swap name, age, venue, and RSVP in Canva or Photoshop before selling.
+
+Etsy title, tags, and description for Version 3: `03-etsy-seo.md`

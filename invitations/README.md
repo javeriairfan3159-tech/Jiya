@@ -18,6 +18,7 @@ Print files: **3000 x 4200 px** (600 DPI PNG)
 - `originals/` — master artwork
 - `5x7-print/` — cropped to exact 5:7 and upscaled for print
 - `listing-jpg/` — 1500 x 2100 (300 DPI) JPEGs for upload
+- `listing-media/` — Etsy thumbnail mockup, square card photo, and 6s listing video (see `listing-media/README.md` for where to upload)
 
 Sample names/dates (Aria / Isla, Saturday at two, Crystal Palace) are mockup text. Swap name, age, venue, and RSVP in Canva or Photoshop before selling.
 

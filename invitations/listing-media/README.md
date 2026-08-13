@@ -8,7 +8,7 @@ Shop Manager → Listings → your listing → **Photos and video**
 
 | Order | File | Why |
 | --- | --- | --- |
-| Photo 1 | `01-etsy-thumbnail-mockup-2000.jpg` | Search thumbnail (square). This is what shoppers see first. |
+| Photo 1 | `04-exact-card-mockup-2000.jpg` | Search thumbnail. This mockup uses the **exact card file**, not an AI redraw. |
 | Photo 2 | `02-etsy-card-square-2000.jpg` | The real 5x7 design, uncropped, so buyers can read the invite. |
 | Photo 3 | `listing-jpg/03-aria-listing-hero-5x7-300dpi.jpg` | Vertical card as they will print it. |
 

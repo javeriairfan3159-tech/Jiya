@@ -34,3 +34,13 @@ Upload the print card only:
 - optional: `listing-jpg/03-aria-listing-hero-5x7-300dpi.jpg`
 
 Never attach the mockup or the video here. Buyers would print the marble table photo instead of the invitation.
+
+## Exact-card mockup (changed artwork)
+
+The marble mockup composites **your real invitation pixels**. It does not redraw the design.
+
+1. Save the changed card as `invitations/client-card.png` (or `.jpg`)
+2. Run: `python3 invitations/listing-media/make_exact_card_mockup.py`
+3. New thumbnail: `listing-media/04-exact-card-mockup-2000.jpg`
+
+If `client-card.png` is missing, the script uses the Version 3 print file.

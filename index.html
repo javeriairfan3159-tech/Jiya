@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiya Digital — Aesthetic Wallpapers, App Icons & Themes</title>
+  <meta name="description" content="Jiya Digital — aesthetic phone wallpapers, app icon packs, phone themes and digital planners. Instant digital downloads." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>" />
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce">✨ Launch Sale — up to 40% OFF on all bundles! Instant download after purchase 💌</div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo" id="logoLink">
+      <span class="logo-mark">🌙</span>
+      <span class="logo-text">Jiya <em>Digital</em></span>
+    </a>
+
+    <div class="search-wrap">
+      <input type="search" id="searchInput" placeholder="Search wallpapers, icons, themes..." autocomplete="off" />
+      <span class="search-icon">🔍</span>
+    </div>
+
+    <nav class="header-actions">
+      <button class="icon-btn" id="favBtn" title="Favorites">
+        ♡ <span class="badge" id="favCount" hidden>0</span>
+      </button>
+      <button class="icon-btn" id="cartBtn" title="Cart">
+        🛍️ <span class="badge" id="cartCount" hidden>0</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="hero-kicker">Digital Downloads · Instant Delivery</p>
+      <h1>Make your phone feel <span>magical</span> ✨</h1>
+      <p class="hero-sub">Aesthetic wallpapers, cozy app icon packs, phone themes &amp; digital planners — designed with love, delivered instantly.</p>
+      <div class="hero-cta">
+        <a href="#shop" class="btn btn-primary">Shop the collection</a>
+        <a href="#about" class="btn btn-ghost">Our story</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>5,000+</strong><span>Happy customers</span></div>
+        <div><strong>★ 4.9</strong><span>Average rating</span></div>
+        <div><strong>Instant</strong><span>Digital delivery</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop -->
+  <main id="shop" class="shop">
+    <div class="shop-head">
+      <h2>Shop the collection</h2>
+      <div class="sort-wrap">
+        <label for="sortSelect">Sort:</label>
+        <select id="sortSelect">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="chips" id="categoryChips"></div>
+
+    <div class="grid" id="productGrid"></div>
+    <p class="empty-msg" id="emptyMsg" hidden>No products found — try another search 🌸</p>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="about-card">
+      <h2>🌸 About Jiya Digital</h2>
+      <p>Welcome! We create dreamy digital goodies that make your everyday screens feel special — from starry-night wallpapers to cozy app icon packs and minimalist planners. Every design is handcrafted with care. Purchase once, download instantly, and enjoy forever.</p>
+      <div class="about-points">
+        <div>📥 <strong>Instant download</strong><span>Files delivered right after checkout</span></div>
+        <div>📱 <strong>iOS &amp; Android</strong><span>Works beautifully on both</span></div>
+        <div>💌 <strong>Friendly support</strong><span>We reply within 24 hours</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <p class="logo-text footer-logo">🌙 Jiya <em>Digital</em></p>
+        <p class="muted">Aesthetic digital downloads for your phone &amp; home.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="#shop">All products</a>
+        <a href="#shop">Wallpapers</a>
+        <a href="#shop">App Icons</a>
+        <a href="#shop">Planners</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#about">About us</a>
+        <a href="#about">How downloads work</a>
+        <a href="#about">Contact</a>
+      </div>
+    </div>
+    <p class="footer-note">© 2026 Jiya Digital · Demo shop — made with 💜</p>
+  </footer>
+
+  <!-- Product modal -->
+  <div class="overlay" id="productOverlay" hidden>
+    <div class="modal product-modal" role="dialog" aria-modal="true">
+      <button class="close-btn" data-close>✕</button>
+      <div id="productModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="cartOverlay" hidden>
+    <aside class="drawer" role="dialog" aria-modal="true">
+      <div class="drawer-head">
+        <h3>Your bag 🛍️</h3>
+        <button class="close-btn" data-close>✕</button>
+      </div>
+      <div class="drawer-body" id="cartItems"></div>
+      <div class="drawer-foot" id="cartFoot"></div>
+    </aside>
+  </div>
+
+  <!-- Checkout modal -->
+  <div class="overlay" id="checkoutOverlay" hidden>
+    <div class="modal checkout-modal" role="dialog" aria-modal="true">
+      <button class="close-btn" data-close>✕</button>
+      <div id="checkoutBody"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -8,6 +8,80 @@
 
 ---
 
+## YouTube Studio pack (copy-paste)
+
+**Use this title**
+
+```
+Age Pension August 2026: 3 Centrelink Changes Australian Pensioners Must Know
+```
+
+**Backup titles (A/B test)**
+
+```
+Centrelink Age Pension Changes August 2026 — Work Bonus, Income & Assets
+Age Pension Work Bonus 2026: Earn Extra Without Losing Your Centrelink Payment
+```
+
+**Hashtags under title (3 only — YouTube shows 3)**
+
+```
+#AgePension #Centrelink #AustralianPensioners
+```
+
+**Tags field (YouTube Studio → Show more → Tags)**
+
+```
+age pension, age pension 2026, age pension august 2026, centrelink, centrelink update, centrelink changes august 2026, australian pensioners, age pension work bonus, work bonus centrelink, income free area age pension, age pension asset test, asset test thresholds, part pension, full age pension, mygov centrelink, services australia, can i work on age pension, age pension income test, government payments australia, retirement australia, seniors australia, cost of living australia, pension payment, australia news
+```
+
+**Description (paste in full)**
+
+```
+🚨 Age Pension August 2026: 3 Centrelink Changes Australian Pensioners Must Know
+
+August 2026 has brought important Centrelink and Age Pension updates that Australian pensioners need to check now. In this video we break down 3 major August changes that can affect your Age Pension income test, Work Bonus, asset test thresholds, and fortnightly payment.
+
+If you receive the Age Pension, do casual or part-time work, hold savings or other assets, or sit on a part pension, these Centrelink updates could change how much you keep.
+
+We explain the new rules in simple language — who may benefit, what the income-free area and Work Bonus mean for extra earnings, how higher asset test limits could lift a payment, and what you should check today in your myGov and Centrelink account. Centrelink does not always raise your payment automatically when a threshold moves, so a myGov check matters.
+
+✅ In this video you'll learn:
+
+• 3 August 2026 Centrelink Age Pension changes Australian pensioners must know
+• How the new income-free area works: $226 a fortnight (single) and $396 combined (couple)
+• Why extra earnings above that are reduced at 50 cents in the dollar — not dollar for dollar
+• How the Age Pension Work Bonus may ignore up to $460 a fortnight from paid work
+• How Work Bonus can stack with the income-free area if you do casual or part-time work
+• New Age Pension asset test thresholds for homeowners and non-homeowners
+• Full-rate asset limits: $333,000 single homeowner · $499,000 couple homeowner · $600,000 single non-homeowner · $766,000 couple non-homeowner
+• How a small asset-test shift can move a part pension up — or reopen eligibility
+• Who may benefit most: working pensioners, part-pensioners, and anyone near a threshold
+• What to check in myGov and Centrelink, and when to request a reassessment
+
+If you receive the Age Pension, Centrelink payments, or you are planning retirement in Australia, watch until the end and compare these August figures with your own payment summary.
+
+🔔 Subscribe for Australian pension news, Centrelink updates, Age Pension changes 2026, Work Bonus explainers, asset test thresholds, retirement information, and Australian Government payment updates.
+
+💬 Comment 1, 2 or 3 — which August surprise did you not know? And send this to someone who turned down work because they were scared of losing their pension.
+
+⚠️ Disclaimer: This video is for general informational purposes only and is based on publicly available information. Individual circumstances vary, and eligibility and payment amounts depend on your personal situation. Always verify your current eligibility, payment details, and applicable rules through official Australian Government and Services Australia / Centrelink sources before making financial decisions. This is not personal financial advice.
+
+⏱️ TIMESTAMPS
+
+00:00 Age Pension August 2026 — 3 Centrelink changes they didn't explain
+00:38 Why August matters for Australian pensioners (not just March and September)
+02:05 Surprise #1 — Income-free area $226 single / $396 couple
+04:55 Surprise #2 — Age Pension Work Bonus up to $460 a fortnight
+07:45 Surprise #3 — Asset test changes ($333k / $499k / $600k / $766k)
+10:15 Who could benefit the most (part pension, work, savings)
+11:35 Check myGov today — request a Centrelink review if you sit near a threshold
+
+#AgePension #Centrelink #AgePension2026 #AustralianPensioners #WorkBonus #myGov #ServicesAustralia #PartPension #AssetTest #IncomeTest #Retirement #GovernmentPayments #SeniorBenefits #CostOfLiving #AustraliaNews #CentrelinkUpdate #RetirementPlanning #Seniors #FinanceAustralia #AugustUpdate
+```
+
+---
+
 ## One-paragraph spoken script (copy-paste)
 
 Stop scrolling — if you are on the Age Pension, Centrelink quietly changed three rules on the first of August and they did not send you a plain-English letter explaining any of them, because while everyone watches March and September, August is the date where the real structure moves, and this August three shifts landed at once: first, you can now earn more before they touch your payment, a single pensioner can bring in $226 a fortnight and keep the full Age Pension untouched and a couple can bring in $396 combined, and once you go over that they do not take dollar for dollar they take only 50 cents in the dollar so the fear of a couple of casual shifts or a spare room wiping out your pension is bigger than the actual rule; second, and this is the benefit almost nobody uses, the Work Bonus lets you earn up to $460 a fortnight from real paid work — part-time, casual, freelance, even some self-employment — and that slice can sit invisible in the income test, stacking separately on top of the $226 free area, which means the old story that going back to work automatically destroys the Age Pension is outdated for a lot of people, so if you know someone who turned down hours because they were scared of a debt letter this is the video you send them; third, the asset test moved too, looking at what you own outside the family home, and you can now hold up to $333,000 as a single homeowner or $499,000 as a homeowner couple and still sit on the full rate, or $600,000 if you are a single non-homeowner and $766,000 as a non-homeowner couple, and if you were a whisker over the old line that small step can lift a part pension or even open the door again, because above the threshold they take roughly $3 a fortnight off for extra assessable assets so raising the starting line gives you more room before that haircut starts; here is the catch they will not put in a TV ad, Centrelink does not always bump you automatically when a threshold moves, so open myGov today, go to Centrelink, pull your latest payment summary, line your income and assets up against these August numbers, and if you sit close to any of them request a reassessment instead of assuming the computer noticed, then like this video, comment 1, 2 or 3 for which surprise you did not know, and subscribe because the next Centrelink shift will not make the news either.

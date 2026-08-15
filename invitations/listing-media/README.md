@@ -1,6 +1,6 @@
 # Etsy thumbnail mockups — Ready Set Go card
 
-These composites use the **exact invitation file** (`originals/03-leo-ready-set-go.png`). They do not redraw the design.
+These composites use the **exact invitation file** (`originals/alex-ready-set-go.png` — ALEX Ready Set Go card). They do not redraw the design.
 
 Size: **2000 × 2000** (Etsy search crop)
 

@@ -11,7 +11,7 @@ OUT = ROOT
 SIZE = 2000
 RATIO = 5 / 7
 
-CARD_PATH = ORIGINALS / "03-leo-ready-set-go.png"
+CARD_PATH = ORIGINALS / "alex-ready-set-go.png"
 ASPHALT = ROOT / "scene-asphalt-empty.png"
 REDFLAG = ROOT / "scene-red-flag-empty.png"
 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leo’s Racing Birthday Invite · White Luxury · 5×7</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Oswald:wght@400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #111111;
+      --rust: #c2410c;
+      --paper: #ffffff;
+      --muted: #3f3f46;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 5in;
+      height: 7in;
+      overflow: hidden;
+      background: var(--paper);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    @page { size: 5in 7in; margin: 0; }
+
+    .card {
+      width: 5in;
+      height: 7in;
+      position: relative;
+      background: var(--paper);
+      overflow: hidden;
+    }
+
+    .check {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 0.28in;
+      background: repeating-conic-gradient(#111 0% 25%, #f7f7f7 0% 50%) 0 0 / 0.14in 0.14in;
+      z-index: 4;
+    }
+    .check.top { top: 0; }
+    .check.bottom {
+      bottom: 0;
+      height: 0.42in;
+      transform: skewY(-3.5deg);
+      transform-origin: center bottom;
+    }
+
+    .headline {
+      position: absolute;
+      top: 0.30in;
+      left: 0.12in;
+      right: 0.12in;
+      height: 0.62in;
+      z-index: 3;
+    }
+    .headline svg { width: 100%; height: 100%; }
+
+    .cars {
+      position: absolute;
+      top: 0.78in;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4.72in;
+      height: 2.28in;
+      object-fit: contain;
+      object-position: center;
+      z-index: 2;
+      filter: drop-shadow(0 0.04in 0.04in rgba(0,0,0,.12));
+    }
+
+    .copy {
+      position: absolute;
+      top: 3.08in;
+      left: 0.28in;
+      right: 0.28in;
+      text-align: center;
+      z-index: 3;
+    }
+
+    .cta {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 600;
+      font-size: 13.5pt;
+      letter-spacing: 0.16em;
+      color: var(--ink);
+      margin-bottom: 0.08in;
+    }
+
+    .name {
+      font-family: "Alfa Slab One", serif;
+      font-size: 46pt;
+      line-height: 0.92;
+      color: var(--rust);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .age {
+      font-family: "Oswald", sans-serif;
+      font-weight: 700;
+      font-size: 20pt;
+      letter-spacing: 0.18em;
+      color: var(--ink);
+      margin: 0.04in 0 0.16in;
+    }
+
+    .when {
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      font-size: 13.5pt;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.12in;
+    }
+    .when .day, .when .month { font-weight: 500; font-size: 11.5pt; }
+    .when .num { font-size: 22pt; font-weight: 700; line-height: 1; }
+    .when .sep { color: #d4d4d8; font-weight: 400; }
+
+    .time {
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      font-size: 14pt;
+      letter-spacing: 0.18em;
+      margin: 0.08in 0 0.12in;
+      color: var(--ink);
+    }
+
+    .where, .rsvp {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .where { font-size: 10pt; color: var(--muted); margin-bottom: 0.06in; }
+    .rsvp { font-size: 11pt; color: var(--ink); }
+
+    .cone {
+      position: absolute;
+      bottom: 0.38in;
+      width: 0.38in;
+      z-index: 5;
+      filter: drop-shadow(0 1px 1px rgba(0,0,0,.25));
+    }
+    .cone.left { left: 0.22in; }
+    .cone.right { right: 0.22in; }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <div class="check top"></div>
+    <div class="headline">
+      <svg viewBox="0 0 500 80" aria-label="Race on over!">
+        <defs>
+          <path id="arc" d="M 30,62 Q 250,8 470,62" />
+        </defs>
+        <text font-family="Black Ops One, sans-serif" font-size="34" fill="#111" letter-spacing="2">
+          <textPath href="#arc" startOffset="50%" text-anchor="middle">RACE ON OVER!</textPath>
+        </text>
+      </svg>
+    </div>
+
+    <img class="cars" src="../originals/cars-cluster.png" alt="Original racing cars" />
+
+    <div class="copy">
+      <p class="cta">JOIN US TO CELEBRATE</p>
+      <h1 class="name">LEO’S</h1>
+      <p class="age">5TH BIRTHDAY</p>
+      <div class="when">
+        <span class="day">SATURDAY</span>
+        <span class="sep">|</span>
+        <span class="num">14</span>
+        <span class="sep">|</span>
+        <span class="month">JUNE</span>
+      </div>
+      <p class="time">4:00 PM</p>
+      <p class="where">123 Speedway Lane, Any City, ST 12345</p>
+      <p class="rsvp">RSVP to Mom 555-123-4567</p>
+    </div>
+
+    <svg class="cone left" viewBox="0 0 40 52" aria-hidden="true">
+      <polygon points="20,1 38,46 2,46" fill="#ea580c" />
+      <rect x="1" y="45" width="38" height="6" rx="1" fill="#1c1917" />
+      <rect x="10" y="30" width="20" height="5" fill="#fff" />
+      <rect x="13" y="16" width="14" height="4.5" fill="#fff" />
+    </svg>
+    <svg class="cone right" viewBox="0 0 40 52" aria-hidden="true">
+      <polygon points="20,1 38,46 2,46" fill="#ea580c" />
+      <rect x="1" y="45" width="38" height="6" rx="1" fill="#1c1917" />
+      <rect x="10" y="30" width="20" height="5" fill="#fff" />
+      <rect x="13" y="16" width="14" height="4.5" fill="#fff" />
+    </svg>
+    <div class="check bottom"></div>
+  </article>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Print wrapper · 5×7 full-bleed</title>
+  <style>
+    html, body { margin: 0; width: 5in; height: 7in; overflow: hidden; }
+    @page { size: 5in 7in; margin: 0; }
+    img { width: 5in; height: 7in; object-fit: cover; display: block; }
+  </style>
+</head>
+<body>
+  <img id="card" alt="Invitation" />
+  <script>
+    const map = {
+      v1: "../originals/01-leo-start-your-engines.png",
+      v2: "../originals/02-leo-race-on-over.png",
+      v3: "../originals/03-leo-ready-set-go.png",
+      v4: "../originals/04-leo-need-speed.png",
+    };
+    const key = new URLSearchParams(location.search).get("v") || "v1";
+    document.getElementById("card").src = map[key] || map.v1;
+  </script>
+</body>
+</html>

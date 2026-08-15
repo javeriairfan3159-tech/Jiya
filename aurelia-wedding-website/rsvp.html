@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSVP | Elena & Matteo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">E &amp; M</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="details.html">The Day</a></li>
+      <li><a href="travel.html">Travel</a></li>
+      <li><a href="info.html">Info</a></li>
+    </ul>
+    <a class="nav-cta" href="rsvp.html">RSVP</a>
+  </header>
+
+  <header class="page-hero rsvp">
+    <p class="eyebrow">Kindly reply by 1 September 2026</p>
+    <h1>RSVP</h1>
+    <p class="lede">We have a seat, a plate, and a late song saved for you. In Canva, connect this form to Canva Sheets or replace the button with your Google Form / The Knot link.</p>
+  </header>
+
+  <main class="section">
+    <form class="form" action="#" method="post">
+      <label>Full name
+        <input type="text" name="name" placeholder="Elena Rossi" required />
+      </label>
+      <label>Email
+        <input type="email" name="email" placeholder="you@email.com" required />
+      </label>
+      <label>Will you join us?
+        <select name="attending">
+          <option>Joyfully attends</option>
+          <option>Regretfully declines</option>
+        </select>
+      </label>
+      <label>Number of guests in your party
+        <select name="guests">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </label>
+      <label>Meal
+        <select name="meal">
+          <option>Herb roast (standard)</option>
+          <option>Vegetarian</option>
+          <option>Child’s plate</option>
+        </select>
+      </label>
+      <label>Allergies or notes
+        <textarea name="notes" placeholder="Tell us anything we should know."></textarea>
+      </label>
+      <label>A song that will get you on the floor
+        <input type="text" name="song" placeholder="Optional" />
+      </label>
+      <button class="btn btn-olive" type="submit">Send RSVP</button>
+    </form>
+    <p class="tiny center" style="margin-top:1.4rem">Template note: this form is a visual RSVP. Buyers should link it to Canva’s form, Google Forms, Zola, or The Knot before publishing.</p>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">Elena &amp; Matteo</p>
+    <p class="tiny">We cannot wait to see you in October.</p>
+  </footer>
+</body>
+</html>

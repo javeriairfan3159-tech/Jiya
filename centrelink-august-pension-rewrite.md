@@ -26,6 +26,68 @@ Use this (GREAT → BREAKING, BIG → HIDDEN):
 🚨 GREAT NEWS FOR AUSTRALIAN PENSIONERS : 3 HIDDEN August Changes Australian Pensioners MUST Know NOW!
 ```
 
+### Paste this with the BREAKING / HIDDEN title
+
+**Title**
+
+```
+🚨 BREAKING NEWS FOR AUSTRALIAN PENSIONERS : 3 HIDDEN August Changes Australian Pensioners MUST Know NOW!
+```
+
+**3 hashtags (title ke neeche)**
+
+```
+#australianpensioners #centrelink #agepension
+```
+
+**Tags (Studio → Show more → Tags)**
+
+```
+age pension, age pension 2026, age pension august 2026, breaking news australian pensioners, hidden centrelink changes, centrelink, centrelink update, centrelink changes august, australian pensioners, age pension work bonus, work bonus, income free area, age pension asset test, asset test thresholds, part pension, full age pension, mygov, mygov centrelink, services australia, can i work on age pension, government payments australia, retirement australia, seniors australia, cost of living, pension payment, australia news, august update
+```
+
+**Description**
+
+```
+🚨 BREAKING NEWS FOR AUSTRALIAN PENSIONERS THIS AUGUST — 3 HIDDEN Surprises You Need to Know!
+
+August has brought several important Centrelink and Age Pension updates that Australian pensioners need to know about. In this video, we break down 3 HIDDEN August changes that could affect your income, work earnings, assets, and Age Pension payment.
+
+If you receive the Age Pension, do casual or part-time work, or have savings and other assets, these Centrelink updates could be especially important for you.
+
+We'll explain the changes in simple language, who may benefit, what the new rules could mean for your payment, and what you should check through your Centrelink and myGov accounts.
+
+✅ In this video you'll learn:
+
+• The first major August update affecting Australian pensioners
+• 3 hidden Centrelink Age Pension changes you need to know now
+• How the income-free area could affect your pension ($226 single / $396 couple)
+• How the Work Bonus may help pensioners who continue working (up to $460 a fortnight)
+• How changes to asset test thresholds could affect your payment
+• New full-rate asset limits: $333,000 · $499,000 · $600,000 · $766,000
+• Who may benefit from the updated rules, including part-pensioners
+• What you should check with Centrelink and myGov
+• Practical steps to help you avoid missing potential entitlements
+
+If you're receiving the Age Pension, Centrelink payments, or planning for retirement, make sure you watch until the end and check how these August changes may apply to your own circumstances.
+
+🔔 Subscribe for the latest Australian pension news, Centrelink updates, Age Pension changes, retirement information, and Australian Government payment updates.
+
+⚠️ Disclaimer: This video is for general informational purposes only and is based on publicly available information. Individual circumstances vary, and eligibility and payment amounts depend on your personal situation. Always verify your current eligibility, payment details, and applicable rules through official Australian Government and Services Australia sources before making financial decisions.
+
+⏱️ TIMESTAMPS
+
+00:00 Introduction
+00:38 August Brings Hidden News for Pensioners
+02:05 Surprise #1 Explained
+04:55 Surprise #2 — The Work Bonus
+07:45 Surprise #3 — Asset Test Changes
+10:15 Who Could Benefit the Most
+11:35 Important Tips Before You Act
+
+#AustralianPension #Centrelink #AgePension #Australia #Pensioners #Retirement #AugustUpdate #GovernmentPayments #SeniorBenefits #CostOfLiving #AustraliaNews #CentrelinkUpdate #RetirementPlanning #Seniors #financeaustralia #WorkBonus #myGov #AgePension2026 #AustralianPensioners
+```
+
 **Use this title (full SEO rewrite)**
 
 ```

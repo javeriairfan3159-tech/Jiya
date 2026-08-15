@@ -22,6 +22,7 @@ Folder: https://www.canva.com/folder/FAHSY-oWEm4
 | File | Open |
 | --- | --- |
 | **5-page wedding website — sell this** | https://www.canva.com/d/OwMjO0Nnahc1FP9 |
+| Imported 6-page Canva website (HTML) | https://www.canva.com/d/uvYZXUUTxxYx5sL |
 | Save the date card | https://www.canva.com/d/yeOnb2qLS9Qrj2x |
 | Alternate save the date | https://www.canva.com/d/krYRorEKYGIJKWw |
 | RSVP banner | https://www.canva.com/d/D56LnYG3aU8HtEG |

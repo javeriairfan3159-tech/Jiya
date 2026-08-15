@@ -12,26 +12,30 @@ Do **not** put Cars, Lightning McQueen, Mater, Pixar, Disney, Radiator Springs, 
 
 ---
 
-## Title (paste this) — 74 characters
+## Title (paste this) — competitor formula
+
+Same comma style as the competitor (`Theme Invitation, Birthday Invitation, Hook Invitation, Kids Birthday Invitation, Editable Canva Template`). Movie/character names swapped so Etsy does not take the listing down.
 
 ```
-Race Car Birthday Invitation, Printable Ready Set Go Racing 5x7 Boy Invite
+Race Car Birthday Invitation, Birthday Invitation, Racing Party Invitation, Kids Birthday Invitation, Editable Canva Template
 ```
 
-Mobile preview (first ~40 characters): `Race Car Birthday Invitation, Printable`
+125 / 140 characters. Mobile preview: `Race Car Birthday Invitation, Birthday I`
 
-### Backup titles (if the first is taken in your shop)
-
-```
-Race Car Birthday Invitation, Ready Set Go Checkered Flag Party Invite 5x7
-```
+### Same formula, this card’s hook (Ready Set Go)
 
 ```
-Racing Birthday Invitation, Printable Race Car Party Invite, Boy 5th Birthday
+Race Car Birthday Invitation, Birthday Invitation, Ready Set Go Invitation, Kids Birthday Invitation, Editable Canva Template
+```
+
+### Extra backups
+
+```
+Race Car Birthday Invitation, Birthday Invitation, Checkered Flag Invitation, Kids Birthday Invitation, Editable Canva Template
 ```
 
 ```
-Race Car Invitation, Printable 5x7 Racing Birthday Invite, Custom Name Boy
+Race Car Birthday Invitation, Birthday Invitation, Red Race Car Invitation, Kids Birthday Invitation, Editable Canva Template
 ```
 
 ---
@@ -53,8 +57,8 @@ Paste each tag in its own Etsy tag slot. Do not put the full title in a tag.
 | 9 | `red race car invite` | 19 |
 | 10 | `printable invite 5x7` | 20 |
 | 11 | `custom name invite` | 18 |
-| 12 | `toddler boy party` | 17 |
-| 13 | `5th birthday invite` | 19 |
+| 12 | `canva template` | 14 |
+| 13 | `editable template` | 17 |
 
 ---
 
@@ -63,42 +67,35 @@ Paste each tag in its own Etsy tag slot. Do not put the full title in a tag.
 First two lines are the search snippet. Keep them exactly.
 
 ```
-Printable race car birthday invitation for a boy's racing party. Ready Set Go 5x7 digital invite with instant download.
+Race car birthday invitation, kids birthday invitation, editable Canva template. Printable racing party invite with instant download.
 
 Ready. Set. Go — his birthday just took the lead.
 
-This racing birthday invitation is built to beat the usual race-car listings: a championship shield with the child’s name, a giant 3D age number, original cartoon race cars on a sunset desert highway, checkered flags, and a clean asphalt details panel that still reads on a phone thumbnail.
+This racing birthday invitation is an editable Canva template built to beat the usual race-car listings: a championship shield with the child’s name, a giant 3D age number, original cartoon race cars on a sunset desert highway, checkered flags, and a clean asphalt details panel that still reads on a phone thumbnail.
 
 WHAT YOU GET
-• 1 printable race car birthday invitation (5x7 inches)
-• High-resolution files for home or shop printing (300 DPI JPEG + 600 DPI PNG)
-• Digital invitation — instant download after purchase
-• Layout sized for standard 5x7 invitation cardstock
+• 1 race car birthday invitation — editable Canva template
+• Kids birthday invitation sized for 5x7 cardstock
+• Instant download digital invitation — edit name, age, date, time, RSVP
+• Print at home or any print shop
 
-PERSONALIZATION
-This is a custom name invite. In the personalization box, send:
-1. Child’s name (sample shows LEO)
-2. Age (sample shows turning 5 — any age available)
-3. Date, time, and venue
-4. RSVP name and phone
-
-You will receive a printable 5x7 racing invitation, ready to print or text to guests.
+HOW TO EDIT
+After purchase you get a Canva link. Open in Canva (free account works), tap the text, type your details, download as PDF or PNG. No software to install.
 
 PERFECT FOR
-• Race car birthday / racing party
-• Ready Set Go 5th birthday (or any age)
-• Checkered flag party and red race car invite
-• Toddler boy party, turning 5 invitation, custom name invite
-• Printable invite 5x7 for home printers or a local print shop
+• Race car birthday invitation / racing party invitation
+• Kids birthday invitation and turning 5 invitation
+• Checkered flag party, red race car invite, Ready Set Go invite
+• Custom name invite, printable invite 5x7, editable template
 
 WHY PARENTS PICK THIS DESIGN
 • Original race-car artwork (not a movie still)
 • Championship-shield name so the listing photo looks premium
 • Date, place, and time in three clear columns — easy to read
-• Instant download digital invitation — no shipping wait
+• Editable Canva template — change the name in minutes
 
 HOW TO PRINT
-Print on white or gloss 5x7 cardstock at Walgreens, Staples, Office Depot, a local print shop, or at home. Colors may vary slightly by printer. This is a digital invitation — no physical card is mailed.
+Download from Canva and print on white or gloss 5x7 cardstock at Walgreens, Staples, Office Depot, a local print shop, or at home. Colors may vary slightly by printer. This is a digital invitation — no physical card is mailed.
 
 PLEASE NOTE
 • Digital file only, instant download
@@ -107,7 +104,7 @@ PLEASE NOTE
 
 Questions before you buy? Message me the name, age, and date — I reply quickly.
 
-race car birthday invitation, racing invitation, ready set go invite, printable 5x7 boy birthday invite, checkered flag party, turning 5 invitation, red race car invite, digital invitation, instant download, custom name invite, toddler boy party, 5th birthday invite, printable invite 5x7
+race car birthday invitation, birthday invitation, racing party invitation, kids birthday invitation, editable Canva template, ready set go invite, checkered flag party, turning 5 invitation, red race car invite, digital invitation, instant download, custom name invite, printable invite 5x7, canva template
 ```
 
 ---

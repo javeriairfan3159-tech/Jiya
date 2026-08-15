@@ -10,7 +10,23 @@
 
 ## YouTube Studio pack (copy-paste)
 
-**Use this title**
+**Minimal CTR title (1–2 word swap from original)**
+
+Original: `🚨 GREAT NEWS FOR AUSTRALIAN PENSIONERS : 3 BIG August Changes Australian Pensioners MUST Know NOW!`
+
+Use this (GREAT → BREAKING, BIG → HIDDEN):
+
+```
+🚨 BREAKING NEWS FOR AUSTRALIAN PENSIONERS : 3 HIDDEN August Changes Australian Pensioners MUST Know NOW!
+```
+
+1-word-only backup (BIG → HIDDEN):
+
+```
+🚨 GREAT NEWS FOR AUSTRALIAN PENSIONERS : 3 HIDDEN August Changes Australian Pensioners MUST Know NOW!
+```
+
+**Use this title (full SEO rewrite)**
 
 ```
 Age Pension August 2026: 3 Centrelink Changes Australian Pensioners Must Know

@@ -40,25 +40,11 @@ Race Car Birthday Invitation, Birthday Invitation, Red Race Car Invitation, Kids
 
 ---
 
-## Tags (13/13) — each 20 characters max
+## Tags (13/13) — paste this (comma separated)
 
-Paste each tag in its own Etsy tag slot. Do not put the full title in a tag.
-
-| # | Tag | Chars |
-| --- | --- | ---: |
-| 1 | `race car birthday` | 17 |
-| 2 | `racing invitation` | 17 |
-| 3 | `boy birthday invite` | 19 |
-| 4 | `ready set go invite` | 19 |
-| 5 | `checkered flag party` | 20 |
-| 6 | `turning 5 invitation` | 20 |
-| 7 | `instant download` | 16 |
-| 8 | `digital invitation` | 18 |
-| 9 | `red race car invite` | 19 |
-| 10 | `printable invite 5x7` | 20 |
-| 11 | `custom name invite` | 18 |
-| 12 | `canva template` | 14 |
-| 13 | `editable template` | 17 |
+```
+race car birthday, racing invitation, boy birthday invite, ready set go invite, checkered flag party, turning 5 invitation, instant download, digital invitation, red race car invite, printable invite 5x7, custom name invite, canva template, editable template
+```
 
 ---
 

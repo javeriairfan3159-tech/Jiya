@@ -31,7 +31,17 @@ Paste-ready title, tags, and description: [`etsy/LISTING.md`](etsy/LISTING.md)
 
 Buyer PDF copy: [`etsy/BUYER-INSTRUCTIONS.md`](etsy/BUYER-INSTRUCTIONS.md)
 
-## Canva folder
+## Canva files (already in your account)
 
-Designs for this product live in Canva folder **Aurelia Wedding Website - Etsy Template**:
-https://www.canva.com/folder/FAHSYric_2Y
+Folder: [Aurelia Wedding Website - Etsy Template](https://www.canva.com/folder/FAHSYric_2Y)
+
+| File | Open in Canva |
+| --- | --- |
+| **Wedding website (6 pages) — sell this** | https://www.canva.com/d/Nb9zvlx77lDPS0e |
+| 6-page presentation layout (listing mockups / extra template) | https://www.canva.com/d/scK5Hj4Kq9TUq8X |
+| Buyer instructions Doc (export as PDF for Etsy) | https://www.canva.com/d/rfoLToOzhP1IOqj |
+| Etsy thumbnail | https://www.canva.com/d/rJzcK-2fkxUOC79 |
+| What's included listing graphic | https://www.canva.com/d/oohcm4c3HmCTvqj |
+| Alternate Pinterest pin | https://www.canva.com/d/yGCRViYJ01fkiYy |
+
+Before listing: open the website → Share → **Template link** (anyone with the link can use as template). Paste that URL into `etsy/BUYER-INSTRUCTIONS.md` in place of the edit link.

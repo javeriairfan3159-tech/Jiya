@@ -11,7 +11,9 @@ Thank you for your purchase. This is a Canva-editable wedding website. No coding
 ## Template link
 
 CANVA TEMPLATE LINK:
-[PASTE YOUR CANVA TEMPLATE URL HERE]
+https://www.canva.com/d/Nb9zvlx77lDPS0e
+
+Seller step before listing: in Canva, open this file → Share → Template link, then replace the URL above with that template link so buyers get their own copy.
 
 Click the link → Use template → the site copies into your Canva account.
 

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leo’s Racing Birthday Invite · Asphalt Gold · 5×7</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Great+Vibes&family=Oswald:wght@500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 5in;
+      height: 7in;
+      overflow: hidden;
+      background: #111;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    @page { size: 5in 7in; margin: 0; }
+
+    .card {
+      width: 5in;
+      height: 7in;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 18%, #3f3f46 0%, transparent 42%),
+        repeating-linear-gradient(90deg, #1c1917 0 2px, #292524 2px 4px);
+      color: #fff;
+    }
+
+    .check {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 0.30in;
+      background: repeating-conic-gradient(#0a0a0a 0% 25%, #fafafa 0% 50%) 0 0 / 0.15in 0.15in;
+      z-index: 5;
+    }
+    .check.top { top: 0; }
+    .check.bottom { bottom: 0; height: 0.36in; }
+
+    .swoosh {
+      position: absolute;
+      left: -0.4in;
+      right: -0.4in;
+      height: 0.22in;
+      background: linear-gradient(90deg, #991b1b, #ef4444 40%, #f59e0b 70%, #ef4444);
+      z-index: 4;
+      box-shadow: 0 0 0.12in rgba(239, 68, 68, .45);
+    }
+    .swoosh.a { top: 0.42in; transform: rotate(-2.5deg); }
+    .swoosh.b { top: 3.42in; transform: rotate(2deg); }
+
+    .hero {
+      position: absolute;
+      top: 0.52in;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 6;
+    }
+
+    .kicker {
+      font-family: "Black Ops One", sans-serif;
+      font-size: 22pt;
+      letter-spacing: 0.04em;
+      color: #fff;
+      text-shadow: 0.03in 0.03in 0 #b91c1c, 0 0 0.12in rgba(0,0,0,.55);
+    }
+
+    .five {
+      margin: 0.04in auto 0;
+      width: 1.55in;
+      height: 1.55in;
+      display: grid;
+      place-items: center;
+      font-family: "Black Ops One", sans-serif;
+      font-size: 92pt;
+      line-height: 1;
+      color: #e11d48;
+      -webkit-text-stroke: 0.012in #fff;
+      text-shadow: 0 0.04in 0 #7f1d1d;
+      background:
+        linear-gradient(#fff 0, #fff 0) 50% 42% / 0.08in 0.7in no-repeat,
+        repeating-linear-gradient(180deg, transparent 0 8px, #fff 8px 10px);
+      background-clip: text;
+      filter: drop-shadow(0 6px 0 #111);
+    }
+
+    .cars {
+      position: absolute;
+      top: 1.55in;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4.85in;
+      height: 1.85in;
+      object-fit: contain;
+      z-index: 3;
+      mix-blend-mode: multiply;
+      filter: contrast(1.05) saturate(1.15) drop-shadow(0 8px 10px rgba(0,0,0,.45));
+    }
+
+    .panel {
+      position: absolute;
+      left: 0.18in;
+      right: 0.18in;
+      top: 3.58in;
+      bottom: 0.48in;
+      background: rgba(9, 9, 11, 0.78);
+      border: 0.018in solid #d4af37;
+      border-radius: 0.08in;
+      text-align: center;
+      padding: 0.14in 0.12in 0.1in;
+      z-index: 6;
+    }
+
+    .cta {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      font-size: 11pt;
+    }
+
+    .name {
+      font-family: "Great Vibes", cursive;
+      font-size: 48pt;
+      color: #f5d76e;
+      line-height: 0.95;
+      margin: 0.02in 0 0.02in;
+      text-shadow: 0 2px 0 #7c5c10;
+    }
+
+    .age {
+      font-family: "Oswald", sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      font-size: 13pt;
+      margin-bottom: 0.12in;
+    }
+
+    .pills {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.12in;
+      margin-bottom: 0.12in;
+    }
+    .pill {
+      font-family: "Oswald", sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      font-size: 12pt;
+      padding: 0.06in 0.16in;
+      border-radius: 999px;
+      border: 0.015in solid #d4af37;
+    }
+    .pill.red { background: #dc2626; }
+    .pill.gold { background: #eab308; color: #111; }
+
+    .lights {
+      width: 0.16in;
+      display: flex;
+      flex-direction: column;
+      gap: 0.03in;
+    }
+    .lights i {
+      display: block;
+      width: 0.12in;
+      height: 0.12in;
+      border-radius: 50%;
+    }
+    .lights .r { background: #ef4444; }
+    .lights .y { background: #facc15; }
+    .lights .g { background: #22c55e; }
+
+    .where, .rsvp {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .where { font-size: 10pt; color: #e4e4e7; margin-bottom: 0.05in; }
+    .rsvp { font-size: 11pt; color: #f5d76e; }
+
+    .cone {
+      position: absolute;
+      bottom: 0.34in;
+      width: 0.34in;
+      z-index: 7;
+    }
+    .cone.left { left: 0.18in; }
+    .cone.right { right: 0.18in; }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <div class="check top"></div>
+    <div class="swoosh a"></div>
+    <div class="swoosh b"></div>
+
+    <div class="hero">
+      <p class="kicker">START YOUR ENGINES!</p>
+    </div>
+
+    <img class="cars" src="../originals/cars-cluster.png" alt="Original racing cars" />
+
+    <div class="panel">
+      <p class="cta">JOIN US TO CELEBRATE</p>
+      <h1 class="name">Leo’s</h1>
+      <p class="age">5TH BIRTHDAY</p>
+      <div class="pills">
+        <span class="pill red">JUN 14</span>
+        <span class="lights" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></span>
+        <span class="pill gold">4:00 PM</span>
+      </div>
+      <p class="where">123 Speedway Lane, Any City</p>
+      <p class="rsvp">RSVP to Mom 555-123-4567</p>
+    </div>
+
+    <svg class="cone left" viewBox="0 0 40 52" aria-hidden="true">
+      <polygon points="20,1 38,46 2,46" fill="#ea580c" />
+      <rect x="1" y="45" width="38" height="6" rx="1" fill="#1c1917" />
+      <rect x="10" y="30" width="20" height="5" fill="#fff" />
+      <rect x="13" y="16" width="14" height="4.5" fill="#fff" />
+    </svg>
+    <svg class="cone right" viewBox="0 0 40 52" aria-hidden="true">
+      <polygon points="20,1 38,46 2,46" fill="#ea580c" />
+      <rect x="1" y="45" width="38" height="6" rx="1" fill="#1c1917" />
+      <rect x="10" y="30" width="20" height="5" fill="#fff" />
+      <rect x="13" y="16" width="14" height="4.5" fill="#fff" />
+    </svg>
+    <div class="check bottom"></div>
+  </article>
+</body>
+</html>

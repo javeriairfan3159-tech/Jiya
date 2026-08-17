@@ -5,17 +5,29 @@ cd "$ROOT"
 python3 generate_slides.py
 mkdir -p images video
 CHROME="${CHROME:-google-chrome}"
-i=0
+USER_DATA="$(mktemp -d /tmp/chrome-etsy-XXXXXX)"
+PORT=9333
 for html in slides/*.html; do
-  i=$((i + 1))
   base="$(basename "$html" .html)"
   png="images/${base}.png"
   jpg="images/${base}.jpg"
+  if [[ -f "$jpg" ]]; then
+    echo "skip $base (jpg exists)"
+    continue
+  fi
   echo "Rendering $base"
-  "$CHROME" --headless=new --disable-gpu --hide-scrollbars --no-sandbox \
+  PORT=$((PORT + 1))
+  timeout 18s "$CHROME" --headless=new --disable-gpu --hide-scrollbars --no-sandbox \
+    --user-data-dir="$USER_DATA" \
+    --remote-debugging-port="$PORT" \
+    --disable-background-networking --disable-sync \
     --force-device-scale-factor=1 --window-size=2000,2000 \
-    --run-all-compositor-stages-before-draw --virtual-time-budget=8000 \
-    --screenshot="$png" "file://${ROOT}/${html}"
+    --virtual-time-budget=2500 \
+    --screenshot="$png" "file://${ROOT}/${html}" || true
+  if [[ ! -f "$png" ]]; then
+    echo "FAILED $base" >&2
+    exit 1
+  fi
   ffmpeg -y -hide_banner -loglevel error -i "$png" -q:v 3 "$jpg"
   echo "saved $jpg"
 done
@@ -26,5 +38,5 @@ ffmpeg -y -hide_banner -loglevel error \
   -vf "scale=1080:1080:force_original_aspect_ratio=decrease,pad=1080:1080:(ow-iw)/2:(oh-ih)/2,fps=30,format=yuv420p" \
   -c:v libx264 -pix_fmt yuv420p -movflags +faststart \
   video/listing-video.mp4
-ls -lh images video
+ls -lh images/*.jpg video
 echo "Done"

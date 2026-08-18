@@ -1,0 +1,410 @@
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/fraunces-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/fraunces-800.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  src: url("fonts/fraunces-italic-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/fraunces-italic-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/dmsans-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/dmsans-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/dmsans-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/caveat-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/caveat-700.ttf") format("truetype");
+}
+
+:root {
+  --paper: #f4eee3;
+  --paper-deep: #ece4d4;
+  --ink: #1b2430;
+  --ink-soft: #3a4554;
+  --yellow: #e8b423;
+  --red: #c44536;
+  --blue: #2f6f8f;
+  --line: rgba(27, 36, 48, 0.16);
+  --tile: #fffdf8;
+}
+
+[data-theme="heritage"] {
+  --paper: #f3ebe1;
+  --paper-deep: #e8ddd0;
+  --ink: #2a2318;
+  --ink-soft: #5a4e3e;
+  --yellow: #c45c26;
+  --red: #8c4a32;
+  --blue: #5d6f4f;
+  --line: rgba(42, 35, 24, 0.16);
+  --tile: #fffaf4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 8.5in;
+  height: 11in;
+  overflow: hidden;
+  background: #ddd;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+.poster {
+  width: 8.5in;
+  height: 11in;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255, 255, 255, 0.55), transparent 42%),
+    radial-gradient(circle at 88% 92%, rgba(0, 0, 0, 0.035), transparent 46%),
+    var(--paper);
+  color: var(--ink);
+  position: relative;
+  overflow: hidden;
+}
+
+.poster::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.frame {
+  position: absolute;
+  inset: 0.38in;
+  border: 1.75px solid var(--ink);
+}
+
+.frame-inner {
+  position: absolute;
+  inset: 0.08in;
+  border: 0.75px solid var(--ink);
+  opacity: 0.55;
+}
+
+.spine {
+  position: absolute;
+  top: 0.58in;
+  bottom: 0.58in;
+  left: 0.58in;
+  width: 0.26in;
+  background: var(--yellow);
+}
+
+.page {
+  position: absolute;
+  top: 0.58in;
+  right: 0.58in;
+  bottom: 0.58in;
+  left: 1.02in;
+  display: flex;
+  flex-direction: column;
+  padding: 0.28in 0.32in 0.22in 0.28in;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.18in;
+}
+
+.shapes {
+  display: flex;
+  align-items: center;
+  gap: 0.1in;
+}
+
+.shapes svg {
+  display: block;
+}
+
+.kicker {
+  font-family: "DM Sans", sans-serif;
+  font-size: 9.5pt;
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.title-block {
+  margin-bottom: 0.16in;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 86pt;
+  line-height: 0.84;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.subtitle {
+  display: flex;
+  align-items: baseline;
+  gap: 0.16in;
+  margin-top: 0.04in;
+}
+
+.subtitle em {
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 32pt;
+  color: var(--red);
+  letter-spacing: -0.01em;
+}
+
+.rule {
+  flex: 1;
+  height: 0;
+  border-top: 1.5px solid var(--ink);
+  opacity: 0.28;
+  transform: translateY(-0.08in);
+}
+
+.date-chip {
+  align-self: flex-start;
+  margin: 0.14in 0 0.28in;
+  font-family: "DM Sans", sans-serif;
+  font-size: 9.5pt;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.09in 0.18in 0.08in;
+}
+
+.name-plate {
+  background: var(--yellow);
+  padding: 0.18in 0.22in 0.16in;
+  margin-bottom: 0.22in;
+}
+
+[data-theme="heritage"] .name-plate .label,
+[data-theme="heritage"] .name-plate .value {
+  color: #f6efe6;
+}
+
+.name-plate .label,
+.tile .label,
+.field .label,
+.favorites .label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.name-plate .value {
+  display: block;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  font-size: 48pt;
+  line-height: 0.95;
+  margin-top: 0.04in;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1.15fr 1.35fr 1.7fr;
+  gap: 0.12in;
+  margin-bottom: 0.22in;
+}
+
+.tile {
+  background: var(--tile);
+  border: 1.25px solid var(--ink);
+  padding: 0.14in 0.14in 0.12in;
+  position: relative;
+  min-height: 1.05in;
+}
+
+.tile::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 0.09in;
+}
+
+.tile.age::before { background: var(--red); }
+.tile.grade::before { background: var(--blue); }
+.tile.teacher::before { background: var(--yellow); }
+
+.tile .value {
+  display: block;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 20pt;
+  line-height: 1.08;
+  margin-top: 0.08in;
+  letter-spacing: -0.02em;
+}
+
+.fields {
+  display: grid;
+  gap: 0.14in;
+  margin-bottom: 0.22in;
+}
+
+.field {
+  border-bottom: 1.5px dashed var(--ink);
+  padding: 0.04in 0 0.1in;
+}
+
+.field .value {
+  display: block;
+  font-family: "Caveat", cursive;
+  font-weight: 500;
+  font-size: 26pt;
+  line-height: 1.05;
+  margin-top: 0.02in;
+  color: var(--ink);
+}
+
+.favorites {
+  margin-top: auto;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.08in;
+  margin-top: 0.1in;
+}
+
+.pill {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11pt;
+  font-weight: 500;
+  border: 1.25px solid var(--ink);
+  padding: 0.07in 0.16in 0.06in;
+  background: transparent;
+}
+
+.pill.solid {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.22in;
+  padding-top: 0.12in;
+  border-top: 1.25px solid var(--line);
+}
+
+.footer p {
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13pt;
+  color: var(--ink-soft);
+}
+
+.year-mark {
+  font-family: "DM Sans", sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+/* Blank template state */
+.blank .name-plate .value,
+.blank .field .value {
+  color: transparent;
+  min-height: 0.46in;
+}
+
+.blank .tile .value {
+  color: transparent;
+  min-height: 0.38in;
+  border-bottom: 1.25px dashed rgba(27, 36, 48, 0.35);
+}
+
+.blank .date-chip {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px dashed var(--ink);
+}
+
+.blank .pill,
+.blank .pill.solid {
+  color: transparent;
+  min-width: 1.4in;
+  background: transparent;
+  border: 1.25px dashed var(--ink);
+}
+
+.hint {
+  display: none;
+}
+
+.blank .hint {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 8pt;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: rgba(27, 36, 48, 0.32);
+  margin-top: 0.06in;
+}

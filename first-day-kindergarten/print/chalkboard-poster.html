@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>First Day of Kindergarten — Chalkboard Poster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fredoka:wght@500;700&family=Great+Vibes&family=Nunito:wght@600;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #111; }
+    .page {
+      width: 8.5in;
+      height: 11in;
+      margin: 24px auto;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(255,255,255,0.06), transparent 30%),
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0 1px, transparent 1px 3px),
+        #2a2d31;
+      color: #f6f1e8;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+    }
+    .border {
+      position: absolute;
+      inset: 0.28in;
+      border: 2px dashed rgba(255,255,255,0.78);
+      border-radius: 10px;
+      pointer-events: none;
+    }
+    .inner {
+      height: 100%;
+      padding: 0.42in 0.48in 0.36in;
+      display: flex;
+      flex-direction: column;
+      gap: 0.14in;
+      position: relative;
+    }
+    .bunting { display: flex; justify-content: center; gap: 7px; height: 0.38in; }
+    .flag {
+      width: 0; height: 0;
+      border-left: 11px solid transparent;
+      border-right: 11px solid transparent;
+      border-top: 22px solid var(--c);
+    }
+    .kicker {
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.28em;
+      font-size: 13px;
+    }
+    .headline { display: flex; justify-content: center; gap: 3px; }
+    .headline span {
+      font-family: "Fredoka", sans-serif;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .headline span:nth-child(1) { color: #ff6b5b; }
+    .headline span:nth-child(2) { color: #ffb14a; }
+    .headline span:nth-child(3) { color: #ffe066; }
+    .headline span:nth-child(4) { color: #63e2a8; }
+    .headline span:nth-child(5) { color: #6cbcff; }
+    .headline span:nth-child(6) { color: #8ea2ff; }
+    .headline span:nth-child(7) { color: #b794ff; }
+    .headline span:nth-child(8) { color: #ff8fb8; }
+    .headline span:nth-child(9) { color: #5ee0c5; }
+    .headline span:nth-child(10) { color: #ffb14a; }
+    .headline span:nth-child(11) { color: #6cbcff; }
+    .headline span:nth-child(12) { color: #ff6b5b; }
+    .name {
+      text-align: center;
+      font-family: "Great Vibes", cursive;
+      font-size: 42px;
+      color: #fff;
+      line-height: 1;
+    }
+    .ribbon {
+      align-self: center;
+      background: linear-gradient(#ffe08a, #f0c24d);
+      color: #2b2b2b;
+      font-family: "Nunito", sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      font-size: 12px;
+      padding: 8px 28px;
+      border-radius: 4px;
+    }
+    .row { display: grid; gap: 10px; }
+    .row-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .row-2 { grid-template-columns: 1.05fr 0.95fr; flex: 1; }
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 2px dashed rgba(255,255,255,0.7);
+      border-radius: 14px;
+      padding: 9px 12px 10px;
+      min-height: 68px;
+    }
+    .label {
+      font-family: "Caveat", cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: #d9d2c5;
+    }
+    .value {
+      font-family: "Nunito", sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+    .stack { display: flex; flex-direction: column; gap: 10px; }
+    .fav .item {
+      display: grid;
+      grid-template-columns: 18px 62px 1fr;
+      gap: 6px;
+      margin-top: 7px;
+      font-family: "Nunito", sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .banner {
+      margin-top: auto;
+      background: #e07a9a;
+      color: #fff;
+      border-radius: 12px;
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      padding: 11px 12px;
+      font-size: 15px;
+    }
+    .footer {
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      font-weight: 800;
+      color: #cfc6ba;
+    }
+    .doodle { position: absolute; font-size: 22px; }
+    .pencil { top: 0.72in; left: 0.42in; }
+    .apple { top: 0.72in; right: 0.46in; }
+    .books { bottom: 0.92in; left: 0.42in; }
+    .pack { bottom: 0.92in; right: 0.46in; }
+    @media print {
+      html, body { background: #2a2d31; }
+      .page { margin: 0; box-shadow: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      @page { size: letter portrait; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <div class="border"></div>
+    <div class="doodle pencil">✏️</div>
+    <div class="doodle apple">🍎</div>
+    <div class="doodle books">📚</div>
+    <div class="doodle pack">🎒</div>
+    <div class="inner">
+      <div class="bunting">
+        <div class="flag" style="--c:#ff6b5b"></div>
+        <div class="flag" style="--c:#ffb14a"></div>
+        <div class="flag" style="--c:#ffe066"></div>
+        <div class="flag" style="--c:#63e2a8"></div>
+        <div class="flag" style="--c:#6cbcff"></div>
+        <div class="flag" style="--c:#b794ff"></div>
+        <div class="flag" style="--c:#ff8fb8"></div>
+      </div>
+      <div class="kicker">FIRST DAY OF</div>
+      <div class="headline" aria-label="KINDERGARTEN">
+        <span>K</span><span>I</span><span>N</span><span>D</span><span>E</span><span>R</span><span>G</span><span>A</span><span>R</span><span>T</span><span>E</span><span>N</span>
+      </div>
+      <div class="name">Emma Rose</div>
+      <div class="ribbon">LET THE ADVENTURE BEGIN!</div>
+      <div class="row row-3">
+        <div class="card"><div class="label">Today is:</div><div class="value">AUGUST 18, 2026</div></div>
+        <div class="card"><div class="label">I am:</div><div class="value">5 YEARS OLD</div></div>
+        <div class="card"><div class="label">My school:</div><div class="value">SUNSHINE ELEMENTARY</div></div>
+      </div>
+      <div class="row row-2">
+        <div class="stack">
+          <div class="card"><div class="label">My teacher is:</div><div class="value">MS. RIVERA</div></div>
+          <div class="card"><div class="label">I love:</div><div class="value">Dinosaurs, painting &amp; the playground</div></div>
+          <div class="card"><div class="label">When I grow up I want to be:</div><div class="value">AN ASTRONAUT 🪐</div></div>
+        </div>
+        <div class="card fav">
+          <div class="label">My favorite things</div>
+          <div class="item"><span>🍕</span><span>Food</span><span>Pizza</span></div>
+          <div class="item"><span>🎨</span><span>Color</span><span>Rainbow blue</span></div>
+          <div class="item"><span>📖</span><span>Book</span><span>Picture books</span></div>
+          <div class="item"><span>⚽</span><span>Activity</span><span>Soccer</span></div>
+          <div class="item"><span>⭐</span><span>Friend</span><span>Mia</span></div>
+        </div>
+      </div>
+      <div class="banner">♥  I AM SO EXCITED FOR THIS YEAR!  ♥</div>
+      <div class="footer">A MEMORY TO KEEP FOREVER</div>
+    </div>
+  </article>
+</body>
+</html>

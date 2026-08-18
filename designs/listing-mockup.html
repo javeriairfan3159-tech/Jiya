@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Listing Mockup — First Day of School Sign</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 2000px;
+      height: 2000px;
+      overflow: hidden;
+      background: #d9cbb8;
+    }
+    .stage {
+      width: 2000px;
+      height: 2000px;
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.28), transparent 50%),
+        radial-gradient(ellipse at 80% 90%, rgba(80,50,20,.12), transparent 46%),
+        #dccdb8;
+      position: relative;
+    }
+    .label {
+      position: absolute;
+      top: 92px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: Georgia, serif;
+      color: #1b2430;
+    }
+    .label .eyebrow {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      opacity: 0.55;
+      margin-bottom: 10px;
+    }
+    .label h1 {
+      font-size: 64px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+    .pair {
+      position: absolute;
+      top: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1680px;
+      display: flex;
+      justify-content: center;
+      gap: 56px;
+    }
+    .card {
+      width: 720px;
+      height: 1440px;
+      background: #fff;
+      box-shadow: 0 28px 80px rgba(40, 24, 8, 0.28);
+      overflow: hidden;
+    }
+    .card img {
+      width: 720px;
+      height: 1440px;
+      display: block;
+      object-fit: cover;
+    }
+    .caption {
+      position: absolute;
+      bottom: 88px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #1b2430;
+      opacity: 0.55;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="label">
+      <div class="eyebrow">Printable 8.5 × 11</div>
+      <h1>The First Chapter</h1>
+    </div>
+    <div class="pair">
+      <div class="card"><img src="exports/primary-filled.png" alt="Primary Academy colorway" /></div>
+      <div class="card"><img src="exports/heritage-filled.png" alt="Heritage colorway" /></div>
+    </div>
+    <p class="caption">Two colorways · Gender-neutral · Photo-ready type</p>
+  </div>
+</body>
+</html>

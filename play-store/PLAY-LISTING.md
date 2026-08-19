@@ -16,6 +16,24 @@ Play Console → Store listing → Graphic assets → **Feature graphic** → Ad
 
 The banner title is **Travel Planner** (JIYA removed).
 
+---
+
+## Phone screenshots (required, 2–8)
+
+Play Console → Store listing → Graphic assets → **Phone screenshots** → Add assets.
+
+Upload these **8 JPEGs in this order** (9:16, 2160×3840, under 8 MB, no Jiya):
+
+1. `play-store/screenshots/out/01-ai.jpg` — Travel AI Assistant
+2. `play-store/screenshots/out/02-explore.jpg` — Explore Places
+3. `play-store/screenshots/out/03-attractions.jpg` — Landmarks
+4. `play-store/screenshots/out/04-mountains.jpg` — Mountains
+5. `play-store/screenshots/out/05-wallet.jpg` — Wallet & Expenses
+6. `play-store/screenshots/out/06-split.jpg` — Split bill & converter
+7. `play-store/screenshots/out/07-notes.jpg` — Notes & Reminders
+8. `play-store/screenshots/out/08-profile.jpg` — Profile / badges
+
+
 Limits: **title 30**, **short description 80**, **full description 4000**.
 
 ---

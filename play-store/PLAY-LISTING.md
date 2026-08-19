@@ -4,11 +4,17 @@ Copy-paste into Play Console → Grow users → Store presence → Main store li
 
 ## Feature graphic (required) — 1024 × 500
 
-Upload `play-store/feature-graphic.png` (PNG, 1024×500, under 15 MB).
+Play Console only accepts **1024 × 500**. Upload this file:
 
-Play Console → Store listing → Graphic assets → **Feature graphic** → Add assets.
+- `play-store/feature-graphic.png` (1024×500, sharpened from 4K)
 
-Do not add extra text, Play badges, or ratings on this image. Google crops the edges on some devices, so the title and phones already sit inside the safe area.
+Ultra HD 4K master (keep for ads/other use):
+
+- `play-store/feature-graphic-4k.png` — **4096 × 2000**
+
+Play Console → Store listing → Graphic assets → **Feature graphic** → Add assets → `feature-graphic.png`
+
+The banner title is **Travel Planner** (JIYA removed).
 
 Limits: **title 30**, **short description 80**, **full description 4000**.
 

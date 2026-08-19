@@ -2,6 +2,14 @@
 
 Copy-paste into Play Console → Grow users → Store presence → Main store listing.
 
+## Feature graphic (required) — 1024 × 500
+
+Upload `play-store/feature-graphic.png` (PNG, 1024×500, under 15 MB).
+
+Play Console → Store listing → Graphic assets → **Feature graphic** → Add assets.
+
+Do not add extra text, Play badges, or ratings on this image. Google crops the edges on some devices, so the title and phones already sit inside the safe area.
+
 Limits: **title 30**, **short description 80**, **full description 4000**.
 
 ---

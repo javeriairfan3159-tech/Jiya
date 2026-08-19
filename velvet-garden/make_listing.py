@@ -123,6 +123,56 @@ def trio_listing() -> None:
     rgb.save(EXPORTS / "listing-mockup.png", optimize=True)
 
 
+def blush_lifestyle() -> None:
+    scene = Image.open(ASSETS / "blush-mockup-scene.png").convert("RGB")
+    scene = scene.resize((2000, 2000), Image.Resampling.LANCZOS)
+    card = load_card("blush-garden")
+    placed = rotate_card(card, -2.0, 1040)
+    x = (scene.width - placed.width) // 2 + 8
+    y = (scene.height - placed.height) // 2 - 10
+    base = scene.convert("RGBA")
+    base.alpha_composite(placed, (x, y))
+    out = ImageEnhance.Contrast(base.convert("RGB")).enhance(1.03)
+    out.save(LISTING / "06-lifestyle-blush-2000.jpg", quality=94, subsampling=0)
+    out.save(EXPORTS / "listing-lifestyle-blush.png", optimize=True)
+
+
+def blush_trio() -> None:
+    canvas = Image.new("RGB", (2000, 2000), (247, 221, 228))
+    noise = Image.effect_noise((2000, 2000), 14).convert("L")
+    tint = Image.new("RGB", (2000, 2000), (236, 196, 208))
+    canvas = Image.blend(canvas, tint, 0.35)
+    canvas = Image.composite(canvas, ImageEnhance.Brightness(canvas).enhance(1.06), noise.point(lambda p: p * 0.28))
+
+    cascade = rotate_card(load_card("blush"), -10.5, 980)
+    blank = rotate_card(load_card("blush-blank"), 10.5, 980)
+    hero = rotate_card(load_card("blush-garden"), -1.0, 1120)
+
+    base = canvas.convert("RGBA")
+    base.alpha_composite(cascade, (50, 430))
+    base.alpha_composite(blank, (1030, 410))
+    base.alpha_composite(hero, (430, 290))
+
+    draw = ImageDraw.Draw(base)
+    cinzel = ImageFont.truetype(str(FONTS / "Cinzel.ttf"), 42)
+    script = ImageFont.truetype(str(FONTS / "GreatVibes-Regular.ttf"), 86)
+    corm = ImageFont.truetype(str(FONTS / "CormorantGaramond.ttf"), 28)
+
+    title = "VELVET GARDEN"
+    tw = draw.textlength(title, font=cinzel)
+    draw.text(((2000 - tw) / 2, 78), title, fill=(193, 122, 132), font=cinzel)
+    sub = "blush birthday suite"
+    sw = draw.textlength(sub, font=script)
+    draw.text(((2000 - sw) / 2, 128), sub, fill=(74, 36, 50), font=script)
+    foot = "BLUSH ATELIER  ·  BLUSH GARDEN  ·  WRITE-IN"
+    fw = draw.textlength(foot, font=corm)
+    draw.text(((2000 - fw) / 2, 1880), foot, fill=(139, 85, 96), font=corm)
+
+    rgb = base.convert("RGB")
+    rgb.save(LISTING / "00b-etsy-thumbnail-blush-2000.jpg", quality=94, subsampling=0)
+    rgb.save(EXPORTS / "listing-mockup-blush.png", optimize=True)
+
+
 def square_card(name: str, outfile: str) -> None:
     card = load_card(name)
     canvas = Image.new("RGB", (2000, 2000), card.getpixel((20, 20)))
@@ -137,14 +187,22 @@ def square_card(name: str, outfile: str) -> None:
 
 
 def main() -> None:
-    for name in ("nocturne", "forest", "ivory", "ivory-garden", "ivory-blank"):
-        save_print(name, load_card(name))
-    lifestyle_mockup()
-    ivory_lifestyle()
-    trio_listing()
-    square_card("nocturne", "03-nocturne-square-2000.jpg")
-    square_card("forest", "04-forest-square-2000.jpg")
-    square_card("ivory", "05-ivory-square-2000.jpg")
+    for name in ("nocturne", "forest", "ivory", "ivory-garden", "ivory-blank", "blush", "blush-garden", "blush-blank"):
+        path = EXPORTS / f"{name}.png"
+        if path.exists():
+            save_print(name, load_card(name))
+    if (EXPORTS / "nocturne.png").exists():
+        lifestyle_mockup()
+        ivory_lifestyle()
+        trio_listing()
+        square_card("nocturne", "03-nocturne-square-2000.jpg")
+        square_card("forest", "04-forest-square-2000.jpg")
+        square_card("ivory", "05-ivory-square-2000.jpg")
+    if (EXPORTS / "blush.png").exists():
+        blush_lifestyle()
+        blush_trio()
+        square_card("blush", "07-blush-square-2000.jpg")
+        square_card("blush-garden", "08-blush-garden-square-2000.jpg")
     print("listing + print files ready")
     for p in sorted(LISTING.iterdir()):
         print(f"  {p.name:40} {p.stat().st_size:9}")

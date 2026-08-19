@@ -318,3 +318,47 @@ html, body {
 .ivory-garden .rule::before { left: 0.08in; transform: rotate(45deg); }
 .ivory-garden .name { font-size: 50pt; }
 .ivory-garden .script { font-size: 25pt; }
+
+/* ——— Blush (light pink cascade) ——— */
+.blush {
+  --ink: #4A2432;
+  --foil: #C17A84;
+  --muted: #8B5560;
+  --line: #D4A0A8;
+  background-color: #F7DDE4;
+  background-image: url("../assets/blush-right-cascade-bg.png");
+}
+.blush .copy {
+  top: 0.50in;
+  left: 0.42in;
+  right: 1.72in;
+  bottom: 0.48in;
+  align-items: flex-start;
+  text-align: left;
+}
+.blush .rule { margin-left: 0; }
+.blush .rule::before { left: 0.08in; transform: rotate(45deg); }
+.blush .name { font-size: 52pt; }
+.blush .script { font-size: 26pt; }
+.blush .blank-line,
+.blush .blank-name { margin-left: 0; margin-right: auto; }
+
+/* ——— Blush garden (L-shape florals, light pink) ——— */
+.blush-garden {
+  --ink: #4A2432;
+  --foil: #C17A84;
+  --muted: #8B5560;
+  --line: #D4A0A8;
+  background-color: #F6D9E2;
+  background-image: url("../assets/blush-garden-bg.png");
+}
+.blush-garden .copy {
+  top: 0.48in;
+  right: 0.42in;
+  left: 1.55in;
+  bottom: 1.55in;
+  justify-content: flex-start;
+  padding-top: 0.12in;
+}
+.blush-garden .name { font-size: 56pt; }
+.blush-garden .script { font-size: 28pt; }

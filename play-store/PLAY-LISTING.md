@@ -54,7 +54,24 @@ Upload these **8 JPEGs in this order** (16:9 landscape, **3840×2160**, under 8 
 
 Zip (all 8): `play-store/screenshots-tablet/Play-tablet-7inch-screenshots.zip`
 
-Same files also work for **10-inch tablet screenshots** if Play asks (same 16:9, 3840×2160).
+---
+
+## 10-inch tablet screenshots (optional, up to 8)
+
+Play Console → Store listing → Graphic assets → **10-inch tablet screenshots** → Add assets.
+
+Upload these **8 JPEGs in this order** (16:9 landscape, **5120×2880**, under 8 MB, no Jiya). Each side is between 1,080 px and 7,680 px:
+
+1. `play-store/screenshots-tablet-10inch/out/01-ai.jpg` — Travel AI Assistant
+2. `play-store/screenshots-tablet-10inch/out/02-explore.jpg` — Explore Places
+3. `play-store/screenshots-tablet-10inch/out/03-attractions.jpg` — Landmarks
+4. `play-store/screenshots-tablet-10inch/out/04-mountains.jpg` — Mountains
+5. `play-store/screenshots-tablet-10inch/out/05-wallet.jpg` — Wallet & Expenses
+6. `play-store/screenshots-tablet-10inch/out/06-split.jpg` — Split bill & converter
+7. `play-store/screenshots-tablet-10inch/out/07-notes.jpg` — Notes & Reminders
+8. `play-store/screenshots-tablet-10inch/out/08-profile.jpg` — Profile / badges
+
+Zip (all 8): `play-store/screenshots-tablet-10inch/Play-tablet-10inch-screenshots.zip`
 
 
 Limits: **title 30**, **short description 80**, **full description 4000**.

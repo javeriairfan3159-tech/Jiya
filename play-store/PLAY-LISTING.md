@@ -73,6 +73,44 @@ Upload these **8 JPEGs in this order** (16:9 landscape, **5120×2880**, under 8 
 
 Zip (all 8): `play-store/screenshots-tablet-10inch/Play-tablet-10inch-screenshots.zip`
 
+---
+
+## Chromebook screenshots (4–8)
+
+Play Console → Store listing → Graphic assets → **Chromebook screenshots** → Add assets.
+
+Upload these **8 JPEGs in this order** (16:9 landscape, **3840×2160**, under 8 MB, no Jiya). Each side is between 1,080 px and 7,680 px:
+
+1. `play-store/screenshots-chromebook/out/01-ai.jpg` — Travel AI Assistant
+2. `play-store/screenshots-chromebook/out/02-explore.jpg` — Explore Places
+3. `play-store/screenshots-chromebook/out/03-attractions.jpg` — Landmarks
+4. `play-store/screenshots-chromebook/out/04-mountains.jpg` — Mountains
+5. `play-store/screenshots-chromebook/out/05-wallet.jpg` — Wallet & Expenses
+6. `play-store/screenshots-chromebook/out/06-split.jpg` — Split bill & converter
+7. `play-store/screenshots-chromebook/out/07-notes.jpg` — Notes & Reminders
+8. `play-store/screenshots-chromebook/out/08-profile.jpg` — Profile / badges
+
+Zip (all 8): `play-store/screenshots-chromebook/Play-chromebook-screenshots.zip`
+
+---
+
+## Android XR screenshots (4–8)
+
+Play Console → Store listing → Graphic assets → **Android XR screenshots** → Add assets.
+
+Upload these **8 JPEGs in this order** (16:9 landscape, **3840×2160**, under 15 MB, no Jiya). Each side is between 720 px and 7,680 px:
+
+1. `play-store/screenshots-xr/out/01-ai.jpg` — Travel AI Assistant
+2. `play-store/screenshots-xr/out/02-explore.jpg` — Explore Places
+3. `play-store/screenshots-xr/out/03-attractions.jpg` — Landmarks
+4. `play-store/screenshots-xr/out/04-mountains.jpg` — Mountains
+5. `play-store/screenshots-xr/out/05-wallet.jpg` — Wallet & Expenses
+6. `play-store/screenshots-xr/out/06-split.jpg` — Split bill & converter
+7. `play-store/screenshots-xr/out/07-notes.jpg` — Notes & Reminders
+8. `play-store/screenshots-xr/out/08-profile.jpg` — Profile / badges
+
+Zip (all 8): `play-store/screenshots-xr/Play-android-xr-screenshots.zip`
+
 
 Limits: **title 30**, **short description 80**, **full description 4000**.
 

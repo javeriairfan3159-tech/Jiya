@@ -32,6 +32,6 @@ python3 make_listing.py
 
 ## Listing media
 
-`listing/` — Etsy thumbnails, lifestyle mockups, square card photos, and `LISTING.txt`.
+`listing/` — Etsy thumbnails, lifestyle mockups, square card photos.
 
-Use **`00b-etsy-thumbnail-blush-2000.jpg`** as the thumbnail for the pink listing.
+**Paste-ready SEO:** `listing/ETSY-SEO.md` (title, 13 tags, description, attributes). Thumbnail: `00b-etsy-thumbnail-blush-2000.jpg`.

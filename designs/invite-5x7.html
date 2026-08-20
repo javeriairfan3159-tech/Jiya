@@ -5,199 +5,212 @@
   <title>Moo Moos & Margaritas — 5×7 Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600&family=Pinyon+Script&family=Rye&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body {
-      width: 1500px;
-      height: 2100px;
-      overflow: hidden;
-      background: #fff8f0;
-    }
+    html, body { width: 1500px; height: 2100px; overflow: hidden; background: #fbf6ee; }
     .sheet {
-      width: 1500px;
-      height: 2100px;
-      background-color: #fffdf8;
+      width: 1500px; height: 2100px; position: relative;
+      background-color: #fff;
       background-image: url("../assets/cow-classic.svg");
-      background-size: 132px 104px;
-      display: flex;
-      align-items: stretch;
-      justify-content: stretch;
+      background-size: 168px 132px;
     }
-    .mat {
-      margin: 42px;
-      flex: 1;
-      background: #fff8f0;
-      display: flex;
+    .inner {
+      position: absolute;
+      inset: 70px;
     }
-    .frame {
-      margin: 18px;
-      flex: 1;
-      border: 1.5px solid #e23d86;
-      display: flex;
+    .scallop {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      pointer-events: none;
     }
     .pad {
-      flex: 1;
-      padding: 48px 72px 42px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      position: relative; z-index: 1;
+      height: 100%;
+      padding: 18px 42px 20px;
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: space-evenly;
       text-align: center;
-      width: 100%;
     }
-    .kicker {
-      font-family: "Cinzel", serif;
-      font-weight: 700;
-      font-size: 17px;
+    .group {
+      display: flex; flex-direction: column; align-items: center; width: 100%;
+    }
+    .join {
+      font-family: "Outfit", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
       letter-spacing: 0.42em;
-      color: #b81d5a;
+      color: #1a1a1a;
       text-transform: uppercase;
+      margin-top: 6px;
     }
     h1 {
       font-family: "Rye", serif;
-      font-weight: 400;
-      font-size: 92px;
-      line-height: 0.92;
-      color: #1c1410;
-      margin-top: 18px;
-    }
-    .amp {
-      font-family: "Pinyon Script", cursive;
-      font-size: 36px;
-      color: #c4a35a;
-      line-height: 1;
-      margin: 2px 0 0;
-    }
-    h2 {
-      font-family: "Pinyon Script", cursive;
-      font-size: 108px;
-      line-height: 0.78;
-      color: #e23d86;
-      margin-top: -2px;
-    }
-    .flourish {
-      width: 420px;
-      height: 72px;
-      object-fit: contain;
-      margin-top: 10px;
-    }
-    .hero {
-      width: 680px;
-      height: 560px;
-      object-fit: contain;
-      object-position: center 42%;
-    }
-    .celebrate {
-      font-family: "Cinzel", serif;
-      font-size: 15px;
-      letter-spacing: 0.4em;
-      text-transform: uppercase;
-      color: #8a7464;
-    }
-    .name {
-      font-family: "Pinyon Script", cursive;
-      font-size: 78px;
-      color: #1c1410;
+      font-size: 118px;
       line-height: 0.9;
-      margin: 6px 0 16px;
-    }
-    .pill {
-      font-family: "Cinzel", serif;
-      font-weight: 700;
-      font-size: 18px;
-      letter-spacing: 0.34em;
-      color: #fff8f0;
-      background: #e23d86;
-      border-radius: 999px;
-      padding: 12px 34px;
-    }
-    .when {
-      font-family: "Cinzel", serif;
-      font-weight: 700;
-      font-size: 22px;
-      letter-spacing: 0.16em;
-      color: #1c1410;
-      text-transform: uppercase;
-    }
-    .where {
-      font-family: "Outfit", sans-serif;
-      font-weight: 500;
-      font-size: 22px;
-      line-height: 1.45;
-      color: #3a2f28;
-      margin-top: 10px;
-    }
-    .where strong {
-      display: block;
-      font-family: "Cinzel", serif;
-      font-weight: 700;
-      font-size: 20px;
-      letter-spacing: 0.18em;
-      margin-bottom: 4px;
-    }
-    .hairline {
-      width: 160px;
-      height: 1px;
-      background: #c4a35a;
-      margin: 0 auto 16px;
-    }
-    .dress {
-      font-family: "Outfit", sans-serif;
-      font-weight: 600;
-      font-size: 16px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: #1c1410;
-    }
-    .rsvp {
-      font-family: "Cinzel", serif;
-      font-size: 13px;
-      letter-spacing: 0.22em;
-      color: #8a7464;
-      text-transform: uppercase;
+      color: #111;
       margin-top: 8px;
     }
+    .and {
+      font-family: "Great Vibes", cursive;
+      font-size: 44px;
+      color: #111;
+      line-height: 0.8;
+      margin: 0;
+    }
+    h2 {
+      font-family: "Great Vibes", cursive;
+      font-size: 138px;
+      line-height: 0.72;
+      color: #e63e86;
+      margin-top: -8px;
+    }
+    .hero {
+      width: 560px;
+      height: 420px;
+      object-fit: contain;
+      object-position: center 46%;
+      margin: 0;
+      mix-blend-mode: multiply;
+      -webkit-mask-image: radial-gradient(ellipse 68% 64% at 50% 48%, #000 72%, transparent 100%);
+      mask-image: radial-gradient(ellipse 68% 64% at 50% 48%, #000 72%, transparent 100%);
+    }
+    .ribbon {
+      position: relative;
+      background: #e63e86;
+      color: #fff;
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 16px 56px;
+      margin: 4px 0 14px;
+    }
+    .ribbon::before,
+    .ribbon::after {
+      content: "";
+      position: absolute;
+      top: 0; width: 28px; height: 100%;
+      background: #e63e86;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 55% 50%);
+    }
+    .ribbon::before { left: -26px; transform: scaleX(-1); }
+    .ribbon::after { right: -26px; }
+    .name-row {
+      display: flex; align-items: center; justify-content: center; gap: 14px;
+      margin-top: 8px;
+    }
+    .name-row img { width: 120px; height: 40px; object-fit: contain; mix-blend-mode: multiply; }
+    .name {
+      font-family: "Great Vibes", cursive;
+      font-size: 88px;
+      color: #111;
+      line-height: 0.9;
+    }
+    .age {
+      margin-top: 14px;
+      background: #e63e86;
+      color: #fff;
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      letter-spacing: 0.28em;
+      padding: 12px 34px;
+      border: 2px dashed #fff;
+      box-shadow: 0 0 0 8px #e63e86;
+    }
+    .details {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr 1.3fr;
+      width: calc(100% - 40px);
+      margin: 28px auto 0;
+      align-items: start;
+    }
+    .col { text-align: center; padding: 0 8px; }
+    .d1 { font-family: "Outfit", sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 0.22em; color: #e63e86; text-transform: uppercase; }
+    .d2 { font-family: "Outfit", sans-serif; font-weight: 700; font-size: 28px; letter-spacing: 0.06em; color: #111; text-transform: uppercase; margin-top: 4px; }
+    .d3 { font-family: "Outfit", sans-serif; font-weight: 500; font-size: 20px; color: #111; margin-top: 2px; }
+    .hat {
+      width: 86px; height: 70px;
+      object-fit: contain;
+      object-position: center 40%;
+      margin: 0 auto 4px;
+      mix-blend-mode: multiply;
+    }
+    .rsvp {
+      margin-top: 16px;
+      font-family: "Outfit", sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.18em;
+      color: #444;
+      text-transform: uppercase;
+    }
+    .dress {
+      margin-top: 8px;
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.12em;
+      color: #111;
+      text-transform: uppercase;
+    }
+    .bottom-flourish {
+      width: 220px; height: 48px;
+      object-fit: contain;
+      margin-top: 6px;
+      mix-blend-mode: multiply;
+    }
+    .boot {
+      position: absolute; z-index: 2;
+      width: 260px; height: 260px;
+      object-fit: cover;
+      bottom: 8px;
+      mix-blend-mode: multiply;
+      -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 58%, #000 52%, transparent 74%);
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 58%, #000 52%, transparent 74%);
+    }
+    .boot.left { left: 8px; object-position: 32% 80%; }
+    .boot.right { right: 8px; object-position: 32% 80%; transform: scaleX(-1); }
   </style>
 </head>
 <body>
   <div class="sheet">
-    <div class="mat">
-      <div class="frame">
-        <div class="pad">
-          <div class="block">
-            <p class="kicker">You’re invited</p>
-            <h1>MOO MOOS</h1>
-            <p class="amp">&amp;</p>
-            <h2>Margaritas</h2>
-            <img class="flourish" src="../assets/flourish.png" alt="" />
+    <div class="inner">
+      <img class="scallop" src="../assets/scallop-frame.svg" alt="" />
+      <div class="pad">
+        <p class="join">Join us for</p>
+        <h1>MOO MOOS</h1>
+        <p class="and">and</p>
+        <h2>Margaritas</h2>
+        <img class="hero" src="../assets/hero-margarita.png" alt="" />
+        <div class="ribbon">Please join us to celebrate</div>
+        <div class="name-row">
+          <img src="../assets/pink-flourish.png" alt="" />
+          <p class="name">Isabella’s</p>
+          <img src="../assets/pink-flourish.png" alt="" />
+        </div>
+        <p class="age">30TH BIRTHDAY</p>
+        <div class="details">
+          <div class="col">
+            <p class="d1">Saturday</p>
+            <p class="d2">August 23</p>
+            <p class="d3">2025</p>
           </div>
-
-          <img class="hero" src="../assets/hero-margarita.png" alt="Pink margarita with a cowboy hat" />
-
-          <div class="block">
-            <p class="celebrate">to celebrate</p>
-            <p class="name">Isabella’s</p>
-            <p class="pill">30TH BIRTHDAY</p>
+          <div class="col">
+            <img class="hat" src="../assets/cowgirl-hat-icon.png" alt="" />
+            <p class="d2">At 6:00 PM</p>
           </div>
-
-          <div class="block">
-            <p class="when">Saturday, August 23 · 6:00 PM</p>
-            <p class="where"><strong>The Ranch House</strong>123 Cowgirl Way, Austin, TX</p>
-          </div>
-
-          <div class="block">
-            <div class="hairline"></div>
-            <p class="dress">Boots on · Hats off · Cheers up</p>
-            <p class="rsvp">RSVP to the host · Cowgirl cocktail attire</p>
+          <div class="col">
+            <p class="d2">The Ranch House</p>
+            <p class="d3">123 Cowgirl Way<br/>Austin, TX 78701</p>
           </div>
         </div>
+        <p class="rsvp">Kindly RSVP to the host</p>
+        <p class="dress">Wear your boots &amp; grab your hat!</p>
+        <img class="bottom-flourish" src="../assets/pink-flourish.png" alt="" />
       </div>
+      <img class="boot left" src="../assets/boot-cactus-left.png" alt="" />
+      <img class="boot right" src="../assets/boot-cactus-right.png" alt="" />
     </div>
   </div>
 </body>

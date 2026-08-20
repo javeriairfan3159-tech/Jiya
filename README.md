@@ -1,6 +1,6 @@
 # Moo Moos & Margaritas — Disco Cowgirl Suite
 
-Original invitation suite for a Moo Moos & Margaritas / disco-cowgirl birthday. Built to compete with single-invite Etsy listings by shipping a full matching set, a pink cowhide frame (not the usual black-and-white scalloped border), and print + phone sizes.
+Original invitation suite for a Moo Moos & Margaritas / disco-cowgirl birthday. Clean cream card, thin cow-print frame, one watercolor margarita (cowboy hat on the rim), and matching extras for print + phone.
 
 ## What’s in the suite
 

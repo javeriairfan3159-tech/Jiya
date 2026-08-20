@@ -5,48 +5,46 @@
   <title>Moo Moos & Margaritas — Welcome Sign</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600&family=Pinyon+Script&family=Rye&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Outfit:wght@600&family=Pinyon+Script&family=Rye&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { width: 1800px; height: 2400px; overflow: hidden; background: #f4a7c0; }
-    .sheet { width: 1800px; height: 2400px; position: relative; }
-    .cow-outer { position: absolute; inset: 0; background-image: url("../assets/cow-ink-on-pink.svg"); background-size: 280px 230px; }
-    .inner {
-      position: absolute; inset: 90px; background: #fffaf3; border-radius: 36px;
-      box-shadow: 0 22px 50px rgba(28,20,16,.2), inset 0 0 0 4px #c4a35a, inset 0 0 0 16px #fffaf3, inset 0 0 0 20px #e8d5a3;
-      display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 80px;
+    html, body { width: 1800px; height: 2400px; overflow: hidden; background: #fff8f0; }
+    .sheet {
+      width: 1800px; height: 2400px;
+      background-color: #fffdf8;
+      background-image: url("../assets/cow-classic.svg");
+      background-size: 150px 118px;
+      display: flex;
     }
-    .kicker { font-family: "Cinzel", serif; font-weight: 700; font-size: 28px; letter-spacing: .48em; color: #b81d5a; text-transform: uppercase; }
-    h1 { font-family: "Rye", serif; font-size: 168px; color: #1c1410; line-height: .88; margin-top: 28px; }
-    .and { font-family: "Pinyon Script", cursive; font-size: 64px; color: #c4a35a; margin: 6px 0 0; }
-    h2 { font-family: "Pinyon Script", cursive; font-size: 188px; color: #e23d86; line-height: .78; }
-    .name { font-family: "Cinzel", serif; font-size: 36px; letter-spacing: .32em; color: #1c1410; text-transform: uppercase; margin-top: 48px; }
-    .script { font-family: "Pinyon Script", cursive; font-size: 96px; color: #1c1410; line-height: .9; margin: 8px 0 18px; }
-    .ticket {
-      display: inline-flex; align-items: center; background: #e23d86; color: #fffaf3;
-      height: 70px; padding: 0 48px; position: relative;
-      font-family: "Cinzel", serif; font-weight: 700; font-size: 26px; letter-spacing: .32em;
-    }
-    .ticket::before, .ticket::after {
-      content: ""; position: absolute; top: 50%; width: 28px; height: 28px;
-      background: #fffaf3; border-radius: 50%; transform: translateY(-50%);
-    }
-    .ticket::before { left: -14px; } .ticket::after { right: -14px; }
-    .dress { margin-top: 64px; font-family: "Outfit", sans-serif; font-weight: 600; font-size: 28px; letter-spacing: .22em; text-transform: uppercase; }
+    .mat { margin: 56px; flex: 1; background: #fff8f0; display: flex; }
+    .frame { margin: 22px; flex: 1; border: 2px solid #e23d86; display: flex; align-items: center; justify-content: space-evenly; text-align: center; padding: 56px 80px; flex-direction: column; }
+    .kicker { font-family: "Cinzel", serif; font-weight: 700; font-size: 26px; letter-spacing: .46em; color: #b81d5a; text-transform: uppercase; }
+    h1 { font-family: "Rye", serif; font-size: 148px; color: #1c1410; line-height: .9; margin-top: 28px; }
+    .amp { font-family: "Pinyon Script", cursive; font-size: 52px; color: #c4a35a; }
+    h2 { font-family: "Pinyon Script", cursive; font-size: 168px; color: #e23d86; line-height: .78; }
+    .flourish { width: 480px; height: 90px; object-fit: contain; margin: 8px 0 18px; }
+    .hero { width: 720px; height: 560px; object-fit: contain; object-position: center 42%; }
+    .celebrate { font-family: "Cinzel", serif; font-size: 22px; letter-spacing: .34em; text-transform: uppercase; color: #8a7464; margin-top: 10px; }
+    .script { font-family: "Pinyon Script", cursive; font-size: 88px; color: #1c1410; line-height: .9; margin: 6px 0 18px; }
+    .pill { font-family: "Cinzel", serif; font-weight: 700; font-size: 24px; letter-spacing: .32em; color: #fff8f0; background: #e23d86; border-radius: 999px; padding: 16px 44px; }
+    .dress { margin-top: 36px; font-family: "Outfit", sans-serif; font-weight: 600; font-size: 24px; letter-spacing: .2em; text-transform: uppercase; }
   </style>
 </head>
 <body>
   <div class="sheet">
-    <div class="cow-outer"></div>
-    <div class="inner">
-      <p class="kicker">Welcome y’all</p>
-      <h1>MOO MOOS</h1>
-      <p class="and">&amp;</p>
-      <h2>Margaritas</h2>
-      <p class="name">to celebrate</p>
-      <p class="script">Isabella’s</p>
-      <div class="ticket">30TH BIRTHDAY</div>
-      <p class="dress">Boots on · Hats off · Cheers up</p>
+    <div class="mat">
+      <div class="frame">
+        <p class="kicker">Welcome y’all</p>
+        <h1>MOO MOOS</h1>
+        <p class="amp">&amp;</p>
+        <h2>Margaritas</h2>
+        <img class="flourish" src="../assets/flourish.png" alt="" />
+        <img class="hero" src="../assets/hero-margarita.png" alt="" />
+        <p class="celebrate">to celebrate</p>
+        <p class="script">Isabella’s</p>
+        <p class="pill">30TH BIRTHDAY</p>
+        <p class="dress">Boots on · Hats off · Cheers up</p>
+      </div>
     </div>
   </div>
 </body>

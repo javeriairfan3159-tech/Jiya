@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Moo Moos & Margaritas — Details Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1500px; height: 2100px; overflow: hidden; background: #fff8f0; }
+    .sheet {
+      width: 1500px; height: 2100px;
+      background-color: #fffdf8;
+      background-image: url("../assets/cow-classic.svg");
+      background-size: 132px 104px;
+      display: flex;
+    }
+    .mat { margin: 42px; flex: 1; background: #fff8f0; display: flex; }
+    .frame { margin: 18px; flex: 1; border: 1.5px solid #e23d86; display: flex; }
+    .pad {
+      flex: 1; padding: 64px 80px 52px;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .kicker { font-family: "Cinzel", serif; font-weight: 700; font-size: 16px; letter-spacing: .4em; color: #b81d5a; text-transform: uppercase; }
+    h1 { font-family: "Pinyon Script", cursive; font-size: 86px; color: #e23d86; line-height: .85; margin: 10px 0 4px; }
+    .sub { font-family: "Cinzel", serif; font-size: 18px; letter-spacing: .28em; color: #1c1410; text-transform: uppercase; }
+    .flourish { width: 360px; height: 64px; object-fit: contain; margin: 8px 0 28px; }
+    .grid { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 32px 56px; }
+    .block h3 {
+      font-family: "Cinzel", serif; font-size: 16px; letter-spacing: .28em; color: #e23d86;
+      text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #ead7b3;
+    }
+    .item { margin-bottom: 18px; }
+    .item strong { display: block; font-family: "Outfit", sans-serif; font-weight: 600; font-size: 24px; color: #1c1410; }
+    .item span { font-family: "Outfit", sans-serif; font-weight: 400; font-size: 18px; color: #6b5c4e; }
+    .wide { grid-column: 1 / -1; }
+    .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .t { text-align: center; border: 1px solid #ead7b3; border-radius: 14px; padding: 16px 8px; }
+    .t b { display: block; font-family: "Cinzel", serif; color: #b81d5a; letter-spacing: .08em; font-size: 16px; margin-bottom: 4px; }
+    .t span { font-family: "Outfit", sans-serif; font-size: 16px; color: #1c1410; }
+    .note {
+      margin-top: auto; text-align: center; width: 100%; padding-top: 28px;
+      font-family: "Outfit", sans-serif; font-size: 20px; color: #1c1410;
+    }
+    .note em { font-family: "Pinyon Script", cursive; font-style: normal; color: #e23d86; font-size: 30px; }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="mat">
+      <div class="frame">
+        <div class="pad">
+          <p class="kicker">The night ahead</p>
+          <h1>Party Details</h1>
+          <p class="sub">Moo Moos &amp; Margaritas</p>
+          <img class="flourish" src="../assets/flourish.png" alt="" />
+          <div class="grid">
+            <div class="block">
+              <h3>The Bar</h3>
+              <div class="item"><strong>Pink Cowgirl Marg</strong><span>Blanco tequila, lime, salted rim</span></div>
+              <div class="item"><strong>Ranch Water</strong><span>Tequila, topo, squeeze of lime</span></div>
+              <div class="item"><strong>Moo-jito Mocktail</strong><span>Mint, lime, bubbles — zero proof</span></div>
+            </div>
+            <div class="block">
+              <h3>The Look</h3>
+              <div class="item"><strong>Cowgirl cocktail</strong><span>Boots, hats, pink, and a little sparkle</span></div>
+              <div class="item"><strong>Optional extras</strong><span>Bandanas, fringe, disco jewelry</span></div>
+              <div class="item"><strong>Comfort first</strong><span>We’ll be dancing — wear what moves</span></div>
+            </div>
+            <div class="block wide">
+              <h3>The Flow</h3>
+              <div class="timeline">
+                <div class="t"><b>6:00</b><span>Doors + first pour</span></div>
+                <div class="t"><b>7:00</b><span>Taco hour</span></div>
+                <div class="t"><b>8:30</b><span>Toasts + playlist</span></div>
+                <div class="t"><b>10:00</b><span>Last call</span></div>
+              </div>
+            </div>
+            <div class="block">
+              <h3>Find Us</h3>
+              <div class="item"><strong>The Ranch House</strong><span>123 Cowgirl Way, Austin, TX 78701</span></div>
+            </div>
+            <div class="block">
+              <h3>RSVP</h3>
+              <div class="item"><strong>Kindly reply by August 1</strong><span>Name + drink order in your note</span></div>
+            </div>
+            <div class="block wide">
+              <h3>The Tag</h3>
+              <div class="item" style="text-align:center">
+                <strong>#MooMoosAndMargaritas</strong>
+                <span>Share the pink, the boots, and the last pour</span>
+              </div>
+            </div>
+          </div>
+          <p class="note">Giddy up, then sip. <em>See you under the disco moon.</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

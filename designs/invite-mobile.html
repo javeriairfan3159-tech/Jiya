@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Moo Moos & Margaritas — Mobile Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@400;500;600&family=Pinyon+Script&family=Rye&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1080px; height: 1920px; overflow: hidden; background: #fff8f0; }
+    .sheet {
+      width: 1080px; height: 1920px;
+      background-color: #fffdf8;
+      background-image: url("../assets/cow-classic.svg");
+      background-size: 120px 94px;
+      display: flex;
+    }
+    .mat { margin: 32px; flex: 1; background: #fff8f0; display: flex; }
+    .frame { margin: 14px; flex: 1; border: 1.5px solid #e23d86; display: flex; }
+    .pad {
+      flex: 1; padding: 48px 56px 40px;
+      display: flex; flex-direction: column; align-items: center; justify-content: space-between; text-align: center;
+    }
+    .block { display: flex; flex-direction: column; align-items: center; width: 100%; }
+    .kicker { font-family: "Cinzel", serif; font-weight: 700; font-size: 16px; letter-spacing: .4em; color: #b81d5a; text-transform: uppercase; }
+    h1 { font-family: "Rye", serif; font-size: 78px; color: #1c1410; margin-top: 16px; line-height: .92; }
+    .amp { font-family: "Pinyon Script", cursive; font-size: 32px; color: #c4a35a; }
+    h2 { font-family: "Pinyon Script", cursive; font-size: 96px; color: #e23d86; line-height: .78; }
+    .flourish { width: 340px; height: 64px; object-fit: contain; margin-top: 8px; }
+    .hero { width: 560px; height: 460px; object-fit: contain; object-position: center 42%; }
+    .celebrate { font-family: "Cinzel", serif; font-size: 15px; letter-spacing: .36em; text-transform: uppercase; color: #8a7464; }
+    .name { font-family: "Pinyon Script", cursive; font-size: 72px; color: #1c1410; line-height: .9; margin: 6px 0 14px; }
+    .pill { font-family: "Cinzel", serif; font-weight: 700; font-size: 18px; letter-spacing: .28em; color: #fff8f0; background: #e23d86; border-radius: 999px; padding: 12px 32px; }
+    .when { font-family: "Cinzel", serif; font-weight: 700; font-size: 22px; letter-spacing: .12em; text-transform: uppercase; color: #1c1410; }
+    .where { font-family: "Outfit", sans-serif; font-weight: 500; font-size: 24px; line-height: 1.4; color: #3a2f28; margin-top: 12px; }
+    .where strong { display: block; font-family: "Cinzel", serif; letter-spacing: .14em; font-size: 20px; margin-bottom: 4px; }
+    .hairline { width: 140px; height: 1px; background: #c4a35a; margin: 0 auto 14px; }
+    .dress { font-family: "Outfit", sans-serif; font-weight: 600; font-size: 16px; letter-spacing: .18em; text-transform: uppercase; }
+    .rsvp { font-family: "Cinzel", serif; font-size: 13px; letter-spacing: .18em; color: #8a7464; text-transform: uppercase; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="mat">
+      <div class="frame">
+        <div class="pad">
+          <div class="block">
+            <p class="kicker">You’re invited</p>
+            <h1>MOO MOOS</h1>
+            <p class="amp">&amp;</p>
+            <h2>Margaritas</h2>
+            <img class="flourish" src="../assets/flourish.png" alt="" />
+          </div>
+          <img class="hero" src="../assets/hero-margarita.png" alt="" />
+          <div class="block">
+            <p class="celebrate">to celebrate</p>
+            <p class="name">Isabella’s</p>
+            <p class="pill">30TH BIRTHDAY</p>
+          </div>
+          <div class="block">
+            <p class="when">Saturday, August 23 · 6:00 PM</p>
+            <p class="where"><strong>The Ranch House</strong>123 Cowgirl Way, Austin, TX</p>
+          </div>
+          <div class="block">
+            <div class="hairline"></div>
+            <p class="dress">Boots on · Hats off · Cheers up</p>
+            <p class="rsvp">RSVP to the host · Cowgirl cocktail attire</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

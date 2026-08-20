@@ -1,0 +1,18 @@
+:root {
+  --cream: #f7efe4;
+  --paper: #fffaf3;
+  --blush: #f4c1d0;
+  --pink: #ee6fa3;
+  --hot: #e23d86;
+  --berry: #b81d5a;
+  --ink: #1c1410;
+  --gold: #c4a35a;
+  --gold-light: #e8d5a3;
+  --sage: #7f9a6c;
+  --lime: #c4d45a;
+}
+
+.font-western { font-family: "Rye", "Rockwell", serif; }
+.font-script { font-family: "Pinyon Script", "Snell Roundhand", cursive; }
+.font-caps { font-family: "Cinzel", "Times New Roman", serif; }
+.font-sans { font-family: "Outfit", "Avenir Next", sans-serif; }

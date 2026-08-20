@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Moo Moos & Margaritas — Mobile Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600&family=Pinyon+Script&family=Rye&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1080px; height: 1920px; overflow: hidden; background: #f4a7c0; }
+    .sheet { width: 1080px; height: 1920px; position: relative; }
+    .cow-outer {
+      position: absolute; inset: 0;
+      background-image: url("../assets/cow-ink-on-pink.svg");
+      background-size: 240px 200px;
+    }
+    .inner {
+      position: absolute; inset: 48px;
+      background: #fffaf3; border-radius: 36px;
+      box-shadow: 0 18px 40px rgba(28,20,16,.18), inset 0 0 0 3px #c4a35a, inset 0 0 0 12px #fffaf3, inset 0 0 0 15px #e8d5a3;
+      overflow: hidden;
+    }
+    .pad {
+      height: 100%; padding: 54px 56px 48px;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .kicker {
+      font-family: "Cinzel", serif; font-weight: 700; font-size: 18px;
+      letter-spacing: .42em; color: #b81d5a; text-transform: uppercase;
+    }
+    h1 { font-family: "Rye", serif; font-size: 92px; color: #1c1410; margin-top: 18px; line-height: .9; text-align: center; }
+    .and { font-family: "Pinyon Script", cursive; font-size: 40px; color: #c4a35a; }
+    h2 { font-family: "Pinyon Script", cursive; font-size: 118px; color: #e23d86; line-height: .78; text-align: center; }
+    .hero { width: 540px; height: 380px; margin: 8px 0; }
+    .celebrate { font-family: "Cinzel", serif; font-size: 16px; letter-spacing: .4em; text-transform: uppercase; color: #7a6a58; }
+    .name { font-family: "Pinyon Script", cursive; font-size: 86px; color: #1c1410; line-height: .9; }
+    .ticket {
+      display: flex; align-items: center; background: #e23d86; color: #fffaf3;
+      height: 56px; padding: 0 36px; position: relative;
+      font-family: "Cinzel", serif; font-weight: 700; font-size: 20px; letter-spacing: .28em; margin-top: 12px;
+    }
+    .ticket::before, .ticket::after {
+      content: ""; position: absolute; top: 50%; width: 22px; height: 22px;
+      background: #fffaf3; border-radius: 50%; transform: translateY(-50%);
+    }
+    .ticket::before { left: -11px; } .ticket::after { right: -11px; }
+    .stack { width: 100%; margin-top: 40px; display: flex; flex-direction: column; gap: 22px; }
+    .row { text-align: center; }
+    .label { font-family: "Cinzel", serif; font-size: 14px; letter-spacing: .32em; color: #e23d86; margin-bottom: 6px; }
+    .value { font-family: "Outfit", sans-serif; font-weight: 500; font-size: 28px; color: #1c1410; line-height: 1.25; }
+    .value strong { font-family: "Cinzel", serif; font-weight: 700; letter-spacing: .06em; }
+    .dress { margin-top: auto; font-family: "Outfit", sans-serif; font-weight: 600; font-size: 18px; letter-spacing: .16em; text-transform: uppercase; text-align: center; }
+    .rsvp { font-family: "Cinzel", serif; font-size: 14px; letter-spacing: .2em; color: #7a6a58; margin-top: 10px; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="cow-outer"></div>
+    <div class="inner">
+      <div class="pad">
+        <p class="kicker">Saddle up · sip up</p>
+        <h1>MOO MOOS</h1>
+        <p class="and">&amp;</p>
+        <h2>Margaritas</h2>
+        <img class="hero" src="../assets/hero.svg" alt="" />
+        <p class="celebrate">to celebrate</p>
+        <p class="name">Isabella’s</p>
+        <div class="ticket">30TH BIRTHDAY</div>
+        <div class="stack">
+          <div class="row"><p class="label">Date</p><p class="value"><strong>Saturday, August 23</strong></p></div>
+          <div class="row"><p class="label">Time</p><p class="value"><strong>6:00 PM</strong> onward</p></div>
+          <div class="row"><p class="label">Place</p><p class="value"><strong>The Ranch House</strong><br/>123 Cowgirl Way, Austin, TX</p></div>
+        </div>
+        <p class="dress">Boots on · Hats off · Cheers up</p>
+        <p class="rsvp">RSVP to the host · Cowgirl cocktail attire</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

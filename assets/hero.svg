@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 430" role="img" aria-label="Cow-print margarita, pink cowboy hat, and disco ball">
+  <defs>
+    <linearGradient id="liquid" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7b7cf"/>
+      <stop offset="55%" stop-color="#e23d86"/>
+      <stop offset="100%" stop-color="#c2185b"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.28"/>
+    </linearGradient>
+    <radialGradient id="disco" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="40%" stop-color="#e9e4ee"/>
+      <stop offset="100%" stop-color="#b9a7c4"/>
+    </radialGradient>
+    <linearGradient id="hatPink" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f4b8c8"/>
+      <stop offset="100%" stop-color="#e23d86"/>
+    </linearGradient>
+    <clipPath id="bowlClip">
+      <path d="M232 148 L388 148 L348 268 L272 268 Z"/>
+    </clipPath>
+    <pattern id="cowMini" patternUnits="userSpaceOnUse" width="70" height="54">
+      <rect width="70" height="54" fill="#fffdf8"/>
+      <ellipse cx="18" cy="16" rx="14" ry="10" fill="#161616"/>
+      <ellipse cx="52" cy="28" rx="11" ry="8" fill="#1a1a1a"/>
+      <ellipse cx="28" cy="42" rx="8" ry="6" fill="#111"/>
+      <ellipse cx="60" cy="8" rx="6" ry="5" fill="#222"/>
+    </pattern>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#c2185b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g fill="#e23d86" opacity="0.9">
+    <path d="M86 86 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"/>
+    <path d="M510 70 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 z"/>
+    <path d="M128 300 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 z"/>
+    <path d="M500 250 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z"/>
+  </g>
+  <g fill="#c4a35a">
+    <path d="M548 140 l1.8 4.5 4.5 1.8 -4.5 1.8 -1.8 4.5 -1.8 -4.5 -4.5 -1.8 4.5 -1.8 z"/>
+    <path d="M70 210 l1.6 4 4 1.6 -4 1.6 -1.6 4 -1.6 -4 -4 -1.6 4 -1.6 z"/>
+  </g>
+  <g transform="translate(470 250)">
+    <path d="M28 110 v-70 a16 16 0 0 1 32 0 v28" fill="#7f9a6c"/>
+    <path d="M28 70 h-22 a12 12 0 0 1 0 -24 v24" fill="#8fae7a"/>
+    <path d="M60 78 h18 a11 11 0 0 1 0 22 h-18" fill="#6f8d5e"/>
+    <circle cx="18" cy="52" r="5" fill="#e23d86"/>
+    <circle cx="72" cy="84" r="5" fill="#ee6fa3"/>
+    <circle cx="44" cy="40" r="4" fill="#f4c1d0"/>
+  </g>
+  <g transform="translate(470 42)">
+    <line x1="48" y1="0" x2="48" y2="22" stroke="#c4a35a" stroke-width="2"/>
+    <circle cx="48" cy="86" r="48" fill="url(#disco)" stroke="#b9a7c4" stroke-width="2"/>
+    <g stroke="#fff" stroke-width="1.2" opacity="0.7" fill="none">
+      <ellipse cx="48" cy="86" rx="46" ry="16"/>
+      <ellipse cx="48" cy="86" rx="46" ry="32"/>
+      <path d="M48 38 v96 M10 86 h76 M20 58 Q48 70 76 58 M20 114 Q48 102 76 114"/>
+    </g>
+    <g fill="#e23d86" opacity="0.35">
+      <polygon points="48,44 62,58 48,72 34,58"/>
+      <polygon points="70,70 86,86 70,102 54,86"/>
+    </g>
+    <circle cx="32" cy="70" r="6" fill="#fff" opacity="0.8"/>
+  </g>
+  <g transform="translate(78 118)" filter="url(#soft)">
+    <ellipse cx="96" cy="78" rx="96" ry="18" fill="#c2185b"/>
+    <ellipse cx="96" cy="74" rx="92" ry="16" fill="url(#hatPink)"/>
+    <path d="M46 74 c4 -52 96 -52 100 0 c-8 18 -92 18 -100 0z" fill="#ee6fa3"/>
+    <path d="M70 40 q26 -18 52 0" fill="none" stroke="#c2185b" stroke-width="6" stroke-linecap="round"/>
+    <rect x="58" y="62" width="76" height="12" rx="2" fill="url(#cowMini)"/>
+    <rect x="58" y="62" width="76" height="12" rx="2" fill="none" stroke="#1c1410" stroke-width="1.5"/>
+  </g>
+  <ellipse cx="310" cy="392" rx="90" ry="12" fill="#1c1410" opacity="0.12"/>
+  <g filter="url(#soft)">
+    <path d="M300 268 L300 348" stroke="#d8cfc4" stroke-width="10"/>
+    <path d="M300 268 L300 348" stroke="#fff" stroke-width="3" opacity="0.55"/>
+    <ellipse cx="300" cy="358" rx="54" ry="10" fill="#efe6da"/>
+    <ellipse cx="300" cy="354" rx="48" ry="8" fill="#fff"/>
+    <path d="M232 148 L388 148 L348 268 L272 268 Z" fill="url(#glass)" stroke="#d5cbbf" stroke-width="3"/>
+    <path d="M240 162 L380 162 L346 258 L274 258 Z" fill="url(#liquid)"/>
+    <g clip-path="url(#bowlClip)" opacity="0.55">
+      <rect x="230" y="188" width="160" height="70" fill="url(#cowMini)"/>
+    </g>
+    <path d="M248 170 q52 18 104 0" fill="none" stroke="#fff" stroke-width="6" opacity="0.35"/>
+    <path d="M236 148 L384 148" stroke="#fff8e8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M236 148 L384 148" stroke="#f4c1d0" stroke-width="4" stroke-linecap="round"/>
+    <g fill="#fff">
+      <circle cx="240" cy="146" r="3.2"/>
+      <circle cx="258" cy="142" r="2.4"/>
+      <circle cx="278" cy="144" r="3"/>
+      <circle cx="300" cy="141" r="2.6"/>
+      <circle cx="322" cy="144" r="3"/>
+      <circle cx="344" cy="142" r="2.4"/>
+      <circle cx="366" cy="146" r="3.2"/>
+    </g>
+    <g transform="translate(352 118) rotate(28)">
+      <ellipse cx="0" cy="0" rx="28" ry="12" fill="#c4d45a"/>
+      <ellipse cx="0" cy="0" rx="20" ry="8" fill="#e8f0a8"/>
+      <path d="M-8 -2 q8 -10 16 0" fill="#7f9a6c"/>
+    </g>
+    <path d="M268 120 L292 210" stroke="#c4a35a" stroke-width="3.5"/>
+    <circle cx="262" cy="108" r="11" fill="#e23d86"/>
+    <path d="M262 100 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" fill="#fffaf3"/>
+  </g>
+</svg>

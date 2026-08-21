@@ -11,6 +11,7 @@ const OUT = path.join(ROOT, "exports");
 fs.mkdirSync(OUT, { recursive: true });
 
 const jobs = [
+  { file: "designs/invite-classic-5x7.html", out: "invite-classic-5x7.png", w: 1500, h: 2100 },
   { file: "designs/invite-5x7.html", out: "invite-5x7.png", w: 1500, h: 2100 },
   { file: "designs/invite-mobile.html", out: "invite-mobile.png", w: 1080, h: 1920 },
   { file: "designs/details-card.html", out: "details-card.png", w: 1500, h: 2100 },

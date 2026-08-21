@@ -1,8 +1,21 @@
 # Blush & Sky — gender reveal baby shower suite
 
-Original stationery suite for a combined **gender reveal + baby shower**. Dusty rose peonies on the left, powder-blue hydrangeas on the right, and a watercolor balloon pair whose gold ribbons form a heart. Champagne-gold frame. Editorial type. Not clipart footprints, glitter stars, or a Canva watermark.
+Print-ready **5×7** gender reveal baby shower invitations.
 
-Demo: **The Walker Baby** · Saturday 12 September 2026 · two o’clock · The Garden House, 48 Willow Lane.
+## Classic card (competitor-style)
+
+The listing hero is the **footprint layout** — the same stack buyers expect: curved “WHAT WILL BABY BE?”, pink and blue watercolor footprints, He / or / She, pink-to-blue ribbon, Gender Reveal script, three-column date / place / RSVP, and “We will WAIT for YOU!”
+
+| File | Size |
+| --- | --- |
+| `exports/invite-classic-5x7.png` | 5×7 in @ 600 dpi |
+| `listing/photos/00-classic-lifestyle-2000.jpg` | Etsy thumbnail mockup |
+
+Editable source: `designs/invite-classic-5x7.html`.
+
+## Blush & Sky suite (premium extras)
+
+A second, more editorial floral suite is also included (peony / hydrangea, balloon heart).
 
 ## What’s in the suite
 

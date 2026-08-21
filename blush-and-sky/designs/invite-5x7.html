@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blush &amp; Sky — 5×7 Gender Reveal Invitation</title>
+  <link rel="stylesheet" href="_tokens.css" />
+  <script src="wait.js"></script>
+  <style>
+    html, body { width: 1500px; height: 2100px; overflow: hidden; background: var(--ivory); }
+    .sheet {
+      width: 1500px; height: 2100px; position: relative;
+      background: var(--paper);
+    }
+    .wash {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; display: block;
+    }
+    .flora {
+      position: absolute; top: 0; height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .flora.left {
+      left: -8px; width: 520px;
+      object-fit: cover; object-position: left center;
+    }
+    .flora.right {
+      right: -8px; width: 520px;
+      object-fit: cover; object-position: right center;
+    }
+    .frame {
+      position: absolute;
+      inset: 52px;
+      border: 2px solid var(--gold);
+      z-index: 4;
+      pointer-events: none;
+      opacity: 0.85;
+    }
+    .frame::after {
+      content: "";
+      position: absolute;
+      inset: 11px;
+      border: 1px solid var(--champagne);
+      opacity: 0.9;
+    }
+    .corner {
+      position: absolute; z-index: 5; width: 18px; height: 18px;
+      background: var(--paper);
+      transform: rotate(45deg);
+      border: 1.5px solid var(--gold);
+    }
+    .corner.tl { top: 45px; left: 45px; }
+    .corner.tr { top: 45px; right: 45px; }
+    .corner.bl { bottom: 45px; left: 45px; }
+    .corner.br { bottom: 45px; right: 45px; }
+
+    .copy {
+      position: absolute;
+      inset: 78px 188px 72px;
+      z-index: 6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+    .kicker {
+      font-family: "Cinzel", serif;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.46em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      padding-left: 0.46em;
+      margin-top: 18px;
+    }
+    .rule {
+      width: 96px; height: 0;
+      border-top: 1.5px solid var(--gold);
+      margin: 10px auto 0;
+    }
+    .he-she {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 22px;
+      margin-top: 6px;
+    }
+    .he, .she {
+      font-family: "Great Vibes", cursive;
+      font-size: 108px;
+      line-height: 0.8;
+    }
+    .he { color: var(--sky-deep); }
+    .she { color: var(--blush-deep); }
+    .or-col {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 6px; padding-bottom: 8px;
+    }
+    .diamond {
+      width: 9px; height: 9px;
+      background: var(--gold);
+      transform: rotate(45deg);
+    }
+    .or {
+      font-family: "Cinzel", serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      padding-left: 0.32em;
+    }
+    .balloons {
+      width: 500px;
+      height: 470px;
+      object-fit: contain;
+      object-position: center 48%;
+      margin: -4px 0 -8px;
+    }
+    .join {
+      font-family: "Cinzel", serif;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      padding-left: 0.42em;
+    }
+    .event {
+      font-family: "Great Vibes", cursive;
+      font-size: 118px;
+      line-height: 0.78;
+      color: var(--blush-deep);
+      margin-top: 2px;
+    }
+    .shower {
+      font-family: "Cinzel", serif;
+      font-weight: 500;
+      font-size: 26px;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: var(--sky-deep);
+      padding-left: 0.38em;
+      margin-top: 2px;
+    }
+    .celebrating {
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
+      font-size: 28px;
+      color: var(--ink-soft);
+      margin-top: 8px;
+    }
+    .baby-name {
+      font-family: "Cinzel", serif;
+      font-weight: 600;
+      font-size: 34px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink);
+      padding-left: 0.22em;
+      margin-top: 2px;
+    }
+    .panel {
+      width: 100%;
+      border-top: 1px solid var(--champagne);
+      border-bottom: 1px solid var(--champagne);
+      padding: 22px 8px 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.15fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .col { text-align: center; }
+    .label {
+      font-family: "Cinzel", serif;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      padding-left: 0.34em;
+    }
+    .value {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 600;
+      font-size: 28px;
+      color: var(--ink);
+      line-height: 1.15;
+      margin-top: 6px;
+    }
+    .sub {
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
+      font-size: 20px;
+      color: var(--ink-soft);
+      line-height: 1.25;
+      margin-top: 2px;
+    }
+    .rsvp {
+      font-family: "Cinzel", serif;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      padding-left: 0.22em;
+      margin-top: 14px;
+    }
+    .footer {
+      font-family: "Great Vibes", cursive;
+      font-size: 40px;
+      color: var(--blush-deep);
+      line-height: 1;
+      margin: 8px 0 10px;
+    }
+    .footer span { color: var(--sky-deep); }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <img class="wash" src="../assets/paper-wash.png" alt="" />
+    <img class="flora left" src="../assets/botanical-left.png" alt="" />
+    <img class="flora right" src="../assets/botanical-right.png" alt="" />
+    <div class="frame"></div>
+    <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+    <div class="copy">
+      <div>
+        <p class="kicker">A Sweet Surprise Awaits</p>
+        <div class="rule"></div>
+        <div class="he-she">
+          <span class="he">He</span>
+          <span class="or-col">
+            <span class="diamond"></span>
+            <span class="or">or</span>
+            <span class="diamond"></span>
+          </span>
+          <span class="she">She</span>
+        </div>
+      </div>
+      <img class="balloons" src="../assets/balloons-hero.png" alt="" />
+      <div>
+        <p class="join">Join us for a</p>
+        <p class="event">Gender Reveal</p>
+        <p class="shower">Baby Shower</p>
+        <p class="celebrating">celebrating</p>
+        <p class="baby-name">The Walker Baby</p>
+      </div>
+      <div style="width:100%">
+        <div class="panel">
+          <div class="col">
+            <p class="label">Date</p>
+            <p class="value">September 12</p>
+            <p class="sub">Saturday, 2026</p>
+          </div>
+          <div class="col">
+            <p class="label">Time</p>
+            <p class="value">Two o’clock</p>
+            <p class="sub">in the afternoon</p>
+          </div>
+          <div class="col">
+            <p class="label">Place</p>
+            <p class="value">Garden House</p>
+            <p class="sub">48 Willow Lane</p>
+          </div>
+        </div>
+        <p class="rsvp">Rsvp to Olivia · 555-0148 · by September 5</p>
+        <p class="footer">we can’t wait to <span>meet you</span></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

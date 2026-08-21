@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blush &amp; Sky — Books for Baby</title>
+  <link rel="stylesheet" href="_tokens.css" />
+  <script src="wait.js"></script>
+  <style>
+    html, body { width: 1500px; height: 1500px; overflow: hidden; background: var(--ivory); }
+    .sheet { width: 1500px; height: 1500px; position: relative; background: var(--paper); }
+    .wash { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .flora {
+      position: absolute; top: 0; height: 100%;
+      pointer-events: none; z-index: 2; width: 480px; object-fit: cover;
+    }
+    .flora.left { left: -30px; object-position: left center; }
+    .flora.right { right: -30px; object-position: right center; }
+    .frame { position: absolute; inset: 48px; border: 2px solid var(--gold); z-index: 4; pointer-events: none; opacity: 0.85; }
+    .frame::after { content: ""; position: absolute; inset: 11px; border: 1px solid var(--champagne); }
+    .copy {
+      position: absolute; inset: 80px 180px; z-index: 6;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    }
+    .kicker {
+      font-family: "Cinzel", serif; font-weight: 500; font-size: 18px;
+      letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold-deep); padding-left: 0.4em;
+    }
+    .title { font-family: "Great Vibes", cursive; font-size: 92px; color: var(--sky-deep); line-height: 0.85; margin: 8px 0 4px; }
+    .books { width: 540px; height: 380px; object-fit: contain; }
+    .body {
+      font-family: "Cormorant Garamond", serif; font-size: 32px; line-height: 1.4; color: var(--ink); margin-top: 8px;
+    }
+    .hint {
+      font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 26px; color: var(--ink-soft); margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <img class="wash" src="../assets/paper-wash.png" alt="" />
+    <img class="flora left" src="../assets/botanical-left.png" alt="" />
+    <img class="flora right" src="../assets/botanical-right.png" alt="" />
+    <div class="frame"></div>
+    <div class="copy">
+      <p class="kicker">A request, with love</p>
+      <p class="title">Books for Baby</p>
+      <img class="books" src="../assets/baby-books.png" alt="" />
+      <p class="body">In lieu of a card, please bring a story<br />and write a note to baby inside.</p>
+      <p class="hint">We will read it together for years to come.</p>
+    </div>
+  </div>
+</body>
+</html>

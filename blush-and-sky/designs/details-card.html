@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blush &amp; Sky — Details Card</title>
+  <link rel="stylesheet" href="_tokens.css" />
+  <script src="wait.js"></script>
+  <style>
+    html, body { width: 1500px; height: 2100px; overflow: hidden; background: var(--ivory); }
+    .sheet { width: 1500px; height: 2100px; position: relative; background: var(--paper); }
+    .wash { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .flora {
+      position: absolute; top: 0; height: 100%;
+      pointer-events: none; z-index: 2; width: 460px; object-fit: cover;
+    }
+    .flora.left { left: -20px; object-position: left center; }
+    .flora.right { right: -20px; object-position: right center; }
+    .frame { position: absolute; inset: 52px; border: 2px solid var(--gold); z-index: 4; pointer-events: none; opacity: 0.85; }
+    .frame::after { content: ""; position: absolute; inset: 11px; border: 1px solid var(--champagne); }
+    .copy {
+      position: absolute; inset: 90px 200px 80px; z-index: 6;
+      display: flex; flex-direction: column; align-items: center; text-align: center;
+    }
+    .kicker {
+      font-family: "Cinzel", serif; font-weight: 500; font-size: 18px;
+      letter-spacing: 0.42em; text-transform: uppercase; color: var(--gold-deep); padding-left: 0.42em;
+    }
+    .title { font-family: "Great Vibes", cursive; font-size: 96px; color: var(--blush-deep); line-height: 0.85; margin-top: 8px; }
+    .rule { width: 110px; border-top: 1.5px solid var(--gold); margin: 16px auto 28px; }
+    .booties { width: 320px; height: 200px; object-fit: contain; margin-bottom: 8px; }
+    .section { width: 100%; margin-bottom: 28px; }
+    .label {
+      font-family: "Cinzel", serif; font-weight: 500; font-size: 15px;
+      letter-spacing: 0.36em; text-transform: uppercase; color: var(--sky-deep); padding-left: 0.36em;
+      margin-bottom: 10px;
+    }
+    .body {
+      font-family: "Cormorant Garamond", serif; font-size: 30px; line-height: 1.45; color: var(--ink);
+    }
+    .body em { font-style: italic; color: var(--blush-deep); }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; width: 100%; text-align: left; }
+    .split .section { text-align: center; }
+    .note {
+      font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 26px;
+      color: var(--ink-soft); margin-top: auto; padding-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <img class="wash" src="../assets/paper-wash.png" alt="" />
+    <img class="flora left" src="../assets/botanical-left.png" alt="" />
+    <img class="flora right" src="../assets/botanical-right.png" alt="" />
+    <div class="frame"></div>
+    <div class="copy">
+      <p class="kicker">The Afternoon</p>
+      <p class="title">Party Details</p>
+      <div class="rule"></div>
+      <img class="booties" src="../assets/booties.png" alt="" />
+
+      <div class="section">
+        <p class="label">Timeline</p>
+        <p class="body">
+          2:00 · Welcome &amp; sips<br />
+          2:30 · Games &amp; guesses<br />
+          3:15 · The great reveal<br />
+          3:45 · Cake &amp; well wishes
+        </p>
+      </div>
+
+      <div class="split">
+        <div class="section">
+          <p class="label">Dress</p>
+          <p class="body">Wear <em>blush</em> or <em>sky</em><br />garden-party easy</p>
+        </div>
+        <div class="section">
+          <p class="label">Games</p>
+          <p class="body">Guess the gender<br />Diaper raffle · Bingo</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <p class="label">Registry</p>
+        <p class="body">A book for baby is treasured.<br />All other gifts are optional.</p>
+      </div>
+
+      <p class="note">Kindly keep the secret until the balloons go up.</p>
+    </div>
+  </div>
+</body>
+</html>

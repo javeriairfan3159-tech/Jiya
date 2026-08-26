@@ -7,7 +7,7 @@ Everything you need to list **Kite Master** on Google Play and the App Store.
 ### Google Play
 | Console field | File |
 | --- | --- |
-| High-res icon | `icon/kite-master-icon-512.png` (512×512, 32-bit PNG) |
+| High-res icon | `icon/kite-master-icon-512.png` (512×512, 32-bit PNG) — new flying patang kite |
 | Feature graphic | `banners/play-store-feature-1024x500.png` (1024×500) |
 | Phone screenshots | `screenshots/01-home-wind.png` … `05-achievements.png` (1080×1920) |
 | Promo video | Upload `videos/kite-master-promo-16x9.mp4` to YouTube, paste the URL |

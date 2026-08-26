@@ -6,7 +6,7 @@ High-quality Play Store / App Store pack for **Kite Master**, the dark neon util
 
 | Need | File |
 | --- | --- |
-| App icon (Play Store) | `store-assets/icon/kite-master-icon-512.png` |
+| App icon (Play Store) | `store-assets/icon/kite-master-icon-512.png` (new patang kite) |
 | App icon (hi-res) | `store-assets/icon/kite-master-icon-1024.png` |
 | Feature graphic | `store-assets/banners/play-store-feature-1024x500.png` |
 | YouTube thumbnail | `store-assets/banners/youtube-thumbnail.png` |

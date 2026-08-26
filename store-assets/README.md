@@ -31,8 +31,19 @@ Everything you need to list **Kite Master** on Google Play and the App Store.
 
 `promo-shot-*.png` files are cinematic extras. Do **not** use them as the main store screenshots; they are not the live app UI.
 
+## Download videos
+
+Open `preview.html` and tap **Download** under each player, or grab the ZIP:
+
+- [Download all 3 videos (ZIP)](downloads/Kite-Master-Promo-Videos.zip)
+- [9:16 Reels / Shorts](videos/kite-master-promo-9x16.mp4)
+- [16:9 YouTube / Play Store](videos/kite-master-promo-16x9.mp4)
+- [Screens tour](videos/kite-master-screens-tour-9x16.mp4)
+
+On GitHub, click a file → the **Download** button, or use Raw.
+
 ## Preview
-Open `preview.html` locally.
+Open `preview.html` locally. Videos section has a download button on every clip.
 
 ## Rebuild
 ```bash

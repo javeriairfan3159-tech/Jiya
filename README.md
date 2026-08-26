@@ -15,7 +15,13 @@ High-quality Play Store / App Store pack for **Kite Master**, the dark neon util
 | Landscape promo | `store-assets/videos/kite-master-promo-16x9.mp4` |
 | Listing copy | `store-assets/copy/STORE_LISTING.md` |
 
-Open `store-assets/preview.html` in a browser to review everything.
+Open `store-assets/preview.html` in a browser to review everything. Har video ke neeche **Download** button hai.
+
+**Videos download:**
+- All 3 clips ZIP: `store-assets/downloads/Kite-Master-Promo-Videos.zip`
+- 9:16: `store-assets/videos/kite-master-promo-9x16.mp4`
+- 16:9: `store-assets/videos/kite-master-promo-16x9.mp4`
+- Screens tour: `store-assets/videos/kite-master-screens-tour-9x16.mp4`
 
 Use `screenshots/01`–`05` on the store listing — those wrap the **real app UI** (ads cropped). Files named `promo-shot-*` are extra cinematic frames, not the live app.
 

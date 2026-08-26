@@ -22,14 +22,41 @@
     .icon img { width: 180px; height: 180px; border-radius: 36px; }
     .shots img { width: 220px; }
     .banner img { width: 100%; }
-    video { width: 100%; max-width: 720px; }
+    video { width: 100%; max-width: 720px; display: block; }
     .v9 { width: 280px !important; }
+    a { color: #00e5ff; }
+
+    .dl-bar {
+      display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+      margin: 20px auto 8px; max-width: 900px; padding: 0 16px;
+    }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: linear-gradient(90deg, #e846ff, #00e5ff);
+      color: #0a0612; font-weight: 700; text-decoration: none;
+      padding: 12px 18px; border-radius: 999px; letter-spacing: .02em;
+    }
+    .btn.ghost {
+      background: transparent; color: #00e5ff;
+      border: 1px solid rgba(0, 229, 255, .55);
+    }
+    .card {
+      background: #12081c; border: 1px solid rgba(232, 70, 255, .28);
+      border-radius: 20px; padding: 14px; max-width: 100%;
+    }
+    .card h3 { margin: 12px 0 4px; font-size: 16px; }
+    .meta { color: #cbbbe8; font-size: 13px; margin: 0 0 12px; }
+    .card .btn { width: 100%; box-sizing: border-box; }
   </style>
 </head>
 <body>
   <header>
     <h1>KITE MASTER</h1>
     <p class="sub">Live wind · Pech tactics · Safety</p>
+    <div class="dl-bar">
+      <a class="btn" href="downloads/Kite-Master-Promo-Videos.zip" download="Kite-Master-Promo-Videos.zip">⬇ Download all videos (ZIP)</a>
+      <a class="btn ghost" href="#videos">Jump to videos</a>
+    </div>
   </header>
   <section>
     <h2>Icons</h2>
@@ -59,12 +86,32 @@
       <img src="screenshots/05-achievements.png" alt="Achievements" />
     </div>
   </section>
-  <section>
-    <h2>Videos</h2>
+  <section id="videos">
+    <h2>Videos — download</h2>
+    <p class="meta">Har video ke neeche Download button hai. Teeno ek saath chahiye hon to ZIP use karo.</p>
     <div class="row">
-      <video class="v9" controls src="videos/kite-master-promo-9x16.mp4"></video>
-      <video controls src="videos/kite-master-promo-16x9.mp4"></video>
+      <article class="card">
+        <video class="v9" controls playsinline src="videos/kite-master-promo-9x16.mp4"></video>
+        <h3>Reels / Shorts promo</h3>
+        <p class="meta">9:16 · 15s · 5.2 MB · 1080×1920</p>
+        <a class="btn" href="videos/kite-master-promo-9x16.mp4" download="Kite-Master-promo-9x16.mp4">⬇ Download 9:16 video</a>
+      </article>
+      <article class="card">
+        <video controls playsinline src="videos/kite-master-promo-16x9.mp4"></video>
+        <h3>YouTube / Play Store promo</h3>
+        <p class="meta">16:9 · 13s · 5.0 MB · 1920×1080</p>
+        <a class="btn" href="videos/kite-master-promo-16x9.mp4" download="Kite-Master-promo-16x9.mp4">⬇ Download 16:9 video</a>
+      </article>
+      <article class="card">
+        <video class="v9" controls playsinline src="videos/kite-master-screens-tour-9x16.mp4"></video>
+        <h3>App screens tour</h3>
+        <p class="meta">9:16 · 10s · 2.7 MB · 1080×1920</p>
+        <a class="btn" href="videos/kite-master-screens-tour-9x16.mp4" download="Kite-Master-screens-tour-9x16.mp4">⬇ Download screens tour</a>
+      </article>
     </div>
+    <p style="margin-top:20px">
+      <a class="btn" href="downloads/Kite-Master-Promo-Videos.zip" download="Kite-Master-Promo-Videos.zip">⬇ Download all 3 videos (ZIP)</a>
+    </p>
   </section>
 </body>
 </html>

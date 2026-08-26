@@ -1,7 +1,14 @@
-# Video downloads
+# Downloads
 
 Click a link to save the file.
 
+## Icon
+| File | Link |
+| --- | --- |
+| Play Store 512×512 | [Kite-Master-icon-512.png](Kite-Master-icon-512.png) |
+| Hi-res 1024×1024 | [Kite-Master-icon-1024.png](Kite-Master-icon-1024.png) |
+
+## Videos
 | Video | Size | Link |
 | --- | --- | --- |
 | All 3 videos (ZIP) | ~13 MB | [Kite-Master-Promo-Videos.zip](Kite-Master-Promo-Videos.zip) |

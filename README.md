@@ -23,7 +23,9 @@ Open `store-assets/preview.html` in a browser to review everything. Har video ke
 - 16:9: `store-assets/videos/kite-master-promo-16x9.mp4`
 - Screens tour: `store-assets/videos/kite-master-screens-tour-9x16.mp4`
 
-Use `screenshots/01`–`05` on the store listing — those wrap the **real app UI** (ads cropped). Files named `promo-shot-*` are extra cinematic frames, not the live app.
+**Play Console Phone screenshots ZIP:** `store-assets/downloads/Play-Console-Phone-Screenshots.zip`
+
+Use `play-console/phone-screenshots/01`–`05` on **Phone assets**. Ads cropped, 1080×1920, 9:16.
 
 ## Rebuild
 

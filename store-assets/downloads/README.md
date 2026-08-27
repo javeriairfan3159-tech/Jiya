@@ -8,7 +8,11 @@ Click a link to save the file.
 | Play Store 512×512 | [Kite-Master-icon-512.png](Kite-Master-icon-512.png) |
 | Hi-res 1024×1024 | [Kite-Master-icon-1024.png](Kite-Master-icon-1024.png) |
 
-## Videos
+## Phone screenshots (Play Console)
+| File | Link |
+| --- | --- |
+| 5 phone screenshots ZIP | [Play-Console-Phone-Screenshots.zip](Play-Console-Phone-Screenshots.zip) |
+| All phone mockups ZIP | [Kite-Master-Phone-Assets.zip](Kite-Master-Phone-Assets.zip) |
 | Video | Size | Link |
 | --- | --- | --- |
 | All 3 videos (ZIP) | ~13 MB | [Kite-Master-Promo-Videos.zip](Kite-Master-Promo-Videos.zip) |

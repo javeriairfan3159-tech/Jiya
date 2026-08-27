@@ -9,7 +9,7 @@ Everything you need to list **Kite Master** on Google Play and the App Store.
 | --- | --- |
 | High-res icon | `icon/kite-master-icon-512.png` (512×512, 32-bit PNG) — new flying patang kite |
 | Feature graphic | `banners/play-store-feature-1024x500.png` (1024×500) |
-| Phone screenshots | `screenshots/01-home-wind.png` … `05-achievements.png` (1080×1920) |
+| Phone screenshots | `play-console/phone-screenshots/01`–`05-phone-*.png` (1080×1920, 9:16) — **Play Console → Phone assets** |
 | Promo video | Upload `videos/kite-master-promo-16x9.mp4` to YouTube, paste the URL |
 | Short / full description | `copy/STORE_LISTING.md` |
 
@@ -30,6 +30,13 @@ Everything you need to list **Kite Master** on Google Play and the App Store.
 - `icon/kite-master-icon-alt-1024.png` — alternate diamond-kite icon
 
 `promo-shot-*.png` files are cinematic extras. Do **not** use them as the main store screenshots; they are not the live app UI.
+
+## Play Console — Phone screenshots
+
+Google Play Console → **Store listing** → **Phone assets** → **Phone screenshots** pe ye 5 files drop karo (2–8 chahiye, 9:16, 1080×1920):
+
+- [Download ZIP (5 PNGs)](downloads/Play-Console-Phone-Screenshots.zip)
+- Or folder: `play-console/phone-screenshots/`
 
 ## Download videos
 

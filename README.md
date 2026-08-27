@@ -10,7 +10,7 @@ High-quality Play Store / App Store pack for **Kite Master**, the dark neon util
 | App icon (hi-res) | `store-assets/icon/kite-master-icon-1024.png` |
 | Feature graphic | `store-assets/banners/play-store-feature-1024x500.png` |
 | YouTube thumbnail | `store-assets/banners/youtube-thumbnail.png` |
-| Phone screenshots | `store-assets/screenshots/01`–`05-*.png` |
+| Phone screenshots (Play Console) | `store-assets/play-console/phone-screenshots/` or [ZIP](store-assets/downloads/Play-Console-Phone-Screenshots.zip) |
 | Vertical promo | `store-assets/videos/kite-master-promo-9x16.mp4` |
 | Landscape promo | `store-assets/videos/kite-master-promo-16x9.mp4` |
 | Listing copy | `store-assets/copy/STORE_LISTING.md` |

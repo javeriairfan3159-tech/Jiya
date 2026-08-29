@@ -22,3 +22,10 @@ SEO-optimized marketplace listing packs for birthday invitation templates.
 | [`listings/fairy-princess-lucky-seven-COPY-PASTE.txt`](listings/fairy-princess-lucky-seven-COPY-PASTE.txt) | Ready-to-paste title, tags, description |
 | [`listings/fairy-princess-lucky-seven-seo-listing.md`](listings/fairy-princess-lucky-seven-seo-listing.md) | Full SEO pack |
 | [`listings/fairy-princess-lucky-seven-preview.jpg`](listings/fairy-princess-lucky-seven-preview.jpg) | Design preview |
+
+### Dinosaur Birthday Party Invitation
+| File | Use |
+|------|-----|
+| [`listings/dino-birthday-COPY-PASTE.txt`](listings/dino-birthday-COPY-PASTE.txt) | Ready-to-paste title, tags, description |
+| [`listings/dino-birthday-invitation-seo-listing.md`](listings/dino-birthday-invitation-seo-listing.md) | Full SEO pack |
+| [`listings/dino-birthday-invite-preview.jpg`](listings/dino-birthday-invite-preview.jpg) | Design preview |

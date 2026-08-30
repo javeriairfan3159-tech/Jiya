@@ -23,6 +23,8 @@ store-listing/
 └── build_promo.py            # Rebuild banners + videos
 ```
 
+**Download everything:** `V380-Pro-Guide-Store-Assets.zip`
+
 Copy-paste the text from `STORE_LISTING.md` into Play Console.
 
 Play promo video: upload the 16:9 MP4 to YouTube (unlisted is fine), then paste the YouTube URL in Play Console.

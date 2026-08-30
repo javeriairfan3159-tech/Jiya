@@ -9,7 +9,11 @@ Use these fields when you publish the app. Character limits are for **Google Pla
 | Full description | below | 4000 |
 | App icon | `icon/ic_launcher_512.png` | 512×512 PNG |
 | High-res icon (optional) | `icon/ic_launcher_1024.png` | 1024×1024 PNG |
-| Feature graphic | `feature-graphic/feature_graphic_1024x500.png` | 1024×500 PNG |
+| Feature graphic / banner | `banner/banner_playstore_1024x500.png` | 1024×500 PNG |
+| YouTube / ad banner | `banner/banner_youtube_1920x1080.png` | 1920×1080 PNG |
+| Wide strip banner | `banner/banner_strip_1920x600.png` | 1920×600 PNG |
+| Promo video (Play / YouTube) | `video/v380-pro-guide-promo-16x9.mp4` | 1920×1080, ~18s |
+| Short video (Reels / Status) | `video/v380-pro-guide-promo-9x16.mp4` | 1080×1920, ~18s |
 | Phone screenshots | `screenshots/01` … `06` | 1080×1920 PNG |
 
 This listing is for an **unofficial companion / guide**. It is not the official V380 camera app.
@@ -122,7 +126,19 @@ Windows/macOS CMS سیٹ اپ، ملٹی یوزر پرمیشنز، اور Hikvis
 
 Upload order: 01 → 06. Play Console needs at least 2 phone screenshots.
 
-## How to rebuild screenshots
+## Promo video (Play Store)
+
+Play Console does not accept an MP4 upload. Steps:
+
+1. Upload `video/v380-pro-guide-promo-16x9.mp4` to YouTube (unlisted is fine).
+2. In Play Console → Main store listing → Promo video, paste the YouTube URL.
+
+Use `video/v380-pro-guide-promo-9x16.mp4` for Instagram Reels, YouTube Shorts, or WhatsApp Status.
+
+Both clips are ~18 seconds: intro → 5 app scenes → end card, with original background audio (no copyrighted music).
+
+## How to rebuild
 ```bash
 python3 store-listing/build_screenshots.py
+python3 store-listing/build_promo.py
 ```

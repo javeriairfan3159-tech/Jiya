@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+video/frames-16x9/
+video/frames-9x16/
+video/promo-audio.m4a

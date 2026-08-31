@@ -1,54 +1,48 @@
-# Jiya — Etsy Listing (copy-paste ready)
+# Wedding Planner App — Etsy listing (copy-paste ready)
+
+This is an **installable mobile app**, not a PDF or Canva template. Copy below matches that.
 
 Upload photos **in this order**. Photo 1 is the search thumbnail.
 
 | # | File | Why it converts |
 |---|------|-----------------|
-| 1 | `mockups/00-THUMBNAIL.jpg` | **Main search thumbnail** — floral wreath + dashboard |
-| 2 | `mockups/02-lifestyle-dashboard.jpg` | Lifestyle: bride holding the dashboard |
-| 3 | `mockups/03-whats-included.jpg` | All 6 modules at a glance |
-| 4 | `mockups/04-multi-event-schedule.jpg` | Mehndi / Barat / Walima (niche keyword) |
-| 5 | `mockups/05-budget-and-ocr.jpg` | Money + receipt scanner |
-| 6 | `mockups/06-guests-rsvp-seating.jpg` | Guest office + CSV + seating |
-| 7 | `mockups/07-ai-wedding-studio.jpg` | AI assistant (high-intent feature) |
-| 8 | `mockups/08-feature-grid.jpg` | Skimmable benefits |
-| 9 | `mockups/09-who-its-for.jpg` | Couple, family committee, planners, NRI |
-| 10 | `mockups/10-how-it-works.jpg` | Reduces “how do I use this?” objections |
-
-**Video (Etsy listing video + Reels/TikTok/Pinterest):**  
-`video/jiya-desi-wedding-planner-vertical.mp4` — 9:16, ~18 seconds, no music (add a royalty-free piano/sitar bed in CapCut if you want).
-
-**Bonus (Pinterest / extra photo if you swap):**  
-`mockups/pinterest-desi-wedding-planner.jpg` · `mockups/11-screen-collage.jpg`
+| 1 | `mockups/00-THUMBNAIL.jpg` | **Main search thumbnail** |
+| 2 | `mockups/02-lifestyle-dashboard.jpg` | Dashboard in hand |
+| 3 | `mockups/03-whats-included.jpg` | All modules |
+| 4 | `mockups/04-multi-event-schedule.jpg` | Multi-event schedule |
+| 5 | `mockups/05-budget-and-ocr.jpg` | Budget + OCR |
+| 6 | `mockups/06-guests-rsvp-seating.jpg` | Guests + seating |
+| 7 | `mockups/07-ai-wedding-studio.jpg` | AI assistant |
+| 8 | `mockups/08-feature-grid.jpg` | Features |
+| 9 | `mockups/09-who-its-for.jpg` | Who it’s for |
+| 10 | `mockups/10-how-it-works.jpg` | How to start |
 
 ---
 
 ## Title (140 characters max — paste as-is)
 
 ```
-Digital Wedding Planner | Budget Tracker Guest List RSVP Seating Chart | AI Organizer OCR Instant Download
+Wedding Planner App | Budget Tracker Guest List RSVP Seating Chart | AI Organizer OCR Scanner
 ```
 
-Character count: 106. Leads with the highest-volume global terms: **digital wedding planner**, **budget tracker**, **guest list**, **RSVP**, **seating chart**, **AI**, **OCR**.
+93/140 characters. Starts with **Wedding Planner App** (exact search phrase). Then budget, guest list, RSVP, seating chart, AI, OCR.
 
-### Alternate titles (A/B later)
-
-```
-Wedding Planner App | Digital Budget Tracker Guest List RSVP Seating Chart | AI OCR Organizer
-```
+### Alternate titles
 
 ```
-Digital Wedding Planner App | Bridal Budget Guest List RSVP Seating | AI Checklist OCR Scanner
+Wedding Planner App | Budget Tracker Guest List RSVP Seating Chart | AI OCR Expense Scanner
+```
+
+```
+Wedding Planner App | Mobile Budget Guest List RSVP Seating Chart | AI Checklist OCR Scanner
 ```
 
 ---
 
 ## Tags (13 tags · max 20 characters each)
 
-Paste one per Etsy tag field — all-audience, no overlap waste:
-
-1. `wedding planner`
-2. `digital wedding plan`
+1. `wedding planner app`
+2. `mobile wedding app`
 3. `wedding organizer`
 4. `wedding budget app`
 5. `wedding guest list`
@@ -65,151 +59,119 @@ Paste one per Etsy tag field — all-audience, no overlap waste:
 
 ## Categories & attributes
 
-- **Primary category:** Paper & Party Supplies → Wedding → Planning  
-  (If that path is missing: Craft Supplies & Tools → Party Supplies → Wedding)
-- **Type:** Digital download
+- **Primary category:** Electronics → Mobile Apps  *(if available)*  
+  Fallback: Paper & Party Supplies → Wedding → Planning
+- **Type:** Digital item / app access
 - **Primary color:** Ivory / Cream
 - **Secondary color:** Gold
 - **Occasion:** Wedding
-- **Holiday:** None
-- **Personalization:** Optional (couple initials, currency, wedding date)
-- **What is it:** Digital wedding planner / mobile organizer
+- **What is it:** Mobile wedding planner app
 - **When is it for:** Engagement through honeymoon
-
----
-
-## Price guidance (not a promise)
-
-Digital wedding planners typically sit **$12–$29**.  
-AI + OCR + guest/budget suite: start at **$19.00**, test **$24**.
 
 ---
 
 ## Description (paste into Etsy — first 2 lines show in search)
 
 ```
-Digital wedding planner with budget tracker, guest list, RSVP, seating chart, AI assistant & OCR receipt scanner.
+Wedding planner app for your phone — budget tracker, guest list, RSVP, seating chart, AI assistant & OCR receipt scanner.
 
-Plan your whole wedding in one calm app — ceremony, reception, and every event in between. Instant download.
+Install the app and plan your whole wedding in one place: ceremony, reception, and every event in between.
 
-Jiya is an all-in-one wedding organizer for modern couples worldwide: dashboard countdown, auto budget allocation, expense tracking, digital RSVPs, seating canvas, vendor list, checklists, and a smart AI wedding studio.
+This is a mobile wedding planner app you install on your device. Track spending, manage guests, build seating, scan receipts, and ask the AI studio for décor, attire, and checklist help — all in one app.
 
 ━━━━━━━━━━━━━━━━━━━━
-WHAT YOU GET (INSTANT DOWNLOAD)
+WHAT’S IN THE APP
 ━━━━━━━━━━━━━━━━━━━━
 
-• Command dashboard — couple initials, days-to-go countdown, total / spent / remaining
-• Multi-event wedding schedule — rehearsal dinner, ceremony, reception, after-party, or any custom event
-• Assign a lead to every event so family and wedding party stay aligned
-• Run-sheet completion bars so nothing slips the night before
-• Wedding budget calculator — set your target, currency (USD and more), and wedding scale
-• Category auto-allocation & rebalancing (venue, catering, photo/video, attire, décor, emergency fund)
-• Green “OK (<80%)” health badges so overspend is visible early
-• AI / OCR receipt & invoice scanner — vendor name, total, and tax, then Confirm & Log Expense
-• Guest list manager — search, add guest, CSV import for large weddings
-• Seating canvas for ballrooms, barns, gardens, and hotel halls
-• Digital RSVP analytics — confirmed / declined / pending at a glance
-• Smart AI Wedding Assistant (Studio) — themes, décor, attire, and checklist advice
-• Tap suggested prompts, then one-tap “Add task” from the chat
+• Dashboard — couple initials, days-to-go countdown, total / spent / remaining
+• Multi-event schedule — rehearsal dinner, ceremony, reception, brunch, or any custom event
+• Assign a lead to each event so your wedding party stays aligned
+• Run-sheet progress bars so nothing is missed
+• Wedding budget calculator — target amount, currency, wedding scale
+• Auto-allocation by category (venue, catering, photo/video, attire, décor, emergency)
+• Budget health badges so overspend shows up early
+• OCR receipt & invoice scanner — vendor, total, tax → log the expense
+• Guest list — search, add guest, CSV import for large weddings
+• Seating canvas for ballrooms, barns, gardens, and hotels
+• RSVP tracker — confirmed / declined / pending
+• AI wedding assistant — themes, décor, attire, checklists
+• Suggested prompts + one-tap add task
 • Quick actions: + Expense, Vendors, Guests, Seating
 
 ━━━━━━━━━━━━━━━━━━━━
-BUILT FOR EVERY KIND OF WEDDING
+MADE FOR EVERY WEDDING
 ━━━━━━━━━━━━━━━━━━━━
 
-Use it for a city hall elopement, a backyard micro wedding, a ballroom reception, a destination weekend, or a multi-day celebration.
+Elopement, backyard micro wedding, ballroom, destination weekend, or a multi-day celebration.
 
-Works for:
-• Traditional, modern, civil, religious, and destination weddings
-• Indian, Pakistani, South Asian, Middle Eastern, African, European, Latin, and multicultural celebrations
-• Christian, Muslim, Hindu, Jewish, Sikh, and secular ceremonies
-• Rehearsal dinner + ceremony + brunch the next day
-• USA, UK, Canada, Australia, Europe, Gulf, and planning-from-abroad couples
+Works for traditional, modern, civil, religious, and multicultural weddings — including Indian, Pakistani, South Asian, Middle Eastern, African, European, Latin, Christian, Muslim, Hindu, Jewish, Sikh, and secular ceremonies.
 
-One planner. Any culture. Any guest count.
+Plan from the USA, UK, Canada, Australia, Europe, the Gulf, or abroad.
 
 ━━━━━━━━━━━━━━━━━━━━
-HOW IT WORKS
+HOW TO START
 ━━━━━━━━━━━━━━━━━━━━
 
-1. Open Jiya and set your budget, currency, and wedding scale
-2. Add every event — venue, date, countdown, and who is in charge
-3. Import guests (CSV), track RSVPs, open the seating canvas
-4. Ask the AI studio for décor, attire, or checklists — tap to add the task
-5. Snap vendor invoices with OCR so the budget stays honest
+1. After purchase, install the wedding planner app on your phone
+2. Set your budget, currency, and wedding scale
+3. Add every event — venue, date, countdown, who’s in charge
+4. Import guests (CSV), track RSVPs, open the seating canvas
+5. Ask the AI studio for ideas, then add tasks
+6. Snap vendor receipts with OCR so the budget stays accurate
 
 ━━━━━━━━━━━━━━━━━━━━
 WHO IT’S FOR
 ━━━━━━━━━━━━━━━━━━━━
 
-• Engaged couples who want budget, guests, and timeline in one place
-• Brides, grooms, and partners tired of 14 group chats and sticky notes
-• Maid of honor / best man helping without losing the spreadsheet
-• Wedding planners and coordinators who need a mobile run-of-show
-• Destination and international couples planning across time zones
-• Anyone hosting more than one event (welcome party, ceremony, reception)
+• Couples who want budget, guests, and timeline in one app
+• Brides, grooms, and partners done with messy group chats
+• Maid of honor / best man helping without a lost spreadsheet
+• Wedding planners who need a mobile run-of-show
+• Destination couples planning across time zones
 
 ━━━━━━━━━━━━━━━━━━━━
-WHY THIS — NOT ANOTHER SPREADSHEET
+WHY AN APP — NOT A SPREADSHEET
 ━━━━━━━━━━━━━━━━━━━━
 
-✓ Budget + guests + schedule + seating + AI in one mobile planner
-✓ OCR so paper receipts actually get logged
-✓ CSV import and seating canvas for 50 guests or 500
-✓ Multi-event timeline — not a single “wedding day” checklist
-✓ Luxury, calm UI you will actually open every day
-✓ Instant digital download — keep forever, plan from your phone
+✓ Install once — plan from your phone
+✓ Budget + guests + schedule + seating + AI together
+✓ OCR so paper invoices actually get logged
+✓ CSV import and seating for 50 guests or 500
+✓ Multi-event timeline, not a one-day checklist
+✓ Clean, calm interface you will actually open
 
 ━━━━━━━━━━━━━━━━━━━━
 PLEASE NOTE
 ━━━━━━━━━━━━━━━━━━━━
 
-• DIGITAL product — nothing is shipped
-• Instant download after purchase
+• This listing is for a wedding planner APP you install on your device
+• After checkout you receive the app / install access (see the download or message from the shop)
 • Designed for mobile (portrait)
-• Listing screens are from the live planner (sample couple T & B, $50,000 USD)
-• Colors may vary slightly by screen
-• You need a device that can open the delivered app / file format
+• Screens in the photos are from the live app (sample couple T & B, $50,000 USD)
+• Colors may vary by screen
+• Android / iOS compatibility is as stated in the shop message after purchase — message us if you are unsure before buying
 
 ━━━━━━━━━━━━━━━━━━━━
 SHOP POLICY
 ━━━━━━━━━━━━━━━━━━━━
 
-Digital items are non-returnable once downloaded. If a file will not open, message the shop — we replace it immediately.
+Because this is software access, it cannot be returned once installed. If the app will not install, message the shop — we will help you get it running.
 
-Questions about currency, guest CSV format, or couple initials? Send a message anytime — happy to help you start planning calm.
+Questions about currency, CSV guest import, or setup? Send a message anytime.
 ```
 
 ---
 
 ## First 2 lines (search snippet)
 
-Digital wedding planner with budget tracker, guest list, RSVP, seating chart, AI assistant & OCR receipt scanner.
+Wedding planner app for your phone — budget tracker, guest list, RSVP, seating chart, AI assistant & OCR receipt scanner.
 
-Plan your whole wedding in one calm app — ceremony, reception, and every event in between. Instant download.
-
----
-
-## Pinterest / Reels titles (global)
-
-- Plan the whole wedding in one app
-- Budget, guests, RSVPs and seating — finally in one place
-- Snap the receipt. Watch the budget stay green.
-- Stop planning your wedding in 14 group chats
+Install the app and plan your whole wedding in one place: ceremony, reception, and every event in between.
 
 ---
 
-## SEO keyword bank (woven into the description)
+## SEO keyword bank
 
-Primary: digital wedding planner, wedding planner, wedding organizer, bridal planner, wedding checklist  
-Secondary: wedding budget tracker, wedding budget calculator, wedding expense tracker, guest list, digital RSVP, seating chart, wedding itinerary, AI wedding planner, destination wedding, receipt scanner, OCR, wedding timeline, vendor list  
-Long-tail: all in one wedding planner, mobile wedding planner, wedding seating canvas, csv wedding guest import, multi event wedding planner, international wedding planner
-
----
-
-## Production notes
-
-- Listing images are **2400×2400 px JPEG** (Etsy zoom-ready).
-- Screens on designed mockups are the **real app screenshots**, inside custom iPhone frames.
-- Lifestyle photos composite the real UI onto bridal marble / peony / silk scenes.
-- Vertical video: `1080×1920`, H.264, ~18s, faststart for Etsy/IG.
+Primary: wedding planner app, mobile wedding app, wedding organizer, bridal planner  
+Secondary: wedding budget app, guest list, RSVP tracker, seating chart, wedding checklist, AI wedding planner, destination wedding, receipt scanner, OCR, wedding itinerary  
+Long-tail: all in one wedding planner app, wedding seating canvas, csv guest import, multi event wedding app

@@ -4,7 +4,7 @@ Upload photos **in this order**. Photo 1 is the search thumbnail.
 
 | # | File | Why it converts |
 |---|------|-----------------|
-| 1 | `mockups/01-hero-three-phones.jpg` | Thumbnail: 3 real screens + brand |
+| 1 | `mockups/00-THUMBNAIL.jpg` | **Main search thumbnail** — floral wreath + dashboard |
 | 2 | `mockups/02-lifestyle-dashboard.jpg` | Lifestyle: bride holding the dashboard |
 | 3 | `mockups/03-whats-included.jpg` | All 6 modules at a glance |
 | 4 | `mockups/04-multi-event-schedule.jpg` | Mehndi / Barat / Walima (niche keyword) |

@@ -18,3 +18,7 @@ python3 etsy-listing/build_assets.py
 ```
 
 Requires Pillow, OpenCV, ffmpeg.
+
+## Download zip
+
+`Jiya-Etsy-Demo.zip` (repo root or `etsy-listing/`) — unzip and upload folder `01-UPLOAD-TO-ETSY` to Etsy in number order. Video is in `02-VIDEO`. Copy is in `03-LISTING-COPY`.

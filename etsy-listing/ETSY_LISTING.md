@@ -26,40 +26,40 @@ Upload photos **in this order**. Photo 1 is the search thumbnail.
 ## Title (140 characters max — paste as-is)
 
 ```
-Jiya Desi Wedding Planner App | Mehndi Barat Nikkah Walima | Budget OCR RSVP Seating AI Digital Organizer
+Digital Wedding Planner | Budget Tracker Guest List RSVP Seating Chart | AI Organizer OCR Instant Download
 ```
 
-Character count: 107. Front-loads the two highest-volume phrases: **Desi Wedding Planner** and **Mehndi Barat**.
+Character count: 106. Leads with the highest-volume global terms: **digital wedding planner**, **budget tracker**, **guest list**, **RSVP**, **seating chart**, **AI**, **OCR**.
 
-### Alternate titles (A/B test later)
-
-```
-Desi Wedding Planner App | South Asian Mehndi Barat Walima Organizer | Budget Tracker RSVP AI Digital Download
-```
+### Alternate titles (A/B later)
 
 ```
-South Asian Wedding Planner | Digital Shaadi Organizer Mehndi Barat Nikkah Walima | Budget Guest List AI
+Wedding Planner App | Digital Budget Tracker Guest List RSVP Seating Chart | AI OCR Organizer
+```
+
+```
+Digital Wedding Planner App | Bridal Budget Guest List RSVP Seating | AI Checklist OCR Scanner
 ```
 
 ---
 
 ## Tags (13 tags · max 20 characters each)
 
-Paste one per Etsy tag field:
+Paste one per Etsy tag field — all-audience, no overlap waste:
 
-1. `desi wedding planner`
-2. `south asian wedding`
-3. `wedding budget app`
-4. `digital wedding plan`
-5. `mehndi barat walima`
+1. `wedding planner`
+2. `digital wedding plan`
+3. `wedding organizer`
+4. `wedding budget app`
+5. `wedding guest list`
 6. `wedding rsvp tracker`
-7. `wedding guest list`
-8. `wedding seating chart`
-9. `ai wedding planner`
-10. `receipt ocr scanner`
-11. `indian wedding plan`
-12. `pakistani wedding`
-13. `muslim wedding plan`
+7. `seating chart`
+8. `wedding checklist`
+9. `bridal planner`
+10. `ai wedding planner`
+11. `wedding itinerary`
+12. `destination wedding`
+13. `receipt scanner`
 
 ---
 
@@ -72,149 +72,138 @@ Paste one per Etsy tag field:
 - **Secondary color:** Gold
 - **Occasion:** Wedding
 - **Holiday:** None
-- **Personalization:** Optional (you can offer couple initials / budget currency as a custom note)
+- **Personalization:** Optional (couple initials, currency, wedding date)
 - **What is it:** Digital wedding planner / mobile organizer
-- **When is it for:** Engagement through walima
+- **When is it for:** Engagement through honeymoon
 
 ---
 
 ## Price guidance (not a promise)
 
-Digital wedding planners in this niche typically sit **$12–$29**.  
-Premium positioning with AI + OCR + multi-event: start at **$19.00**, then test $24.
+Digital wedding planners typically sit **$12–$29**.  
+AI + OCR + guest/budget suite: start at **$19.00**, test **$24**.
 
 ---
 
 ## Description (paste into Etsy — first 2 lines show in search)
 
 ```
-Plan the whole shaadi in one calm app — Mehndi, Barat, Nikkah & Walima.
+Digital wedding planner with budget tracker, guest list, RSVP, seating chart, AI assistant & OCR receipt scanner.
 
-Jiya is a mobile-first Desi / South Asian wedding planner: multi-event run sheets, auto budget allocation, OCR receipt scanning, digital RSVPs, seating canvas, and a context-aware AI studio.
+Plan your whole wedding in one calm app — ceremony, reception, and every event in between. Instant download.
+
+Jiya is an all-in-one wedding organizer for modern couples worldwide: dashboard countdown, auto budget allocation, expense tracking, digital RSVPs, seating canvas, vendor list, checklists, and a smart AI wedding studio.
 
 ━━━━━━━━━━━━━━━━━━━━
 WHAT YOU GET (INSTANT DOWNLOAD)
 ━━━━━━━━━━━━━━━━━━━━
 
-• Command dashboard — couple initials, days-to-Barat countdown, total / spent / remaining
-• Multi-event master schedule — Mehndi Night, Barat & Nikkah, Walima Reception
-• Family leads on every function (Uncle, Aunt, cousin — everyone owns a lane)
+• Command dashboard — couple initials, days-to-go countdown, total / spent / remaining
+• Multi-event wedding schedule — rehearsal dinner, ceremony, reception, after-party, or any custom event
+• Assign a lead to every event so family and wedding party stay aligned
 • Run-sheet completion bars so nothing slips the night before
-• Wedding budget calculator — target, currency (USD+), wedding scale
-• Category auto-allocation & rebalancing (venue, photo, attire, décor, emergency)
+• Wedding budget calculator — set your target, currency (USD and more), and wedding scale
+• Category auto-allocation & rebalancing (venue, catering, photo/video, attire, décor, emergency fund)
 • Green “OK (<80%)” health badges so overspend is visible early
-• AI / OCR receipt & invoice scanner — vendor, total, tax → Confirm & Log Expense
-• Guest management — search, add guest, CSV import for big baraats
-• Seating canvas for halls and marquee lawns
-• Digital RSVP analytics — confirmed / declined / pending
-• Smart AI Wedding Assistant (Studio) — themes, décor, attire, checklists
-• Suggested prompts like “pastel themes for a daytime Barat”
-• One-tap “Add task: Reserve venue” from the chat
+• AI / OCR receipt & invoice scanner — vendor name, total, and tax, then Confirm & Log Expense
+• Guest list manager — search, add guest, CSV import for large weddings
+• Seating canvas for ballrooms, barns, gardens, and hotel halls
+• Digital RSVP analytics — confirmed / declined / pending at a glance
+• Smart AI Wedding Assistant (Studio) — themes, décor, attire, and checklist advice
+• Tap suggested prompts, then one-tap “Add task” from the chat
 • Quick actions: + Expense, Vendors, Guests, Seating
 
 ━━━━━━━━━━━━━━━━━━━━
-BUILT FOR REAL DESI WEDDINGS
+BUILT FOR EVERY KIND OF WEDDING
 ━━━━━━━━━━━━━━━━━━━━
 
-Most “wedding planners” assume one white-dress Saturday.
+Use it for a city hall elopement, a backyard micro wedding, a ballroom reception, a destination weekend, or a multi-day celebration.
 
-Jiya is built for multi-day, multi-venue shaadis:
+Works for:
+• Traditional, modern, civil, religious, and destination weddings
+• Indian, Pakistani, South Asian, Middle Eastern, African, European, Latin, and multicultural celebrations
+• Christian, Muslim, Hindu, Jewish, Sikh, and secular ceremonies
+• Rehearsal dinner + ceremony + brunch the next day
+• USA, UK, Canada, Australia, Europe, Gulf, and planning-from-abroad couples
 
-• Mehndi Night at the marquee lawn
-• Barat & Nikkah in the ballroom
-• Walima at a second palace
-• Different family leads on each event
-• Guest lists that run into the hundreds
-• Receipts in three currencies and a hundred WhatsApp forwards
-
-If you are planning an Indian, Pakistani, Bangladeshi, or Muslim wedding — or an NRI destination shaadi — this is the organizer that already speaks your language.
+One planner. Any culture. Any guest count.
 
 ━━━━━━━━━━━━━━━━━━━━
 HOW IT WORKS
 ━━━━━━━━━━━━━━━━━━━━
 
-1. Open Jiya and set budget, currency, and wedding scale
-2. Add every event — venue + family lead + countdown
+1. Open Jiya and set your budget, currency, and wedding scale
+2. Add every event — venue, date, countdown, and who is in charge
 3. Import guests (CSV), track RSVPs, open the seating canvas
-4. Ask the AI studio for décor / attire / checklists, then tap to add the task
+4. Ask the AI studio for décor, attire, or checklists — tap to add the task
 5. Snap vendor invoices with OCR so the budget stays honest
 
 ━━━━━━━━━━━━━━━━━━━━
 WHO IT’S FOR
 ━━━━━━━━━━━━━━━━━━━━
 
-• The couple who is done with 14 family WhatsApp groups
-• The mama / khala / committee running one function each
+• Engaged couples who want budget, guests, and timeline in one place
+• Brides, grooms, and partners tired of 14 group chats and sticky notes
+• Maid of honor / best man helping without losing the spreadsheet
 • Wedding planners and coordinators who need a mobile run-of-show
-• NRI & destination couples planning from another timezone
+• Destination and international couples planning across time zones
+• Anyone hosting more than one event (welcome party, ceremony, reception)
 
 ━━━━━━━━━━━━━━━━━━━━
-WHY JIYA (NOT ANOTHER SPREADSHEET)
+WHY THIS — NOT ANOTHER SPREADSHEET
 ━━━━━━━━━━━━━━━━━━━━
 
-✓ Multi-event — not a single “wedding day” checklist
-✓ Money + guests + schedule + AI in one place
-✓ OCR so receipts actually get logged
-✓ Seating canvas + CSV — ready for a full baraat
-✓ Context-aware prompts (Barat, Mehndi, Walima) not generic Pinterest tips
-✓ Calm, luxury UI you will actually open every day
+✓ Budget + guests + schedule + seating + AI in one mobile planner
+✓ OCR so paper receipts actually get logged
+✓ CSV import and seating canvas for 50 guests or 500
+✓ Multi-event timeline — not a single “wedding day” checklist
+✓ Luxury, calm UI you will actually open every day
+✓ Instant digital download — keep forever, plan from your phone
 
 ━━━━━━━━━━━━━━━━━━━━
 PLEASE NOTE
 ━━━━━━━━━━━━━━━━━━━━
 
-• This is a DIGITAL product — nothing is shipped
-• Instant download after purchase (files + access as described in the listing photos)
+• DIGITAL product — nothing is shipped
+• Instant download after purchase
 • Designed for mobile (portrait)
-• Screens in the listing are from the live planner (sample couple T & B, $50,000 USD, 114 days to Barat)
+• Listing screens are from the live planner (sample couple T & B, $50,000 USD)
 • Colors may vary slightly by screen
-• You will need a device that can open the delivered app / file format
+• You need a device that can open the delivered app / file format
 
 ━━━━━━━━━━━━━━━━━━━━
 SHOP POLICY
 ━━━━━━━━━━━━━━━━━━━━
 
-Digital items are non-returnable once downloaded. If a file won’t open, message the shop — we replace immediately.
+Digital items are non-returnable once downloaded. If a file will not open, message the shop — we replace it immediately.
 
-Questions about currency, guest CSV format, or a custom couple-initials setup? Send a message before or after purchase — happy to help you start Mehndi week calm.
+Questions about currency, guest CSV format, or couple initials? Send a message anytime — happy to help you start planning calm.
 ```
 
 ---
 
-## First 2 lines (search snippet — already in the description)
+## First 2 lines (search snippet)
 
-Plan the whole shaadi in one calm app — Mehndi, Barat, Nikkah & Walima.
+Digital wedding planner with budget tracker, guest list, RSVP, seating chart, AI assistant & OCR receipt scanner.
 
-Jiya is a mobile-first Desi / South Asian wedding planner: multi-event run sheets, auto budget allocation, OCR receipt scanning, digital RSVPs, seating canvas, and a context-aware AI studio.
-
----
-
-## Video overlay captions (already in the MP4)
-
-1. Jiya — Plan the whole shaadi in one calm app
-2. Your shaadi, on one screen
-3. Mehndi. Barat. Walima.
-4. Snap the receipt. Logged.
-5. RSVPs & seating canvas
-6. Ask for a pastel Barat
-7. Instant download on Etsy
+Plan your whole wedding in one calm app — ceremony, reception, and every event in between. Instant download.
 
 ---
 
-## Pinterest / Reels title ideas
+## Pinterest / Reels titles (global)
 
-- Plan Mehndi, Barat, Nikkah & Walima in one app
-- The Desi wedding planner that tracks the budget AND Uncle Tariq’s run sheet
-- Stop planning your shaadi in 14 WhatsApp groups
-- OCR the mehndi florist invoice. Watch the budget stay green.
+- Plan the whole wedding in one app
+- Budget, guests, RSVPs and seating — finally in one place
+- Snap the receipt. Watch the budget stay green.
+- Stop planning your wedding in 14 group chats
 
 ---
 
-## SEO keyword bank (use in description naturally — already included)
+## SEO keyword bank (woven into the description)
 
-Primary: desi wedding planner, south asian wedding planner, digital wedding planner, shaadi planner, mehndi barat walima, indian wedding planner, pakistani wedding planner, muslim wedding planner  
-Secondary: wedding budget tracker, wedding budget calculator, wedding expense tracker, receipt scanner OCR, wedding guest list, digital RSVP, wedding seating chart, wedding seating canvas, AI wedding assistant, wedding run sheet, multi event wedding, NRI wedding planner, destination wedding planner  
-Long-tail: mehndi night planner, barat countdown, nikkah walima organizer, csv wedding guest import, pastel daytime barat theme
+Primary: digital wedding planner, wedding planner, wedding organizer, bridal planner, wedding checklist  
+Secondary: wedding budget tracker, wedding budget calculator, wedding expense tracker, guest list, digital RSVP, seating chart, wedding itinerary, AI wedding planner, destination wedding, receipt scanner, OCR, wedding timeline, vendor list  
+Long-tail: all in one wedding planner, mobile wedding planner, wedding seating canvas, csv wedding guest import, multi event wedding planner, international wedding planner
 
 ---
 

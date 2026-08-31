@@ -106,31 +106,29 @@ def drop_shadow(im: Image.Image, offset=(18, 28), blur=28, opacity=110) -> Image
     return canvas
 
 
-def iphone_mock(screenshot: Image.Image, screen_h: int = 1180) -> Image.Image:
-    """Draw a graphite iPhone-style device around a real screenshot."""
+def android_mock(screenshot: Image.Image, screen_h: int = 1180) -> Image.Image:
+    """Draw a flagship Android (Pixel/Galaxy punch-hole) around a real screenshot."""
     shot = screenshot.convert("RGB")
     aspect = shot.width / shot.height
     screen_w = int(screen_h * aspect)
     screen = shot.resize((screen_w, screen_h), Image.Resampling.LANCZOS)
 
-    bezel = max(10, int(screen_w * 0.042))
-    top = int(bezel * 1.15)
-    bottom = int(bezel * 1.25)
+    bezel = max(8, int(screen_w * 0.034))
+    top = int(bezel * 1.05)
+    bottom = int(bezel * 1.15)
     device_w = screen_w + bezel * 2
     device_h = screen_h + top + bottom
-    radius = int(device_w * 0.13)
-    screen_r = int(screen_w * 0.10)
+    radius = int(device_w * 0.09)
+    screen_r = int(screen_w * 0.07)
 
     device = Image.new("RGBA", (device_w, device_h), (0, 0, 0, 0))
     d = ImageDraw.Draw(device)
 
-    # outer metal
-    d.rounded_rectangle((0, 0, device_w - 1, device_h - 1), radius=radius, fill=(42, 44, 46, 255))
-    # inner highlight
-    d.rounded_rectangle((2, 2, device_w - 3, device_h - 3), radius=radius - 2, fill=(58, 60, 62, 255))
-    d.rounded_rectangle((4, 4, device_w - 5, device_h - 5), radius=radius - 3, fill=(22, 23, 24, 255))
+    # aluminum frame (slightly flatter than iPhone)
+    d.rounded_rectangle((0, 0, device_w - 1, device_h - 1), radius=radius, fill=(36, 38, 40, 255))
+    d.rounded_rectangle((2, 2, device_w - 3, device_h - 3), radius=max(2, radius - 2), fill=(72, 74, 76, 255))
+    d.rounded_rectangle((3, 3, device_w - 4, device_h - 4), radius=max(2, radius - 3), fill=(18, 19, 20, 255))
 
-    # screen well
     sx, sy = bezel, top
     well = Image.new("RGBA", (screen_w, screen_h), (0, 0, 0, 255))
     well_m = rounded_mask((screen_w, screen_h), screen_r)
@@ -139,20 +137,25 @@ def iphone_mock(screenshot: Image.Image, screen_h: int = 1180) -> Image.Image:
     screen_rgba.putalpha(well_m)
     device.paste(screen_rgba, (sx, sy), screen_rgba)
 
-    # dynamic island
-    island_w = int(screen_w * 0.34)
-    island_h = int(screen_w * 0.075)
-    ix = sx + (screen_w - island_w) // 2
-    iy = sy + int(screen_w * 0.028)
-    d.rounded_rectangle((ix, iy, ix + island_w, iy + island_h), radius=island_h // 2, fill=(8, 8, 8, 255))
+    # centered punch-hole camera
+    hole_r = max(5, int(screen_w * 0.018))
+    cx = sx + screen_w // 2
+    cy = sy + int(screen_w * 0.045)
+    d.ellipse((cx - hole_r - 3, cy - hole_r - 3, cx + hole_r + 3, cy + hole_r + 3), fill=(10, 10, 10, 255))
+    d.ellipse((cx - hole_r, cy - hole_r, cx + hole_r, cy + hole_r), fill=(28, 32, 40, 255))
+    d.ellipse((cx - max(2, hole_r // 3), cy - max(2, hole_r // 3), cx + max(2, hole_r // 3), cy + max(2, hole_r // 3)), fill=(90, 140, 190, 220))
 
-    # side buttons
-    bw = max(3, int(device_w * 0.012))
-    d.rounded_rectangle((-1, int(device_h * 0.18), bw, int(device_h * 0.26)), radius=2, fill=(90, 90, 92, 255))
-    d.rounded_rectangle((-1, int(device_h * 0.30), bw, int(device_h * 0.40)), radius=2, fill=(90, 90, 92, 255))
-    d.rounded_rectangle((device_w - bw, int(device_h * 0.28), device_w + 1, int(device_h * 0.40)), radius=2, fill=(90, 90, 92, 255))
+    # volume (left) + power (right)
+    bw = max(3, int(device_w * 0.013))
+    d.rounded_rectangle((-1, int(device_h * 0.22), bw, int(device_h * 0.34)), radius=2, fill=(110, 112, 114, 255))
+    d.rounded_rectangle((device_w - bw, int(device_h * 0.28), device_w + 1, int(device_h * 0.38)), radius=2, fill=(110, 112, 114, 255))
 
     return device
+
+
+def iphone_mock(screenshot: Image.Image, screen_h: int = 1180) -> Image.Image:
+    """Back-compat alias — all mockups render as Android."""
+    return android_mock(screenshot, screen_h)
 
 
 def rotate(im: Image.Image, angle: float) -> Image.Image:
@@ -247,6 +250,11 @@ def inset_quad(quad: np.ndarray, frac=0.035) -> np.ndarray:
     return c + (quad - c) * (1 - frac)
 
 
+def expand_quad(quad: np.ndarray, frac=0.16) -> np.ndarray:
+    c = quad.mean(axis=0)
+    return c + (quad - c) * (1 + frac)
+
+
 def find_black_quads(img_rgb: Image.Image, min_area_frac=0.03) -> list[np.ndarray]:
     arr = np.array(img_rgb.convert("RGB"))
     bgr = cv2.cvtColor(arr, cv2.COLOR_RGB2BGR)
@@ -320,7 +328,9 @@ def composite_phones(bg_path: Path, shot_keys: list[str], out_name: str) -> Imag
     quads = sorted(quads, key=lambda q: q[:, 0].mean())
     out = bg
     for q, key in zip(quads, shot_keys):
-        out = warp_screenshot_onto(out, load(SHOT[key]), q)
+        device = android_mock(load(SHOT[key]), 1400)
+        outer = expand_quad(q, 0.18)
+        out = warp_screenshot_onto(out, device, outer)
     return out
 
 
@@ -347,8 +357,7 @@ def listing_01_hero():
     paste(base, sched, (W * 0.50, H * 0.52), center=True)
 
     d = ImageDraw.Draw(base)
-    draw_centered(d, "Jiya", 70, font(SERIF_B, 52), GOLD_RGB, W)
-    draw_centered(d, "The Desi Wedding Planner", 140, font(SERIF_B, 78), NAVY_RGB, W)
+    draw_centered(d, "Wedding Planner App", 140, font(SERIF_B, 78), NAVY_RGB, W)
     draw_centered(d, "Mehndi  ·  Barat  ·  Nikkah  ·  Walima", 250, font(SANS_M, 32), MUTED[:3], W)
     gold_rule(d, W // 2, 318, 180)
 
@@ -390,7 +399,7 @@ def listing_03_whats_included():
     base.alpha_composite(veil)
     d = ImageDraw.Draw(base)
     draw_centered(d, "WHAT'S INSIDE", 70, font(SANS_M, 26), GOLD_RGB, W, tracking=10)
-    draw_centered(d, "One planner for the whole shaadi", 118, font(SERIF_B, 64), NAVY_RGB, W)
+    draw_centered(d, "One planner for the whole wedding", 118, font(SERIF_B, 64), NAVY_RGB, W)
     gold_rule(d, W // 2, 210, 140)
 
     items = [
@@ -481,7 +490,7 @@ def listing_05_budget_ocr():
 
 def listing_06_guests():
     W = H = 2400
-    photo = cover_resize(load(ASSETS / "ai-hand-guests.png"), (W, H))
+    photo = cover_resize(load(MOCKUPS / "composite-hand-guests.png" if (MOCKUPS / "composite-hand-guests.png").exists() else ASSETS / "ai-hand-guests.png"), (W, H))
     # left text panel
     panel = cream_panel((1020, 2100), 40, (255, 252, 248, 228))
     paste(photo, panel, (40, 150))
@@ -508,7 +517,8 @@ def listing_06_guests():
 
 def listing_07_ai_studio():
     W = H = 2400
-    photo = cover_resize(load(ASSETS / "ai-vertical-ai-assistant.png"), (W, H))
+    src = MOCKUPS / "composite-hand-ai.png"
+    photo = cover_resize(load(src if src.exists() else ASSETS / "ai-vertical-ai-assistant.png"), (W, H))
     # bottom caption bar
     bar = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     bd = ImageDraw.Draw(bar)
@@ -527,8 +537,7 @@ def listing_08_features():
     veil = Image.new("RGBA", (W, H), (252, 249, 244, 80))
     base.alpha_composite(veil)
     d = ImageDraw.Draw(base)
-    draw_centered(d, "Jiya", 64, font(SERIF_I, 42), GOLD_RGB, W)
-    draw_centered(d, "Everything a Desi wedding needs", 130, font(SERIF_B, 56), NAVY_RGB, W)
+    draw_centered(d, "Everything a wedding needs", 130, font(SERIF_B, 56), NAVY_RGB, W)
     gold_rule(d, W // 2, 220, 140)
 
     cards = [
@@ -608,7 +617,7 @@ def listing_10_how():
     draw_centered(d, "Download. Plan. Breathe.", 140, font(SERIF_B, 64), NAVY_RGB, W)
 
     steps = [
-        ("1", "Open Jiya", "Set your target budget, currency and wedding scale."),
+        ("1", "Install the app", "Set your target budget, currency and wedding scale."),
         ("2", "Add every event", "Mehndi, Barat, Nikkah, Walima — venues and family leads."),
         ("3", "Fill the guest world", "CSV import, RSVPs, seating canvas."),
         ("4", "Ask the studio", "AI themes, décor, attire — tap to add tasks."),
@@ -634,7 +643,7 @@ def extra_collage_and_pinterest():
     W, H = 2400, 2400
     base = marble_canvas((W, H))
     d = ImageDraw.Draw(base)
-    draw_centered(d, "Jiya  ·  Desi Wedding Planner", 80, font(SANS_M, 26), GOLD_RGB, W)
+    draw_centered(d, "Wedding Planner App", 80, font(SANS_M, 26), GOLD_RGB, W)
     phones = [
         drop_shadow(rotate(iphone_mock(load(SHOT["dashboard"]), 980), -14), (8, 22), 24, 110),
         drop_shadow(rotate(iphone_mock(load(SHOT["schedule"]), 1040), -5), (8, 22), 24, 110),
@@ -654,14 +663,14 @@ def extra_collage_and_pinterest():
     phone = drop_shadow(iphone_mock(load(SHOT["dashboard"]), 1500), (0, 40), 36, 130)
     paste(pin, phone, (pin_w // 2, pin_h * 0.55), center=True)
     pd = ImageDraw.Draw(pin)
-    draw_centered(pd, "Jiya", 90, font(SERIF_I, 40), GOLD_RGB, pin_w)
-    draw_centered(pd, "The Desi Wedding\nPlanner App", 150, font(SERIF_B, 64), NAVY_RGB, pin_w)
+    draw_centered(pd, "Wedding Planner App", 150, font(SERIF_B, 64), NAVY_RGB, pin_w)
     save_jpg(pin, MOCKUPS / "pinterest-desi-wedding-planner.jpg")
 
 
 def composite_lifestyle_extras():
     mapping = [
         (ASSETS / "bg-hand-holding-empty-phone.png", ["dashboard"], "composite-hand-dashboard"),
+        (ASSETS / "bg-hand-holding-empty-phone.png", ["guests"], "composite-hand-guests"),
         (ASSETS / "bg-vertical-hand-phone.png", ["ai"], "composite-hand-ai"),
         (ASSETS / "bg-vertical-bridal-scene.png", ["dashboard"], "composite-vertical-dashboard"),
         (ASSETS / "bg-desk-three-phones-empty.png", ["schedule", "dashboard", "guests"], "composite-three-phones"),
